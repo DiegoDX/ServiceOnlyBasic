@@ -1,0 +1,653 @@
+[2025-12-03 15:28:26 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-03 15:28:26 INF] Now listening on: https://localhost:7222
+[2025-12-03 15:28:26 INF] Now listening on: http://localhost:5273
+[2025-12-03 15:28:26 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-03 15:28:26 INF] Hosting environment: Development
+[2025-12-03 15:28:26 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-03 15:28:26 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-03 15:28:26 INF] HTTP GET /swagger/index.html responded 200 in 50.8933 ms
+[2025-12-03 15:28:26 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 150.002ms
+[2025-12-03 15:28:26 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-03 15:28:26 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 15:28:26 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 5.2376ms
+[2025-12-03 15:28:27 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.2792ms
+[2025-12-03 15:28:27 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-03 15:28:27 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 5.8038 ms
+[2025-12-03 15:28:27 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.1046ms
+[2025-12-03 15:28:49 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Auth/login - application/json 60
+[2025-12-03 15:28:49 INF] HTTP POST /api/Auth/login responded 307 in 2.4078 ms
+[2025-12-03 15:28:49 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Auth/login - 307 0 null 14.1497ms
+[2025-12-03 15:28:49 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Auth/login - null null
+[2025-12-03 15:28:49 INF] CORS policy execution successful.
+[2025-12-03 15:28:49 INF] HTTP OPTIONS /api/Auth/login responded 204 in 3.6275 ms
+[2025-12-03 15:28:49 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Auth/login - 204 null null 11.5983ms
+[2025-12-03 15:28:49 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 60
+[2025-12-03 15:28:49 INF] CORS policy execution successful.
+[2025-12-03 15:28:49 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 15:28:49 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-03 15:28:50 INF] Executed DbCommand (48ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-03 15:28:51 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResultDto'.
+[2025-12-03 15:28:51 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 1172.1606ms
+[2025-12-03 15:28:51 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 15:28:51 INF] HTTP POST /api/Auth/login responded 200 in 1238.7708 ms
+[2025-12-03 15:28:51 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/login - 200 null application/json; charset=utf-8 1252.8509ms
+[2025-12-03 15:29:23 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-03 15:29:23 INF] HTTP GET /api/Countries responded 307 in 0.5543 ms
+[2025-12-03 15:29:23 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 7.7598ms
+[2025-12-03 15:29:23 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 15:29:23 INF] CORS policy execution successful.
+[2025-12-03 15:29:23 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 15:29:23 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 15:29:23 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 15:29:23 INF] HTTP GET /api/Countries responded 401 in 15.1878 ms
+[2025-12-03 15:29:23 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 20.3457ms
+[2025-12-03 15:38:05 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-03 15:38:05 INF] Now listening on: https://localhost:7222
+[2025-12-03 15:38:05 INF] Now listening on: http://localhost:5273
+[2025-12-03 15:38:05 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-03 15:38:05 INF] Hosting environment: Development
+[2025-12-03 15:38:05 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-03 15:38:14 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-03 15:38:14 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 15:38:14 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 30.074ms
+[2025-12-03 15:38:14 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.5253ms
+[2025-12-03 15:38:14 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-03 15:38:14 ERR] Unhandled exception
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Countries" for actions - WebAPI.Controllers.CountriesController.Debug (WebAPI), WebAPI.Controllers.CountriesController.Getall (WebAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 20
+[2025-12-03 15:38:14 ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 42.2037 ms
+[2025-12-03 15:38:14 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 500 null application/json; charset=utf-8 71.1844ms
+[2025-12-03 15:38:20 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-03 15:38:20 INF] HTTP GET /swagger/index.html responded 200 in 49.2407 ms
+[2025-12-03 15:38:20 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 105.1952ms
+[2025-12-03 15:38:20 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-03 15:38:20 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-03 15:38:20 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-03 15:38:20 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-03 15:38:20 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-03 15:38:20 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 15:38:20 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 19.6825 ms
+[2025-12-03 15:38:20 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 16.7918 ms
+[2025-12-03 15:38:20 INF] HTTP GET /swagger/index.js responded 200 in 1.9448 ms
+[2025-12-03 15:38:20 INF] HTTP GET /swagger/index.css responded 200 in 18.3021 ms
+[2025-12-03 15:38:20 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 75.1703ms
+[2025-12-03 15:38:20 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 86.6362ms
+[2025-12-03 15:38:20 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 34.1744 ms
+[2025-12-03 15:38:20 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 88.6971ms
+[2025-12-03 15:38:20 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 90.063ms
+[2025-12-03 15:38:20 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 92.5289ms
+[2025-12-03 15:38:20 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-03 15:38:20 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 102.8348ms
+[2025-12-03 15:38:20 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.3192ms
+[2025-12-03 15:38:20 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-03 15:38:20 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-03 15:38:20 ERR] Unhandled exception
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Countries" for actions - WebAPI.Controllers.CountriesController.Debug (WebAPI), WebAPI.Controllers.CountriesController.Getall (WebAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 20
+[2025-12-03 15:38:20 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 1.1762 ms
+[2025-12-03 15:38:20 ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 52.4002 ms
+[2025-12-03 15:38:20 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 53.3384ms
+[2025-12-03 15:38:20 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 500 null application/json; charset=utf-8 59.3284ms
+[2025-12-03 15:39:13 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-03 15:39:13 INF] HTTP GET /swagger/index.html responded 200 in 0.6031 ms
+[2025-12-03 15:39:13 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 9.3574ms
+[2025-12-03 15:39:13 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-03 15:39:13 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 15:39:13 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 5.9299ms
+[2025-12-03 15:39:13 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.5306ms
+[2025-12-03 15:39:13 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-03 15:39:13 ERR] Unhandled exception
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Countries" for actions - WebAPI.Controllers.CountriesController.Debug (WebAPI), WebAPI.Controllers.CountriesController.Getall (WebAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 20
+[2025-12-03 15:39:13 ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 19.7232 ms
+[2025-12-03 15:39:13 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 500 null application/json; charset=utf-8 27.2519ms
+[2025-12-03 15:43:10 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-03 15:43:11 INF] Now listening on: https://localhost:7222
+[2025-12-03 15:43:11 INF] Now listening on: http://localhost:5273
+[2025-12-03 15:43:11 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-03 15:43:11 INF] Hosting environment: Development
+[2025-12-03 15:43:11 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-03 15:43:17 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-03 15:43:18 INF] HTTP GET /swagger/index.html responded 200 in 62.6368 ms
+[2025-12-03 15:43:18 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 203.6325ms
+[2025-12-03 15:43:18 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 15:43:18 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-03 15:43:18 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 5.3804ms
+[2025-12-03 15:43:18 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.5748ms
+[2025-12-03 15:43:18 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-03 15:43:18 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.4038 ms
+[2025-12-03 15:43:18 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.339ms
+[2025-12-03 15:44:02 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Auth/login - application/json 60
+[2025-12-03 15:44:02 INF] HTTP POST /api/Auth/login responded 307 in 2.0693 ms
+[2025-12-03 15:44:02 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Auth/login - 307 0 null 9.4908ms
+[2025-12-03 15:44:02 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Auth/login - null null
+[2025-12-03 15:44:02 INF] CORS policy execution successful.
+[2025-12-03 15:44:02 INF] HTTP OPTIONS /api/Auth/login responded 204 in 3.4845 ms
+[2025-12-03 15:44:02 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Auth/login - 204 null null 11.8417ms
+[2025-12-03 15:44:02 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 60
+[2025-12-03 15:44:02 INF] CORS policy execution successful.
+[2025-12-03 15:44:02 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 15:44:02 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-03 15:44:04 INF] Executed DbCommand (71ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-03 15:44:04 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResultDto'.
+[2025-12-03 15:44:04 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 1299.4347ms
+[2025-12-03 15:44:04 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 15:44:04 INF] HTTP POST /api/Auth/login responded 200 in 1401.8633 ms
+[2025-12-03 15:44:04 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/login - 200 null application/json; charset=utf-8 1413.4747ms
+[2025-12-03 15:44:37 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-03 15:44:37 INF] HTTP GET /api/Countries responded 307 in 0.5245 ms
+[2025-12-03 15:44:37 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 6.3642ms
+[2025-12-03 15:44:37 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 15:44:37 INF] CORS policy execution successful.
+[2025-12-03 15:44:37 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 15:44:37 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 15:44:37 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 15:44:37 INF] HTTP GET /api/Countries responded 401 in 24.1764 ms
+[2025-12-03 15:44:37 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 34.454ms
+[2025-12-03 15:45:26 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-03 15:45:26 INF] Now listening on: https://localhost:7222
+[2025-12-03 15:45:26 INF] Now listening on: http://localhost:5273
+[2025-12-03 15:45:26 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-03 15:45:26 INF] Hosting environment: Development
+[2025-12-03 15:45:26 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-03 15:45:28 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-03 15:45:28 INF] HTTP GET /swagger/index.html responded 200 in 65.9378 ms
+[2025-12-03 15:45:28 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 164.5156ms
+[2025-12-03 15:45:28 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-03 15:45:28 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 15:45:28 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 7.3258ms
+[2025-12-03 15:45:28 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.1862ms
+[2025-12-03 15:45:28 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-03 15:45:28 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.0758 ms
+[2025-12-03 15:45:28 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.5724ms
+[2025-12-03 15:45:41 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-03 15:45:41 INF] HTTP GET /api/Countries responded 307 in 2.1680 ms
+[2025-12-03 15:45:41 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 8.9555ms
+[2025-12-03 15:45:41 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 15:45:41 INF] CORS policy execution successful.
+[2025-12-03 15:45:41 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 15:45:41 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 15:45:41 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 15:45:41 INF] HTTP GET /api/Countries responded 401 in 55.1971 ms
+[2025-12-03 15:45:41 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 61.2189ms
+[2025-12-03 15:45:53 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-03 15:45:53 INF] HTTP GET /swagger/index.html responded 200 in 0.4370 ms
+[2025-12-03 15:45:53 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 11.2882ms
+[2025-12-03 15:45:53 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-03 15:45:53 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 15:45:53 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-03 15:45:53 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 7.1126ms
+[2025-12-03 15:45:53 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-03 15:45:53 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-03 15:45:53 INF] HTTP GET /swagger/index.css responded 200 in 11.6237 ms
+[2025-12-03 15:45:53 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-03 15:45:53 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-03 15:45:53 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 76.4775ms
+[2025-12-03 15:45:53 INF] HTTP GET /swagger/index.js responded 200 in 0.3114 ms
+[2025-12-03 15:45:53 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 22.1790 ms
+[2025-12-03 15:45:53 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 55.5334 ms
+[2025-12-03 15:45:53 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.6742ms
+[2025-12-03 15:45:53 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.5835 ms
+[2025-12-03 15:45:53 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 91.4969ms
+[2025-12-03 15:45:53 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 93.491ms
+[2025-12-03 15:45:53 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 94.333ms
+[2025-12-03 15:45:53 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 98.748ms
+[2025-12-03 15:45:53 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-03 15:45:53 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-03 15:45:53 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 5.4405 ms
+[2025-12-03 15:45:53 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 1.7746 ms
+[2025-12-03 15:45:53 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.3591ms
+[2025-12-03 15:45:53 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 8.5971ms
+[2025-12-03 15:46:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-03 15:46:03 INF] HTTP GET /api/Countries responded 307 in 0.2251 ms
+[2025-12-03 15:46:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 5.2289ms
+[2025-12-03 15:46:03 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 15:46:03 INF] CORS policy execution successful.
+[2025-12-03 15:46:03 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 15:46:03 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 15:46:03 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 15:46:03 INF] HTTP GET /api/Countries responded 401 in 5.1124 ms
+[2025-12-03 15:46:03 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 14.7823ms
+[2025-12-03 15:51:36 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-03 15:51:36 INF] Now listening on: https://localhost:7222
+[2025-12-03 15:51:36 INF] Now listening on: http://localhost:5273
+[2025-12-03 15:51:36 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-03 15:51:36 INF] Hosting environment: Development
+[2025-12-03 15:51:36 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-03 15:51:52 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 15:51:52 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-03 15:51:52 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 24.9834ms
+[2025-12-03 15:51:52 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.3727ms
+[2025-12-03 15:51:52 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-03 15:51:52 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.3386 ms
+[2025-12-03 15:51:52 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.3554ms
+[2025-12-03 15:51:55 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-03 15:51:55 INF] HTTP GET /swagger/index.html responded 200 in 44.1356 ms
+[2025-12-03 15:51:55 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 98.8386ms
+[2025-12-03 15:51:55 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-03 15:51:55 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-03 15:51:55 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-03 15:51:55 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-03 15:51:55 INF] HTTP GET /swagger/index.js responded 200 in 0.6927 ms
+[2025-12-03 15:51:55 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-03 15:51:55 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 15:51:55 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 14.8017ms
+[2025-12-03 15:51:55 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 11.7771 ms
+[2025-12-03 15:51:55 INF] HTTP GET /swagger/index.css responded 200 in 3.5981 ms
+[2025-12-03 15:51:55 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 20.8041ms
+[2025-12-03 15:51:55 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 18.3803 ms
+[2025-12-03 15:51:55 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 11.0205 ms
+[2025-12-03 15:51:55 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-03 15:51:55 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 30.5204ms
+[2025-12-03 15:51:55 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 31.8515ms
+[2025-12-03 15:51:55 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 37.9022ms
+[2025-12-03 15:51:55 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 36.7303ms
+[2025-12-03 15:51:55 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.0713ms
+[2025-12-03 15:51:55 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-03 15:51:55 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-03 15:51:55 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 2.4830 ms
+[2025-12-03 15:51:55 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 1.2136 ms
+[2025-12-03 15:51:55 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.3639ms
+[2025-12-03 15:51:55 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 7.6633ms
+[2025-12-03 15:52:00 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-03 15:52:00 INF] HTTP GET /api/Countries responded 307 in 1.0955 ms
+[2025-12-03 15:52:00 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 7.6482ms
+[2025-12-03 15:52:00 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 15:52:00 INF] CORS policy execution successful.
+[2025-12-03 15:52:00 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 15:52:00 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 15:52:00 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 15:52:00 INF] HTTP GET /api/Countries responded 401 in 80.2502 ms
+[2025-12-03 15:52:00 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 85.6723ms
+[2025-12-03 15:52:19 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Auth/login - application/json 60
+[2025-12-03 15:52:19 INF] HTTP POST /api/Auth/login responded 307 in 0.1986 ms
+[2025-12-03 15:52:19 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Auth/login - 307 0 null 8.0889ms
+[2025-12-03 15:52:19 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Auth/login - null null
+[2025-12-03 15:52:19 INF] CORS policy execution successful.
+[2025-12-03 15:52:19 INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.2496 ms
+[2025-12-03 15:52:19 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Auth/login - 204 null null 5.3865ms
+[2025-12-03 15:52:19 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 60
+[2025-12-03 15:52:19 INF] CORS policy execution successful.
+[2025-12-03 15:52:19 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 15:52:19 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-03 15:52:21 INF] Executed DbCommand (52ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-03 15:52:21 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResultDto'.
+[2025-12-03 15:52:21 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 1233.9726ms
+[2025-12-03 15:52:21 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 15:52:21 INF] HTTP POST /api/Auth/login responded 200 in 1263.0791 ms
+[2025-12-03 15:52:21 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/login - 200 null application/json; charset=utf-8 1271.5713ms
+[2025-12-03 15:53:00 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-03 15:53:00 INF] HTTP GET /api/Countries responded 307 in 0.0818 ms
+[2025-12-03 15:53:00 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 4.2021ms
+[2025-12-03 15:53:00 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 15:53:00 INF] CORS policy execution successful.
+[2025-12-03 15:53:00 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 15:53:00 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 15:53:00 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 15:53:00 INF] HTTP GET /api/Countries responded 401 in 5.8716 ms
+[2025-12-03 15:53:00 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 10.2918ms
+[2025-12-03 15:53:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-03 15:53:03 INF] HTTP GET /api/Countries responded 307 in 0.1125 ms
+[2025-12-03 15:53:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 7.1466ms
+[2025-12-03 15:53:03 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 15:53:03 INF] CORS policy execution successful.
+[2025-12-03 15:53:03 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 15:53:03 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 15:53:03 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 15:53:03 INF] HTTP GET /api/Countries responded 401 in 5.0817 ms
+[2025-12-03 15:53:03 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 10.5768ms
+[2025-12-03 15:53:31 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-03 15:53:31 INF] HTTP GET /api/Countries responded 307 in 0.1475 ms
+[2025-12-03 15:53:31 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 7.8161ms
+[2025-12-03 15:53:31 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 15:53:31 INF] CORS policy execution successful.
+[2025-12-03 15:53:31 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 15:53:31 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 15:53:31 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 15:53:31 INF] HTTP GET /api/Countries responded 401 in 2.9284 ms
+[2025-12-03 15:53:31 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 11.8526ms
+[2025-12-03 15:53:35 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Auth/login - application/json 60
+[2025-12-03 15:53:35 INF] HTTP POST /api/Auth/login responded 307 in 0.1369 ms
+[2025-12-03 15:53:35 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Auth/login - 307 0 null 5.9031ms
+[2025-12-03 15:53:35 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Auth/login - null null
+[2025-12-03 15:53:35 INF] CORS policy execution successful.
+[2025-12-03 15:53:35 INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.8657 ms
+[2025-12-03 15:53:35 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Auth/login - 204 null null 5.728ms
+[2025-12-03 15:53:35 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 60
+[2025-12-03 15:53:35 INF] CORS policy execution successful.
+[2025-12-03 15:53:35 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 15:53:35 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-03 15:53:35 INF] Executed DbCommand (6ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-03 15:53:35 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResultDto'.
+[2025-12-03 15:53:35 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 99.1488ms
+[2025-12-03 15:53:35 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 15:53:35 INF] HTTP POST /api/Auth/login responded 200 in 104.6231 ms
+[2025-12-03 15:53:35 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/login - 200 null application/json; charset=utf-8 110.4335ms
+[2025-12-03 15:54:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-03 15:54:04 INF] HTTP GET /api/Countries responded 307 in 0.0932 ms
+[2025-12-03 15:54:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 5.0329ms
+[2025-12-03 15:54:04 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 15:54:04 INF] CORS policy execution successful.
+[2025-12-03 15:54:04 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 15:54:04 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 15:54:04 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 15:54:04 INF] HTTP GET /api/Countries responded 401 in 3.6071 ms
+[2025-12-03 15:54:04 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 8.9696ms
+[2025-12-03 16:07:35 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-03 16:07:36 INF] Now listening on: https://localhost:7222
+[2025-12-03 16:07:36 INF] Now listening on: http://localhost:5273
+[2025-12-03 16:07:36 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-03 16:07:36 INF] Hosting environment: Development
+[2025-12-03 16:07:36 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-03 16:07:41 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-03 16:07:41 INF] HTTP GET /swagger/index.html responded 200 in 63.5863 ms
+[2025-12-03 16:07:41 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 183.5977ms
+[2025-12-03 16:07:41 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 16:07:41 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-03 16:07:41 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 5.0737ms
+[2025-12-03 16:07:42 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.9406ms
+[2025-12-03 16:07:42 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-03 16:07:42 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.3150 ms
+[2025-12-03 16:07:42 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.7414ms
+[2025-12-03 16:09:02 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-03 16:09:02 INF] HTTP GET /api/Countries responded 307 in 4.1988 ms
+[2025-12-03 16:09:02 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 11.0288ms
+[2025-12-03 16:09:02 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:09:02 INF] CORS policy execution successful.
+[2025-12-03 16:09:02 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 16:09:02 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 16:09:02 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 16:09:02 INF] HTTP GET /api/Countries responded 401 in 55.7680 ms
+[2025-12-03 16:09:02 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 61.9855ms
+[2025-12-03 16:09:32 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Auth/login - application/json 60
+[2025-12-03 16:09:32 INF] HTTP POST /api/Auth/login responded 307 in 0.2402 ms
+[2025-12-03 16:09:32 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Auth/login - 307 0 null 5.572ms
+[2025-12-03 16:09:32 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Auth/login - null null
+[2025-12-03 16:09:32 INF] CORS policy execution successful.
+[2025-12-03 16:09:32 INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.6691 ms
+[2025-12-03 16:09:32 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Auth/login - 204 null null 6.2455ms
+[2025-12-03 16:09:32 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 60
+[2025-12-03 16:09:32 INF] CORS policy execution successful.
+[2025-12-03 16:09:32 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 16:09:32 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-03 16:09:33 INF] Executed DbCommand (61ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-03 16:09:33 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResultDto'.
+[2025-12-03 16:09:33 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 1263.0477ms
+[2025-12-03 16:09:33 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 16:09:33 INF] HTTP POST /api/Auth/login responded 200 in 1295.7147 ms
+[2025-12-03 16:09:33 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/login - 200 null application/json; charset=utf-8 1310.0183ms
+[2025-12-03 16:17:15 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-03 16:17:15 INF] Now listening on: https://localhost:7222
+[2025-12-03 16:17:15 INF] Now listening on: http://localhost:5273
+[2025-12-03 16:17:15 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-03 16:17:15 INF] Hosting environment: Development
+[2025-12-03 16:17:15 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-03 16:17:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-03 16:17:31 INF] HTTP GET /swagger/index.html responded 200 in 47.4101 ms
+[2025-12-03 16:17:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 151.4015ms
+[2025-12-03 16:17:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-03 16:17:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-03 16:17:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-03 16:17:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-03 16:17:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-03 16:17:31 INF] HTTP GET /swagger/index.js responded 200 in 0.5254 ms
+[2025-12-03 16:17:31 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 16:17:31 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-03 16:17:31 INF] HTTP GET /swagger/index.css responded 200 in 52.2132 ms
+[2025-12-03 16:17:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 93.2818ms
+[2025-12-03 16:17:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 98.9397ms
+[2025-12-03 16:17:31 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 129.5581ms
+[2025-12-03 16:17:31 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 53.7253 ms
+[2025-12-03 16:17:31 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 60.4268 ms
+[2025-12-03 16:17:31 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 64.6990 ms
+[2025-12-03 16:17:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 146.8077ms
+[2025-12-03 16:17:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 147.2522ms
+[2025-12-03 16:17:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 149.4394ms
+[2025-12-03 16:17:31 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.6282ms
+[2025-12-03 16:17:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - null null
+[2025-12-03 16:17:31 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.8021 ms
+[2025-12-03 16:17:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.104ms
+[2025-12-03 16:17:52 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 60
+[2025-12-03 16:17:52 INF] CORS policy execution successful.
+[2025-12-03 16:17:52 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 16:17:52 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-03 16:17:53 INF] Executed DbCommand (56ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-03 16:17:53 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResultDto'.
+[2025-12-03 16:17:53 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 1233.4738ms
+[2025-12-03 16:17:53 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 16:17:53 INF] HTTP POST /api/Auth/login responded 200 in 1308.7806 ms
+[2025-12-03 16:17:53 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/login - 200 null application/json; charset=utf-8 1329.9173ms
+[2025-12-03 16:19:15 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:19:15 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 16:19:15 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 16:19:15 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 16:19:15 INF] HTTP GET /api/Countries responded 401 in 14.0388 ms
+[2025-12-03 16:19:15 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 23.0774ms
+[2025-12-03 16:19:40 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:19:40 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 16:19:40 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 16:19:40 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 16:19:40 INF] HTTP GET /api/Countries responded 401 in 6.4744 ms
+[2025-12-03 16:19:40 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 13.1535ms
+[2025-12-03 16:20:02 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:20:02 INF] JWT TOKEN VALID
+[2025-12-03 16:20:02 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Debug (WebAPI)'
+[2025-12-03 16:20:02 INF] Route matched with {action = "Debug", controller = "Countries"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Debug() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-03 16:20:15 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-12-03 16:20:15 INF] Executed action WebAPI.Controllers.CountriesController.Debug (WebAPI) in 12772.282ms
+[2025-12-03 16:20:15 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Debug (WebAPI)'
+[2025-12-03 16:20:15 INF] HTTP GET /api/Countries responded 200 in 12825.7467 ms
+[2025-12-03 16:20:15 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 12830.611ms
+[2025-12-03 16:49:18 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-03 16:49:18 INF] Now listening on: https://localhost:7222
+[2025-12-03 16:49:18 INF] Now listening on: http://localhost:5273
+[2025-12-03 16:49:18 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-03 16:49:18 INF] Hosting environment: Development
+[2025-12-03 16:49:18 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-03 16:49:24 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-03 16:49:24 INF] HTTP GET /swagger/index.html responded 200 in 41.5974 ms
+[2025-12-03 16:49:24 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 130.4212ms
+[2025-12-03 16:49:24 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-03 16:49:24 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-03 16:49:24 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-03 16:49:24 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-03 16:49:24 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-03 16:49:24 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 16:49:24 INF] HTTP GET /swagger/index.js responded 200 in 0.6431 ms
+[2025-12-03 16:49:24 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-03 16:49:24 INF] HTTP GET /swagger/index.css responded 200 in 7.9401 ms
+[2025-12-03 16:49:24 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 22.7141ms
+[2025-12-03 16:49:24 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 30.2975ms
+[2025-12-03 16:49:25 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 70.24ms
+[2025-12-03 16:49:25 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 92.6267 ms
+[2025-12-03 16:49:25 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 97.0280 ms
+[2025-12-03 16:49:25 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 91.9268 ms
+[2025-12-03 16:49:25 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 125.7923ms
+[2025-12-03 16:49:25 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 129.3993ms
+[2025-12-03 16:49:25 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 135.6794ms
+[2025-12-03 16:49:25 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.9217ms
+[2025-12-03 16:49:25 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - null null
+[2025-12-03 16:49:25 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.1332 ms
+[2025-12-03 16:49:25 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.5497ms
+[2025-12-03 16:49:25 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - null null
+[2025-12-03 16:49:25 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 1.5899 ms
+[2025-12-03 16:49:25 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - 200 628 image/png 10.4373ms
+[2025-12-03 16:49:43 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 60
+[2025-12-03 16:49:43 INF] CORS policy execution successful.
+[2025-12-03 16:49:43 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 16:49:43 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-03 16:49:44 INF] Executed DbCommand (50ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-03 16:49:44 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResultDto'.
+[2025-12-03 16:49:44 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 1151.0603ms
+[2025-12-03 16:49:44 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-03 16:49:44 INF] HTTP POST /api/Auth/login responded 200 in 1219.6756 ms
+[2025-12-03 16:49:44 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/login - 200 null application/json; charset=utf-8 1232.3254ms
+[2025-12-03 16:50:34 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:50:34 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 16:50:34 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 16:50:34 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 16:50:34 INF] HTTP GET /api/Countries responded 401 in 13.5945 ms
+[2025-12-03 16:50:34 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 18.5194ms
+[2025-12-03 16:51:06 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:51:06 INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+[2025-12-03 16:51:06 ERR] JWT FAILED: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+[2025-12-03 16:51:06 INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+[2025-12-03 16:51:06 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 16:51:06 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 16:51:06 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 16:51:06 INF] HTTP GET /api/Countries responded 401 in 21.6200 ms
+[2025-12-03 16:51:06 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Countries - 401 0 null 27.5921ms
+[2025-12-03 16:51:16 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:51:16 INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+[2025-12-03 16:51:16 ERR] JWT FAILED: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+[2025-12-03 16:51:16 INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+[2025-12-03 16:51:16 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 16:51:16 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 16:51:16 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 16:51:16 INF] HTTP GET /api/Countries responded 401 in 6.7693 ms
+[2025-12-03 16:51:16 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Countries - 401 0 null 10.6267ms
+[2025-12-03 16:52:07 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:52:07 INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+[2025-12-03 16:52:07 ERR] JWT FAILED: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+[2025-12-03 16:52:07 INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+[2025-12-03 16:52:07 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 16:52:07 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 16:52:07 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 16:52:07 INF] HTTP GET /api/Countries responded 401 in 6.5973 ms
+[2025-12-03 16:52:07 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Countries - 401 0 null 11.0881ms
+[2025-12-03 16:52:09 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:52:09 INF] JWT TOKEN VALID
+[2025-12-03 16:52:09 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Debug (WebAPI)'
+[2025-12-03 16:52:09 INF] Route matched with {action = "Debug", controller = "Countries"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Debug() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-03 16:52:14 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-12-03 16:52:14 INF] Executed action WebAPI.Controllers.CountriesController.Debug (WebAPI) in 4255.3404ms
+[2025-12-03 16:52:14 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Debug (WebAPI)'
+[2025-12-03 16:52:14 INF] HTTP GET /api/Countries responded 200 in 4286.2362 ms
+[2025-12-03 16:52:14 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 4290.9494ms
+[2025-12-03 16:52:37 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-03 16:52:37 INF] HTTP GET /swagger/index.html responded 200 in 0.4291 ms
+[2025-12-03 16:52:37 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 11.952ms
+[2025-12-03 16:52:37 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-03 16:52:37 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-03 16:52:37 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-03 16:52:37 INF] HTTP GET /swagger/index.css responded 200 in 0.6442 ms
+[2025-12-03 16:52:37 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-03 16:52:37 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 20.9939ms
+[2025-12-03 16:52:37 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 1.0065 ms
+[2025-12-03 16:52:37 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-03 16:52:37 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-03 16:52:38 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 31.1901ms
+[2025-12-03 16:52:37 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-03 16:52:38 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 6.9728 ms
+[2025-12-03 16:52:38 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.3838 ms
+[2025-12-03 16:52:38 INF] HTTP GET /swagger/index.js responded 200 in 0.4568 ms
+[2025-12-03 16:52:38 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 32.4004ms
+[2025-12-03 16:52:38 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 45.5733ms
+[2025-12-03 16:52:38 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 46.9249ms
+[2025-12-03 16:52:38 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 41.2404ms
+[2025-12-03 16:52:38 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.6632ms
+[2025-12-03 16:52:38 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-03 16:52:38 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.3030 ms
+[2025-12-03 16:52:38 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 4.5875ms
+[2025-12-03 16:52:38 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - null null
+[2025-12-03 16:52:38 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.9384 ms
+[2025-12-03 16:52:38 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.6663ms
+[2025-12-03 16:53:06 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:53:06 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 16:53:06 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 16:53:06 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 16:53:06 INF] HTTP GET /api/Countries responded 401 in 2.2827 ms
+[2025-12-03 16:53:06 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 6.3518ms
+[2025-12-03 16:53:10 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-03 16:53:10 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-03 16:53:10 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-03 16:53:10 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-03 16:53:10 INF] HTTP GET /api/Countries responded 401 in 2.2244 ms
+[2025-12-03 16:53:10 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 6.2776ms

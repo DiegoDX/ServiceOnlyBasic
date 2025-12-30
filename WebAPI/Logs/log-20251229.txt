@@ -1,0 +1,1158 @@
+[2025-12-29 10:35:29 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 10:35:30 INF] Now listening on: https://localhost:7222
+[2025-12-29 10:35:30 INF] Now listening on: http://localhost:5273
+[2025-12-29 10:35:30 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 10:35:30 INF] Hosting environment: Development
+[2025-12-29 10:35:30 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 10:35:51 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/auth/login - application/json 112
+[2025-12-29 10:35:51 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 10:35:51 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 10:35:52 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-12-29 10:35:52 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 236.4311ms
+[2025-12-29 10:35:52 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 10:35:52 INF] HTTP POST /api/auth/login responded 400 in 353.1445 ms
+[2025-12-29 10:35:52 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/auth/login - 400 null application/problem+json; charset=utf-8 399.0674ms
+[2025-12-29 10:36:46 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/auth/login - application/json 112
+[2025-12-29 10:36:46 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 10:36:46 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 10:36:46 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-12-29 10:36:46 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 8.0497ms
+[2025-12-29 10:36:46 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 10:36:46 INF] HTTP POST /api/auth/login responded 400 in 22.0016 ms
+[2025-12-29 10:36:46 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/auth/login - 400 null application/problem+json; charset=utf-8 28.1889ms
+[2025-12-29 10:44:02 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 10:44:02 INF] Now listening on: https://localhost:7222
+[2025-12-29 10:44:02 INF] Now listening on: http://localhost:5273
+[2025-12-29 10:44:02 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 10:44:02 INF] Hosting environment: Development
+[2025-12-29 10:44:02 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 10:44:38 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/v1 - null null
+[2025-12-29 10:44:38 INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+[2025-12-29 10:44:38 INF] Write content with HTTP Response ContentType of text/html
+[2025-12-29 10:44:38 INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+[2025-12-29 10:44:38 INF] HTTP GET /scalar/v1 responded 200 in 235.5449 ms
+[2025-12-29 10:44:38 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/scalar.js - null null
+[2025-12-29 10:44:38 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-29 10:44:38 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-29 10:44:38 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/scalar.aspnetcore.js - null null
+[2025-12-29 10:44:38 INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+[2025-12-29 10:44:38 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/v1 - 200 null text/html 398.689ms
+[2025-12-29 10:44:38 INF] CORS policy execution successful.
+[2025-12-29 10:44:38 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 77.1021ms
+[2025-12-29 10:44:38 INF] Sending file with download name ''.
+[2025-12-29 10:44:38 INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+[2025-12-29 10:44:38 INF] Sending file with download name ''.
+[2025-12-29 10:44:38 INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+[2025-12-29 10:44:38 INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 65.3556 ms
+[2025-12-29 10:44:38 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.8376ms
+[2025-12-29 10:44:38 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/scalar.aspnetcore.js - 200 1046 text/javascript 95.6588ms
+[2025-12-29 10:44:38 INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+[2025-12-29 10:44:38 INF] HTTP GET /scalar/scalar.js responded 200 in 89.6331 ms
+[2025-12-29 10:44:38 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/scalar.js - 200 934118 text/javascript 107.5846ms
+[2025-12-29 10:44:39 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-29 10:44:39 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-29 10:44:39 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-29 10:44:39 INF] HTTP GET /openapi/v1.json responded 200 in 16.8626 ms
+[2025-12-29 10:44:39 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 26.1492ms
+[2025-12-29 10:44:39 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/favicon.svg - null null
+[2025-12-29 10:44:39 INF] Executing endpoint 'HTTP: GET /scalar/favicon.svg'
+[2025-12-29 10:44:39 INF] Sending file with download name ''.
+[2025-12-29 10:44:39 INF] Executed endpoint 'HTTP: GET /scalar/favicon.svg'
+[2025-12-29 10:44:39 INF] HTTP GET /scalar/favicon.svg responded 200 in 6.1123 ms
+[2025-12-29 10:44:39 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/favicon.svg - 200 533 image/svg+xml 15.688ms
+[2025-12-29 10:45:04 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 53
+[2025-12-29 10:45:04 INF] CORS policy execution successful.
+[2025-12-29 10:45:04 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 10:45:04 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 10:45:13 INF] Executed DbCommand (64ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-29 10:47:17 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 10:47:17 INF] Now listening on: https://localhost:7222
+[2025-12-29 10:47:17 INF] Now listening on: http://localhost:5273
+[2025-12-29 10:47:17 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 10:47:17 INF] Hosting environment: Development
+[2025-12-29 10:47:17 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 10:53:11 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 10:53:11 INF] Now listening on: https://localhost:7222
+[2025-12-29 10:53:11 INF] Now listening on: http://localhost:5273
+[2025-12-29 10:53:11 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 10:53:11 INF] Hosting environment: Development
+[2025-12-29 10:53:11 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 10:54:07 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/auth/login - application/json 58
+[2025-12-29 10:54:07 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 10:54:07 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 10:54:11 INF] Executed DbCommand (47ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-29 10:54:56 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 49108.9318ms
+[2025-12-29 10:54:56 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 10:55:00 INF] HTTP POST /api/auth/login responded 400 in 53619.2988 ms
+[2025-12-29 10:55:00 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/auth/login - 499 null application/json; charset=utf-8 53664.8296ms
+[2025-12-29 10:55:46 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Auth/register/ - application/json 80
+[2025-12-29 10:55:46 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Register (WebAPI)'
+[2025-12-29 10:55:46 INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Application.DTOs.RegisterDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 10:55:46 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-12-29 10:55:46 INF] Executed action WebAPI.Controllers.AuthController.Register (WebAPI) in 29.5934ms
+[2025-12-29 10:55:46 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Register (WebAPI)'
+[2025-12-29 10:55:46 INF] HTTP POST /api/Auth/register/ responded 400 in 42.2607 ms
+[2025-12-29 10:55:46 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Auth/register/ - 400 null application/problem+json; charset=utf-8 51.3427ms
+[2025-12-29 10:56:04 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Auth/register/ - application/json 81
+[2025-12-29 10:56:04 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Register (WebAPI)'
+[2025-12-29 10:56:04 INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Application.DTOs.RegisterDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 10:56:07 INF] Executed DbCommand (20ms) [Parameters=[@username='?' (Size = 450), @email='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @username OR [u].[Email] = @email) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 10:56:46 INF] Executed action WebAPI.Controllers.AuthController.Register (WebAPI) in 41561.516ms
+[2025-12-29 10:56:46 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Register (WebAPI)'
+[2025-12-29 10:57:05 ERR] Unhandled exception
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Infrastructure.Data.AppDbContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Infrastructure\Data\AppDbContext.cs:line 49
+   at Infrastructure.Repositories.UserRepository.AddAsync(User user, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Infrastructure\Repositories\UserRepository.cs:line 16
+   at Application.Services.AuthService.RegisterAsync(RegisterDto dto, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Application\Services\AuthService.cs:line 39
+   at WebAPI.Controllers.AuthController.Register(RegisterDto dto, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Controllers\AuthController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 10:57:05 ERR] HTTP POST /api/Auth/register/ responded 500 in 61015.4411 ms
+[2025-12-29 10:57:05 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Auth/register/ - 499 null application/json; charset=utf-8 61019.5625ms
+[2025-12-29 10:57:50 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 10:57:50 INF] Now listening on: https://localhost:7222
+[2025-12-29 10:57:50 INF] Now listening on: http://localhost:5273
+[2025-12-29 10:57:50 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 10:57:50 INF] Hosting environment: Development
+[2025-12-29 10:57:50 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 10:58:24 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Auth/register/ - application/json 81
+[2025-12-29 10:58:24 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Register (WebAPI)'
+[2025-12-29 10:58:24 INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Application.DTOs.RegisterDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 10:58:26 INF] Executed DbCommand (41ms) [Parameters=[@username='?' (Size = 450), @email='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @username OR [u].[Email] = @email) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 10:58:26 INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 450), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [CreatedAt], [Email], [IsDeleted], [PasswordHash], [Role], [UpdatedAt], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[2025-12-29 10:58:26 INF] Executing StatusCodeResult, setting HTTP status code 201
+[2025-12-29 10:58:26 INF] Executed action WebAPI.Controllers.AuthController.Register (WebAPI) in 1544.8623ms
+[2025-12-29 10:58:26 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Register (WebAPI)'
+[2025-12-29 10:58:26 INF] HTTP POST /api/Auth/register/ responded 201 in 1631.3896 ms
+[2025-12-29 10:58:26 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Auth/register/ - 201 0 null 1692.9907ms
+[2025-12-29 10:58:52 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/auth/login - application/json 58
+[2025-12-29 10:58:52 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 10:58:52 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 10:58:57 INF] Executed DbCommand (3ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-29 10:59:19 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 26544.8837ms
+[2025-12-29 10:59:19 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 10:59:19 ERR] Unhandled exception
+System.ArgumentException: IDX10703: Cannot create a 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', key length is zero.
+   at Microsoft.IdentityModel.Tokens.SymmetricSecurityKey..ctor(Byte[] key)
+   at Infrastructure.Security.Jwt.JwtTokenGenerator.GenerateAccessToken(User user) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Infrastructure\Security\Jwt\JwtTokenGenerator.cs:line 31
+   at Application.Services.AuthService.LoginAsync(LoginDto dto, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Application\Services\AuthService.cs:line 69
+   at WebAPI.Controllers.AuthController.Login(LoginDto dto, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Controllers\AuthController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 10:59:19 ERR] HTTP POST /api/auth/login responded 500 in 26625.9574 ms
+[2025-12-29 10:59:19 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/auth/login - 499 null application/json; charset=utf-8 26634.3477ms
+[2025-12-29 11:00:53 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 11:00:53 INF] Now listening on: https://localhost:7222
+[2025-12-29 11:00:53 INF] Now listening on: http://localhost:5273
+[2025-12-29 11:00:53 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 11:00:53 INF] Hosting environment: Development
+[2025-12-29 11:00:53 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 11:01:20 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/auth/login - application/json 58
+[2025-12-29 11:01:20 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 11:01:20 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 11:01:22 INF] Executed DbCommand (48ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-29 11:30:20 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 11:30:20 INF] Now listening on: https://localhost:7222
+[2025-12-29 11:30:20 INF] Now listening on: http://localhost:5273
+[2025-12-29 11:30:20 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 11:30:20 INF] Hosting environment: Development
+[2025-12-29 11:30:20 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 11:34:03 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/auth/login - application/json 58
+[2025-12-29 11:34:19 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 11:34:19 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 11:34:20 INF] Executed DbCommand (43ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-29 11:39:16 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 296259.2968ms
+[2025-12-29 11:39:16 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 11:39:16 ERR] Unhandled exception
+System.ArgumentException: IDX10703: Cannot create a 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', key length is zero.
+   at Microsoft.IdentityModel.Tokens.SymmetricSecurityKey..ctor(Byte[] key)
+   at Infrastructure.Security.Jwt.JwtTokenGenerator.GenerateAccessToken(User user) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Infrastructure\Security\Jwt\JwtTokenGenerator.cs:line 31
+   at Application.Services.AuthService.LoginAsync(LoginDto dto, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Application\Services\AuthService.cs:line 69
+   at WebAPI.Controllers.AuthController.Login(LoginDto dto, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Controllers\AuthController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 11:39:16 ERR] HTTP POST /api/auth/login responded 500 in 312374.1875 ms
+[2025-12-29 11:39:16 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/auth/login - 499 null application/json; charset=utf-8 312422.3161ms
+[2025-12-29 12:15:15 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 12:15:15 INF] Now listening on: https://localhost:7222
+[2025-12-29 12:15:15 INF] Now listening on: http://localhost:5273
+[2025-12-29 12:15:15 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 12:15:15 INF] Hosting environment: Development
+[2025-12-29 12:15:15 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 12:15:20 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/ - null null
+[2025-12-29 12:15:26 INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+[2025-12-29 12:15:26 INF] Write content with HTTP Response ContentType of text/html
+[2025-12-29 12:15:26 INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+[2025-12-29 12:15:26 INF] HTTP GET /scalar/ responded 200 in 5717.8664 ms
+[2025-12-29 12:15:26 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/ - 200 null text/html 5849.2988ms
+[2025-12-29 12:15:26 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/scalar.aspnetcore.js - null null
+[2025-12-29 12:15:26 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/scalar.js - null null
+[2025-12-29 12:15:26 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-29 12:15:26 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-29 12:15:26 INF] CORS policy execution successful.
+[2025-12-29 12:15:26 INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+[2025-12-29 12:15:26 INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+[2025-12-29 12:15:26 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 26.9008ms
+[2025-12-29 12:15:26 INF] Sending file with download name ''.
+[2025-12-29 12:15:26 INF] Sending file with download name ''.
+[2025-12-29 12:15:26 INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+[2025-12-29 12:15:26 INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 38.9010 ms
+[2025-12-29 12:15:26 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/scalar.aspnetcore.js - 200 1046 text/javascript 48.7151ms
+[2025-12-29 12:15:26 INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+[2025-12-29 12:15:26 INF] HTTP GET /scalar/scalar.js responded 200 in 47.4308 ms
+[2025-12-29 12:15:26 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/scalar.js - 200 934118 text/javascript 58.8375ms
+[2025-12-29 12:15:26 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.8034ms
+[2025-12-29 12:15:26 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-29 12:15:26 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-29 12:15:26 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-29 12:15:26 INF] HTTP GET /openapi/v1.json responded 200 in 17.5488 ms
+[2025-12-29 12:15:26 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 21.8464ms
+[2025-12-29 12:15:27 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/favicon.svg - null null
+[2025-12-29 12:15:27 INF] Executing endpoint 'HTTP: GET /scalar/favicon.svg'
+[2025-12-29 12:15:27 INF] Sending file with download name ''.
+[2025-12-29 12:15:27 INF] Executed endpoint 'HTTP: GET /scalar/favicon.svg'
+[2025-12-29 12:15:27 INF] HTTP GET /scalar/favicon.svg responded 200 in 3.2117 ms
+[2025-12-29 12:15:27 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/favicon.svg - 200 533 image/svg+xml 13.6385ms
+[2025-12-29 12:16:49 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 51
+[2025-12-29 12:16:49 INF] CORS policy execution successful.
+[2025-12-29 12:16:49 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 12:16:49 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 12:16:50 INF] Executed DbCommand (42ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-29 12:17:57 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResponse'.
+[2025-12-29 12:17:57 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 67839.0482ms
+[2025-12-29 12:17:57 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 12:17:57 INF] HTTP POST /api/Auth/login responded 200 in 67864.4676 ms
+[2025-12-29 12:17:57 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/login - 200 null application/json; charset=utf-8 67881.6751ms
+[2025-12-29 12:19:16 INF] Request starting HTTP/1.1 POST https://localhost:7222/countries - application/json 91
+[2025-12-29 12:19:16 INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.ValidateAndGetOutputSize(ReadOnlySpan`1 strSpan, Int32 offset, Int32 length)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+[2025-12-29 12:19:16 INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+[2025-12-29 12:19:16 INF] HTTP POST /countries responded 404 in 17.2441 ms
+[2025-12-29 12:19:16 INF] Request finished HTTP/1.1 POST https://localhost:7222/countries - 404 0 null 23.3709ms
+[2025-12-29 12:19:16 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7222/countries, Response status code: 404
+[2025-12-29 12:19:31 INF] Request starting HTTP/1.1 POST https://localhost:7222/countries - application/json 91
+[2025-12-29 12:19:31 INF] HTTP POST /countries responded 404 in 23.1287 ms
+[2025-12-29 12:19:31 INF] Request finished HTTP/1.1 POST https://localhost:7222/countries - 404 0 null 31.4429ms
+[2025-12-29 12:19:31 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7222/countries, Response status code: 404
+[2025-12-29 12:20:57 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 82
+[2025-12-29 12:20:57 INF] CORS policy execution successful.
+[2025-12-29 12:20:57 INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+[2025-12-29 12:20:57 INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+[2025-12-29 12:20:57 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-29 12:20:57 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-29 12:20:57 INF] HTTP POST /api/Countries responded 401 in 14.4293 ms
+[2025-12-29 12:20:57 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 401 0 null 20.0703ms
+[2025-12-29 12:21:36 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 82
+[2025-12-29 12:21:36 INF] CORS policy execution successful.
+[2025-12-29 12:21:36 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 12:21:36 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 12:28:49 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 12:28:49 INF] Now listening on: https://localhost:7222
+[2025-12-29 12:28:49 INF] Now listening on: http://localhost:5273
+[2025-12-29 12:28:49 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 12:28:49 INF] Hosting environment: Development
+[2025-12-29 12:28:49 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 12:29:00 INF] Request starting HTTP/1.1 POST https://localhost:7222/countries - application/json 91
+[2025-12-29 12:29:00 INF] HTTP POST /countries responded 404 in 79.9363 ms
+[2025-12-29 12:29:00 INF] Request finished HTTP/1.1 POST https://localhost:7222/countries - 404 0 null 118.6637ms
+[2025-12-29 12:29:00 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7222/countries, Response status code: 404
+[2025-12-29 12:29:09 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 82
+[2025-12-29 12:29:09 INF] CORS policy execution successful.
+[2025-12-29 12:29:09 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 12:29:09 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 12:39:37 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 627312.8923ms
+[2025-12-29 12:39:37 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 12:39:37 ERR] Unhandled exception
+System.InvalidOperationException: The LINQ expression 'DbSet<Country>()
+    .Where(c => !(c.IsDeleted))
+    .Any(c => c.Code.Value == @dto_Code)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutorExpression[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass11_0`1.<ExecuteCore>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at Infrastructure.Repositories.CountryRepository.ExistsAsync(Expression`1 predicate, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Infrastructure\Repositories\CountryRepository.cs:line 40
+   at Application.Services.CountryService.CreateAsync(CreateCountryDto dto, CancellationToken cancellationToken)
+   at WebAPI.Controllers.CountriesController.Create(CreateCountryDto dto, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Controllers\CountriesController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 12:39:37 ERR] HTTP POST /api/Countries responded 500 in 627424.8416 ms
+[2025-12-29 12:39:37 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 500 null application/json; charset=utf-8 627435.6359ms
+[2025-12-29 12:39:37 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/ - null null
+[2025-12-29 12:39:38 INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+[2025-12-29 12:39:38 INF] Write content with HTTP Response ContentType of text/html
+[2025-12-29 12:39:38 INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+[2025-12-29 12:39:38 INF] HTTP GET /scalar/ responded 200 in 92.6466 ms
+[2025-12-29 12:39:38 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/ - 200 null text/html 154.7971ms
+[2025-12-29 12:39:38 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/scalar.js - null null
+[2025-12-29 12:39:38 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-29 12:39:38 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/scalar.aspnetcore.js - null null
+[2025-12-29 12:39:38 INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+[2025-12-29 12:39:38 INF] CORS policy execution successful.
+[2025-12-29 12:39:38 INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+[2025-12-29 12:39:38 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 48.431ms
+[2025-12-29 12:39:38 INF] Sending file with download name ''.
+[2025-12-29 12:39:38 INF] Sending file with download name ''.
+[2025-12-29 12:39:38 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-29 12:39:38 INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+[2025-12-29 12:39:38 INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 51.6990 ms
+[2025-12-29 12:39:38 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/scalar.aspnetcore.js - 200 1046 text/javascript 58.4463ms
+[2025-12-29 12:39:38 INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+[2025-12-29 12:39:38 INF] HTTP GET /scalar/scalar.js responded 200 in 69.9939 ms
+[2025-12-29 12:39:38 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/scalar.js - 200 934118 text/javascript 74.9931ms
+[2025-12-29 12:39:38 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.2967ms
+[2025-12-29 12:39:38 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-29 12:39:38 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-29 12:39:38 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-29 12:39:38 INF] HTTP GET /openapi/v1.json responded 200 in 26.3181 ms
+[2025-12-29 12:39:38 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 31.1128ms
+[2025-12-29 12:39:39 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/favicon.svg - null null
+[2025-12-29 12:39:39 INF] Executing endpoint 'HTTP: GET /scalar/favicon.svg'
+[2025-12-29 12:39:39 INF] Sending file with download name ''.
+[2025-12-29 12:39:39 INF] Executed endpoint 'HTTP: GET /scalar/favicon.svg'
+[2025-12-29 12:39:39 INF] HTTP GET /scalar/favicon.svg responded 200 in 4.5960 ms
+[2025-12-29 12:39:39 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/favicon.svg - 200 533 image/svg+xml 14.5116ms
+[2025-12-29 12:41:23 INF] Request starting HTTP/1.1 POST https://localhost:7222/countries - application/json 91
+[2025-12-29 12:41:23 INF] HTTP POST /countries responded 404 in 0.5002 ms
+[2025-12-29 12:41:23 INF] Request finished HTTP/1.1 POST https://localhost:7222/countries - 404 0 null 7.3236ms
+[2025-12-29 12:41:23 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7222/countries, Response status code: 404
+[2025-12-29 12:41:28 INF] Request starting HTTP/1.1 POST https://localhost:7222/countries - application/json 91
+[2025-12-29 12:41:28 INF] HTTP POST /countries responded 404 in 0.3583 ms
+[2025-12-29 12:41:28 INF] Request finished HTTP/1.1 POST https://localhost:7222/countries - 404 0 null 7.6879ms
+[2025-12-29 12:41:28 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7222/countries, Response status code: 404
+[2025-12-29 12:43:42 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/countries - application/json 91
+[2025-12-29 12:43:42 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 12:43:42 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 12:43:43 INF] Executed DbCommand (28ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 12:43:43 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 12:43:43 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 444.9454ms
+[2025-12-29 12:43:43 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 12:43:43 ERR] Unhandled exception
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 12:43:43 ERR] HTTP POST /api/countries responded 500 in 528.5306 ms
+[2025-12-29 12:43:43 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/countries - 500 null application/json; charset=utf-8 548.7885ms
+[2025-12-29 16:04:32 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 16:04:33 INF] Now listening on: https://localhost:7222
+[2025-12-29 16:04:33 INF] Now listening on: http://localhost:5273
+[2025-12-29 16:04:33 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 16:04:33 INF] Hosting environment: Development
+[2025-12-29 16:04:33 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 16:05:13 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/auth/login - application/json 58
+[2025-12-29 16:05:13 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 16:05:13 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-29 16:05:14 INF] Executed DbCommand (48ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[PasswordHash], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-29 16:05:15 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResponse'.
+[2025-12-29 16:05:15 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 1370.368ms
+[2025-12-29 16:05:15 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-29 16:05:15 INF] HTTP POST /api/auth/login responded 200 in 1471.0242 ms
+[2025-12-29 16:05:15 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/auth/login - 200 null application/json; charset=utf-8 1588.8697ms
+[2025-12-29 16:06:00 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/countries - application/json 91
+[2025-12-29 16:06:00 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:06:00 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 16:06:00 INF] Executed DbCommand (5ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 16:06:00 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 16:06:00 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 123.2263ms
+[2025-12-29 16:06:00 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:06:00 ERR] Unhandled exception
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 16:06:00 ERR] HTTP POST /api/countries responded 500 in 221.5253 ms
+[2025-12-29 16:06:00 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/countries - 500 null application/json; charset=utf-8 232.7546ms
+[2025-12-29 16:07:47 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 82
+[2025-12-29 16:07:47 INF] CORS policy execution successful.
+[2025-12-29 16:07:47 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:07:47 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 16:07:47 INF] Executed DbCommand (3ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 16:07:47 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 16:07:47 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 25.8653ms
+[2025-12-29 16:07:47 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:07:47 ERR] Unhandled exception
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 16:07:47 ERR] HTTP POST /api/Countries responded 500 in 69.4051 ms
+[2025-12-29 16:07:47 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 500 null application/json; charset=utf-8 78.1528ms
+[2025-12-29 16:08:28 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 82
+[2025-12-29 16:08:28 INF] CORS policy execution successful.
+[2025-12-29 16:08:28 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:08:28 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 16:08:28 INF] Executed DbCommand (4ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 16:08:28 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 16:08:28 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 14.5808ms
+[2025-12-29 16:08:28 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:08:28 ERR] Unhandled exception
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 16:08:28 ERR] HTTP POST /api/Countries responded 500 in 48.1190 ms
+[2025-12-29 16:08:28 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 500 null application/json; charset=utf-8 53.5778ms
+[2025-12-29 16:10:47 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 82
+[2025-12-29 16:10:47 INF] CORS policy execution successful.
+[2025-12-29 16:10:47 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:10:47 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 16:10:51 INF] Executed DbCommand (17ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 16:11:07 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 16:11:07 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 20066.3246ms
+[2025-12-29 16:11:07 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:11:07 ERR] Unhandled exception
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 16:11:07 ERR] HTTP POST /api/Countries responded 500 in 20097.2427 ms
+[2025-12-29 16:11:07 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 500 null application/json; charset=utf-8 20102.2026ms
+[2025-12-29 16:11:50 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 82
+[2025-12-29 16:11:53 INF] CORS policy execution successful.
+[2025-12-29 16:11:53 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:11:53 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 16:11:56 INF] Executed DbCommand (3ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 16:11:56 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 16:11:56 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 2866.0341ms
+[2025-12-29 16:11:56 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:11:56 ERR] Unhandled exception
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 16:11:56 ERR] HTTP POST /api/Countries responded 500 in 5517.0666 ms
+[2025-12-29 16:11:56 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 500 null application/json; charset=utf-8 5521.4194ms
+[2025-12-29 16:12:10 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 82
+[2025-12-29 16:12:10 INF] CORS policy execution successful.
+[2025-12-29 16:12:10 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:12:10 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 16:12:14 INF] Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 16:12:26 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 16:12:26 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 16628.355ms
+[2025-12-29 16:12:26 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:12:29 ERR] Unhandled exception
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 16:12:33 ERR] HTTP POST /api/Countries responded 500 in 23092.9276 ms
+[2025-12-29 16:12:33 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 500 null application/json; charset=utf-8 23101.3254ms
+[2025-12-29 16:19:18 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 16:19:19 INF] Now listening on: https://localhost:7222
+[2025-12-29 16:19:19 INF] Now listening on: http://localhost:5273
+[2025-12-29 16:19:19 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 16:19:19 INF] Hosting environment: Development
+[2025-12-29 16:19:19 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 16:19:38 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Countries - application/json 91
+[2025-12-29 16:19:38 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:19:38 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 16:19:39 INF] Executed DbCommand (38ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 16:19:39 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 16:19:39 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 1208.1534ms
+[2025-12-29 16:19:39 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:19:39 INF] HTTP POST /api/Countries responded 201 in 1329.2043 ms
+[2025-12-29 16:19:39 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Countries - 201 0 null 1387.7826ms
+[2025-12-29 16:54:34 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 16:54:34 INF] Now listening on: https://localhost:7222
+[2025-12-29 16:54:34 INF] Now listening on: http://localhost:5273
+[2025-12-29 16:54:34 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 16:54:34 INF] Hosting environment: Development
+[2025-12-29 16:54:34 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 16:56:14 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Countries - application/json 91
+[2025-12-29 16:56:14 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:56:14 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 16:56:15 INF] Executed DbCommand (43ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 16:56:15 INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 450), @p3='?' (DbType = DateTime2), @p4='?' (Size = 500), @p5='?' (Size = 100), @p6='?' (DbType = Int64), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Countries] ([Id], [AreaInSquareKm], [Code], [CreatedAt], [Description], [Name], [Population], [UpdatedAt])
+OUTPUT INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[2025-12-29 16:56:15 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 16:56:15 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 1059.0658ms
+[2025-12-29 16:56:15 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:56:15 INF] HTTP POST /api/Countries responded 201 in 1152.8665 ms
+[2025-12-29 16:56:15 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Countries - 201 0 null 1190.3464ms
+[2025-12-29 16:56:52 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Countries - application/json 95
+[2025-12-29 16:56:52 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:56:52 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 16:56:52 INF] Executed DbCommand (14ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 16:56:57 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 4561.4551ms
+[2025-12-29 16:56:57 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 16:56:57 INF] HTTP POST /api/Countries responded 400 in 4598.7595 ms
+[2025-12-29 16:56:57 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Countries - 400 null application/json; charset=utf-8 4604.171ms
+[2025-12-29 17:08:50 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Countries - application/json 95
+[2025-12-29 17:08:50 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 17:08:50 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 17:08:50 INF] Executed DbCommand (3ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 17:08:50 INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 450), @p3='?' (DbType = DateTime2), @p4='?' (Size = 500), @p5='?' (Size = 100), @p6='?' (DbType = Int64), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Countries] ([Id], [AreaInSquareKm], [Code], [CreatedAt], [Description], [Name], [Population], [UpdatedAt])
+OUTPUT INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[2025-12-29 17:08:50 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 17:08:50 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 99.9989ms
+[2025-12-29 17:08:50 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 17:08:50 INF] HTTP POST /api/Countries responded 201 in 116.3350 ms
+[2025-12-29 17:08:50 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Countries - 201 0 null 127.6103ms
+[2025-12-29 17:09:29 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Countries - application/json 719
+[2025-12-29 17:09:29 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 17:09:29 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 17:09:29 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-12-29 17:09:29 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 18.0931ms
+[2025-12-29 17:09:29 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 17:09:29 INF] HTTP POST /api/Countries responded 400 in 23.7114 ms
+[2025-12-29 17:09:29 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Countries - 400 null application/problem+json; charset=utf-8 27.8776ms
+[2025-12-29 17:16:23 INF] Request starting HTTP/1.1 PUT https://localhost:7222/api/Countries - application/json 90
+[2025-12-29 17:16:23 INF] Executing endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:16:23 INF] Executed endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:16:23 INF] HTTP PUT /api/Countries responded 405 in 1.8669 ms
+[2025-12-29 17:16:23 INF] Request finished HTTP/1.1 PUT https://localhost:7222/api/Countries - 405 0 null 20.4815ms
+[2025-12-29 17:16:45 INF] Request starting HTTP/1.1 PUT https://localhost:7222/api/Countries - application/json 90
+[2025-12-29 17:16:45 INF] Executing endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:16:45 INF] Executed endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:16:45 INF] HTTP PUT /api/Countries responded 405 in 1.8554 ms
+[2025-12-29 17:16:45 INF] Request finished HTTP/1.1 PUT https://localhost:7222/api/Countries - 405 0 null 12.7396ms
+[2025-12-29 17:17:47 INF] Request starting HTTP/1.1 PUT https://localhost:7222/api/Countries - application/json 90
+[2025-12-29 17:17:47 INF] Executing endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:17:47 INF] Executed endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:17:47 INF] HTTP PUT /api/Countries responded 405 in 5.7281 ms
+[2025-12-29 17:17:47 INF] Request finished HTTP/1.1 PUT https://localhost:7222/api/Countries - 405 0 null 12.9613ms
+[2025-12-29 17:19:46 INF] Request starting HTTP/1.1 PUT https://localhost:7222/api/Countries/F794222B-E09B-42A4-BB94-E0C4661B9E4F - application/json 90
+[2025-12-29 17:19:46 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Update (WebAPI)'
+[2025-12-29 17:19:46 INF] Route matched with {action = "Update", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 17:19:53 INF] Executed DbCommand (2ms) [Parameters=[@countryId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AreaInSquareKm], [c].[Code], [c].[CreatedAt], [c].[Description], [c].[IsDeleted], [c].[Name], [c].[Population], [c].[UpdatedAt]
+FROM [Countries] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @countryId
+[2025-12-29 17:19:54 INF] Executed DbCommand (3ms) [Parameters=[@dto_Name='?' (Size = 100), @id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Name] = @dto_Name AND [c].[Id] <> @id) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 17:19:54 INF] Executed DbCommand (11ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 450), @p2='?' (DbType = DateTime2), @p3='?' (Size = 500), @p4='?' (DbType = Boolean), @p5='?' (Size = 100), @p6='?' (DbType = Int64), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Countries] SET [AreaInSquareKm] = @p0, [Code] = @p1, [CreatedAt] = @p2, [Description] = @p3, [IsDeleted] = @p4, [Name] = @p5, [Population] = @p6, [UpdatedAt] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+[2025-12-29 17:19:54 INF] Executing StatusCodeResult, setting HTTP status code 204
+[2025-12-29 17:19:54 INF] Executed action WebAPI.Controllers.CountriesController.Update (WebAPI) in 7409.8417ms
+[2025-12-29 17:19:54 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Update (WebAPI)'
+[2025-12-29 17:19:54 INF] HTTP PUT /api/Countries/F794222B-E09B-42A4-BB94-E0C4661B9E4F responded 204 in 7426.0579 ms
+[2025-12-29 17:19:54 INF] Request finished HTTP/1.1 PUT https://localhost:7222/api/Countries/F794222B-E09B-42A4-BB94-E0C4661B9E4F - 204 null null 7436.2817ms
+[2025-12-29 17:24:46 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-29 17:24:46 INF] CORS policy execution successful.
+[2025-12-29 17:24:46 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-29 17:24:46 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-29 17:24:46 INF] HTTP GET /openapi/v1.json responded 200 in 29.6126 ms
+[2025-12-29 17:24:46 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 33.9965ms
+[2025-12-29 17:25:12 INF] Request starting HTTP/1.1 DELETE https://localhost:7222/api/Countries/F794222B-E09B-42A4-BB94-E0C4661B9E4F - null null
+[2025-12-29 17:25:12 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Delete (WebAPI)'
+[2025-12-29 17:25:12 INF] Route matched with {action = "Delete", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 17:25:12 INF] Executed DbCommand (3ms) [Parameters=[@countryId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AreaInSquareKm], [c].[Code], [c].[CreatedAt], [c].[Description], [c].[IsDeleted], [c].[Name], [c].[Population], [c].[UpdatedAt]
+FROM [Countries] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @countryId
+[2025-12-29 17:25:12 INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Countries]
+OUTPUT 1
+WHERE [Id] = @p0;
+[2025-12-29 17:25:12 INF] Executing StatusCodeResult, setting HTTP status code 204
+[2025-12-29 17:25:12 INF] Executed action WebAPI.Controllers.CountriesController.Delete (WebAPI) in 24.7192ms
+[2025-12-29 17:25:12 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Delete (WebAPI)'
+[2025-12-29 17:25:12 INF] HTTP DELETE /api/Countries/F794222B-E09B-42A4-BB94-E0C4661B9E4F responded 204 in 38.9943 ms
+[2025-12-29 17:25:12 INF] Request finished HTTP/1.1 DELETE https://localhost:7222/api/Countries/F794222B-E09B-42A4-BB94-E0C4661B9E4F - 204 null null 47.4228ms
+[2025-12-29 17:32:28 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Countries - application/json 90
+[2025-12-29 17:32:28 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 17:32:28 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 17:32:29 INF] Executed DbCommand (3ms) [Parameters=[@p='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Code] = @p) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 17:32:29 INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 450), @p3='?' (DbType = DateTime2), @p4='?' (Size = 500), @p5='?' (Size = 100), @p6='?' (DbType = Int64), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Countries] ([Id], [AreaInSquareKm], [Code], [CreatedAt], [Description], [Name], [Population], [UpdatedAt])
+OUTPUT INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[2025-12-29 17:32:29 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 17:32:29 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 22.3401ms
+[2025-12-29 17:32:29 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 17:32:29 INF] HTTP POST /api/Countries responded 201 in 29.2942 ms
+[2025-12-29 17:32:29 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Countries - 201 0 null 35.2235ms
+[2025-12-29 17:34:26 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Countries - application/json 191
+[2025-12-29 17:34:26 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 17:34:26 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-29 17:34:26 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-12-29 17:34:26 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 2.7555ms
+[2025-12-29 17:34:26 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-29 17:34:26 INF] HTTP POST /api/Countries responded 400 in 8.7088 ms
+[2025-12-29 17:34:26 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Countries - 400 null application/problem+json; charset=utf-8 13.6363ms
+[2025-12-29 17:35:09 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Cities - application/json 191
+[2025-12-29 17:35:09 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-29 17:35:09 INF] Route matched with {action = "Create", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCityDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:35:09 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 17:35:09 INF] Executed action WebAPI.Controllers.CitiesController.Create (WebAPI) in 40.8666ms
+[2025-12-29 17:35:09 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-29 17:35:10 ERR] Unhandled exception
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 17:35:10 ERR] HTTP POST /api/Cities responded 500 in 166.2117 ms
+[2025-12-29 17:35:10 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Cities - 500 null application/json; charset=utf-8 207.849ms
+[2025-12-29 17:35:48 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Cities - application/json 191
+[2025-12-29 17:35:48 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-29 17:35:48 INF] Route matched with {action = "Create", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCityDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:35:48 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 17:35:48 INF] Executed action WebAPI.Controllers.CitiesController.Create (WebAPI) in 5.2814ms
+[2025-12-29 17:35:48 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-29 17:35:48 INF] HTTP POST /api/Cities responded 201 in 15.1491 ms
+[2025-12-29 17:35:48 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Cities - 201 0 null 20.5166ms
+[2025-12-29 17:37:52 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Cities - application/json 191
+[2025-12-29 17:37:52 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-29 17:37:52 INF] Route matched with {action = "Create", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCityDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:37:52 INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 500), @p5='?' (Size = 100), @p6='?' (DbType = Int64), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([Id], [AreaInSquareKm], [CountryId], [CreatedAt], [Description], [Name], [Population], [UpdatedAt])
+OUTPUT INSERTED.[IsCapital], INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[2025-12-29 17:37:52 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 17:37:52 INF] Executed action WebAPI.Controllers.CitiesController.Create (WebAPI) in 30.1104ms
+[2025-12-29 17:37:52 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-29 17:37:52 INF] HTTP POST /api/Cities responded 201 in 50.3162 ms
+[2025-12-29 17:37:52 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Cities - 201 0 null 63.7149ms
+[2025-12-29 17:38:47 INF] Request starting HTTP/1.1 POST https://localhost:7222/api/Cities - application/json 188
+[2025-12-29 17:38:47 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-29 17:38:47 INF] Route matched with {action = "Create", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCityDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:38:47 INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 500), @p5='?' (Size = 100), @p6='?' (DbType = Int64), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([Id], [AreaInSquareKm], [CountryId], [CreatedAt], [Description], [Name], [Population], [UpdatedAt])
+OUTPUT INSERTED.[IsCapital], INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[2025-12-29 17:38:47 INF] Executing CreatedAtActionResult, writing value of type 'null'.
+[2025-12-29 17:38:47 INF] Executed action WebAPI.Controllers.CitiesController.Create (WebAPI) in 14.5964ms
+[2025-12-29 17:38:47 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-29 17:38:47 INF] HTTP POST /api/Cities responded 201 in 21.6140 ms
+[2025-12-29 17:38:47 INF] Request finished HTTP/1.1 POST https://localhost:7222/api/Cities - 201 0 null 33.861ms
+[2025-12-29 17:40:06 INF] Request starting HTTP/1.1 PUT https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - application/json 190
+[2025-12-29 17:40:06 INF] Executing endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:40:06 INF] Executed endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:40:06 INF] HTTP PUT /api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 responded 405 in 1.6200 ms
+[2025-12-29 17:40:06 INF] Request finished HTTP/1.1 PUT https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - 405 0 null 4.9829ms
+[2025-12-29 17:40:49 INF] Request starting HTTP/1.1 PUT https://localhost:7222/api/Cities/ - application/json 236
+[2025-12-29 17:40:49 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-29 17:40:49 INF] Route matched with {action = "Edit", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Application.DTOs.UpdateCityDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:40:49 INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2025-12-29 17:40:49 INF] Executed action WebAPI.Controllers.CitiesController.Edit (WebAPI) in 4.9193ms
+[2025-12-29 17:40:49 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-29 17:40:49 INF] HTTP PUT /api/Cities/ responded 400 in 12.0941 ms
+[2025-12-29 17:40:49 INF] Request finished HTTP/1.1 PUT https://localhost:7222/api/Cities/ - 400 null application/problem+json; charset=utf-8 16.691ms
+[2025-12-29 17:42:00 INF] Request starting HTTP/1.1 PUT https://localhost:7222/api/Cities/ - application/json 239
+[2025-12-29 17:42:00 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-29 17:42:00 INF] Route matched with {action = "Edit", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Application.DTOs.UpdateCityDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:42:00 INF] Executed DbCommand (7ms) [Parameters=[@cityDto_Id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AreaInSquareKm], [c].[CountryId], [c].[CreatedAt], [c].[Description], [c].[IsCapital], [c].[IsDeleted], [c].[Name], [c].[Population], [c].[UpdatedAt]
+FROM [Cities] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @cityDto_Id
+[2025-12-29 17:42:00 INF] Executed DbCommand (24ms) [Parameters=[@name='?' (Size = 100), @countryId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c]
+        WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Name] = @name AND [c].[CountryId] = @countryId) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-29 17:42:00 INF] Executed DbCommand (10ms) [Parameters=[@p9='?' (DbType = Guid), @p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime2), @p3='?' (Size = 500), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 100), @p7='?' (DbType = Int64), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Cities] SET [AreaInSquareKm] = @p0, [CountryId] = @p1, [CreatedAt] = @p2, [Description] = @p3, [IsCapital] = @p4, [IsDeleted] = @p5, [Name] = @p6, [Population] = @p7, [UpdatedAt] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+[2025-12-29 17:42:00 INF] Executing StatusCodeResult, setting HTTP status code 204
+[2025-12-29 17:42:00 INF] Executed action WebAPI.Controllers.CitiesController.Edit (WebAPI) in 84.0572ms
+[2025-12-29 17:42:00 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-29 17:42:00 INF] HTTP PUT /api/Cities/ responded 204 in 96.3024 ms
+[2025-12-29 17:42:00 INF] Request finished HTTP/1.1 PUT https://localhost:7222/api/Cities/ - 204 null null 105.5069ms
+[2025-12-29 17:43:17 INF] Request starting HTTP/1.1 DELETE https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - null null
+[2025-12-29 17:43:17 INF] Executing endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:43:17 INF] Executed endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:43:17 INF] HTTP DELETE /api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 responded 405 in 4.9674 ms
+[2025-12-29 17:43:17 INF] Request finished HTTP/1.1 DELETE https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - 405 0 null 15.1029ms
+[2025-12-29 17:43:48 INF] Request starting HTTP/1.1 DELETE https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - null null
+[2025-12-29 17:43:48 INF] Executing endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:43:48 INF] Executed endpoint '405 HTTP Method Not Supported'
+[2025-12-29 17:43:48 INF] HTTP DELETE /api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 responded 405 in 3.5988 ms
+[2025-12-29 17:43:48 INF] Request finished HTTP/1.1 DELETE https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - 405 0 null 9.9455ms
+[2025-12-29 17:44:48 INF] Request starting HTTP/1.1 DELETE https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - null null
+[2025-12-29 17:44:48 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Delete (WebAPI)'
+[2025-12-29 17:44:48 INF] Route matched with {action = "Delete", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:44:53 INF] Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AreaInSquareKm], [c].[CountryId], [c].[CreatedAt], [c].[Description], [c].[IsCapital], [c].[IsDeleted], [c].[Name], [c].[Population], [c].[UpdatedAt]
+FROM [Cities] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @id
+[2025-12-29 17:44:53 INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Cities]
+OUTPUT 1
+WHERE [Id] = @p0;
+[2025-12-29 17:44:53 INF] Executing StatusCodeResult, setting HTTP status code 204
+[2025-12-29 17:44:53 INF] Executed action WebAPI.Controllers.CitiesController.Delete (WebAPI) in 4617.2493ms
+[2025-12-29 17:44:53 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Delete (WebAPI)'
+[2025-12-29 17:44:53 INF] HTTP DELETE /api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 responded 204 in 4632.5570 ms
+[2025-12-29 17:44:53 INF] Request finished HTTP/1.1 DELETE https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - 204 null null 4640.3458ms
+[2025-12-29 17:53:33 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - application/json 76
+[2025-12-29 17:53:33 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.GetById (WebAPI)'
+[2025-12-29 17:53:33 INF] Route matched with {action = "GetById", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.CountryListItemDto]] GetById(System.Guid, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:53:33 INF] Executed DbCommand (3ms) [Parameters=[@Id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AreaInSquareKm], [c].[CountryId], [c].[CreatedAt], [c].[Description], [c].[IsCapital], [c].[IsDeleted], [c].[Name], [c].[Population], [c].[UpdatedAt]
+FROM [Cities] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @Id
+[2025-12-29 17:53:33 INF] Executing OkObjectResult, writing value of type 'null'.
+[2025-12-29 17:53:33 INF] Executed action WebAPI.Controllers.CitiesController.GetById (WebAPI) in 22.947ms
+[2025-12-29 17:53:33 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.GetById (WebAPI)'
+[2025-12-29 17:53:33 INF] HTTP GET /api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 responded 204 in 38.2916 ms
+[2025-12-29 17:53:33 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - 204 null null 46.3992ms
+[2025-12-29 17:54:06 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - application/json 76
+[2025-12-29 17:54:06 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.GetById (WebAPI)'
+[2025-12-29 17:54:06 INF] Route matched with {action = "GetById", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.CountryListItemDto]] GetById(System.Guid, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:54:06 INF] Executed DbCommand (2ms) [Parameters=[@Id='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AreaInSquareKm], [c].[CountryId], [c].[CreatedAt], [c].[Description], [c].[IsCapital], [c].[IsDeleted], [c].[Name], [c].[Population], [c].[UpdatedAt]
+FROM [Cities] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @Id
+[2025-12-29 17:54:06 INF] Executing OkObjectResult, writing value of type 'null'.
+[2025-12-29 17:54:06 INF] Executed action WebAPI.Controllers.CitiesController.GetById (WebAPI) in 11.1047ms
+[2025-12-29 17:54:06 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.GetById (WebAPI)'
+[2025-12-29 17:54:06 INF] HTTP GET /api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 responded 204 in 19.7225 ms
+[2025-12-29 17:54:06 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23 - 204 null null 27.1651ms
+[2025-12-29 17:54:16 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Cities - application/json 76
+[2025-12-29 17:54:16 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.GetPaged (WebAPI)'
+[2025-12-29 17:54:16 INF] Route matched with {action = "GetPaged", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.Pagination.PagedResult`1[Application.DTOs.CityListItemDto]]] GetPaged(Application.Pagination.Params.CityQueryParams, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:54:45 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-29 17:54:45 INF] Now listening on: https://localhost:7222
+[2025-12-29 17:54:45 INF] Now listening on: http://localhost:5273
+[2025-12-29 17:54:45 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-29 17:54:45 INF] Hosting environment: Development
+[2025-12-29 17:54:45 INF] Content root path: C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-29 17:54:59 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Cities - application/json 76
+[2025-12-29 17:54:59 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.GetPaged (WebAPI)'
+[2025-12-29 17:54:59 INF] Route matched with {action = "GetPaged", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.Pagination.PagedResult`1[Application.DTOs.CityListItemDto]]] GetPaged(Application.Pagination.Params.CityQueryParams, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:55:44 INF] Executed action WebAPI.Controllers.CitiesController.GetPaged (WebAPI) in 44726.2782ms
+[2025-12-29 17:55:44 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.GetPaged (WebAPI)'
+[2025-12-29 17:55:44 ERR] Unhandled exception
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Infrastructure.Repositories.CityRepository.GetByCountryPagedAsync(Guid countryId, CityQueryParams cityQueryParam, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Infrastructure\Repositories\CityRepository.cs:line 61
+   at Application.Services.CityService.GetPagedAsync(Guid countryId, CityQueryParams query, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Application\Services\CityService.cs:line 94
+   at WebAPI.Controllers.CitiesController.GetPaged(CityQueryParams cityQueryParams, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Controllers\CitiesController.cs:line 25
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 17:55:44 ERR] HTTP GET /api/Cities responded 500 in 44903.4787 ms
+[2025-12-29 17:55:44 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Cities - 499 null application/json; charset=utf-8 44949.213ms
+[2025-12-29 17:55:49 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Cities - application/json 76
+[2025-12-29 17:55:49 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.GetPaged (WebAPI)'
+[2025-12-29 17:55:49 INF] Route matched with {action = "GetPaged", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.Pagination.PagedResult`1[Application.DTOs.CityListItemDto]]] GetPaged(Application.Pagination.Params.CityQueryParams, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:59:18 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Cities?CountryId=9415A2C7-2271-4BB0-97E3-7DA210679DDE - null null
+[2025-12-29 17:59:18 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.GetPaged (WebAPI)'
+[2025-12-29 17:59:18 INF] Route matched with {action = "GetPaged", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.Pagination.PagedResult`1[Application.DTOs.CityListItemDto]]] GetPaged(Application.Pagination.Params.CityQueryParams, System.Threading.CancellationToken) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-29 17:59:22 INF] Executed action WebAPI.Controllers.CitiesController.GetPaged (WebAPI) in 213553.7531ms
+[2025-12-29 17:59:22 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.GetPaged (WebAPI)'
+[2025-12-29 17:59:22 ERR] Unhandled exception
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Infrastructure.Repositories.CityRepository.GetByCountryPagedAsync(Guid countryId, CityQueryParams cityQueryParam, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Infrastructure\Repositories\CityRepository.cs:line 61
+   at Application.Services.CityService.GetPagedAsync(Guid countryId, CityQueryParams query, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\Application\Services\CityService.cs:line 94
+   at WebAPI.Controllers.CitiesController.GetPaged(CityQueryParams cityQueryParams, CancellationToken cancellationToken) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Controllers\CitiesController.cs:line 25
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\PracticaParaEntrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-29 17:59:22 ERR] HTTP GET /api/Cities responded 500 in 213578.2326 ms
+[2025-12-29 17:59:22 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Cities - 499 null application/json; charset=utf-8 213583.5971ms
+[2025-12-29 17:59:22 INF] Executed DbCommand (34ms) [Parameters=[@countryId='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Cities] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[CountryId] = @countryId
+[2025-12-29 17:59:22 INF] Executed DbCommand (5ms) [Parameters=[@countryId='?' (DbType = Guid), @p='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c1].[Id], [c1].[AreaInSquareKm], [c1].[CountryId], [c1].[CreatedAt], [c1].[Description], [c1].[IsCapital], [c1].[IsDeleted], [c1].[Name], [c1].[Population], [c1].[UpdatedAt], [c2].[Id], [c2].[AreaInSquareKm], [c2].[Code], [c2].[CreatedAt], [c2].[Description], [c2].[IsDeleted], [c2].[Name], [c2].[Population], [c2].[UpdatedAt]
+FROM (
+    SELECT [c].[Id], [c].[AreaInSquareKm], [c].[CountryId], [c].[CreatedAt], [c].[Description], [c].[IsCapital], [c].[IsDeleted], [c].[Name], [c].[Population], [c].[UpdatedAt]
+    FROM [Cities] AS [c]
+    WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[CountryId] = @countryId
+    ORDER BY [c].[Name]
+    OFFSET @p ROWS FETCH NEXT @p0 ROWS ONLY
+) AS [c1]
+INNER JOIN (
+    SELECT [c0].[Id], [c0].[AreaInSquareKm], [c0].[Code], [c0].[CreatedAt], [c0].[Description], [c0].[IsDeleted], [c0].[Name], [c0].[Population], [c0].[UpdatedAt]
+    FROM [Countries] AS [c0]
+    WHERE [c0].[IsDeleted] = CAST(0 AS bit)
+) AS [c2] ON [c1].[CountryId] = [c2].[Id]
+ORDER BY [c1].[Name]
+[2025-12-29 17:59:24 INF] Executing OkObjectResult, writing value of type 'Application.Pagination.PagedResult`1[[Application.DTOs.CityListItemDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-29 17:59:24 INF] Executed action WebAPI.Controllers.CitiesController.GetPaged (WebAPI) in 5434.7431ms
+[2025-12-29 17:59:24 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.GetPaged (WebAPI)'
+[2025-12-29 17:59:24 INF] HTTP GET /api/Cities responded 200 in 5448.4129 ms
+[2025-12-29 17:59:24 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Cities?CountryId=9415A2C7-2271-4BB0-97E3-7DA210679DDE - 200 null application/json; charset=utf-8 5456.2933ms

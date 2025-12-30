@@ -1,0 +1,96 @@
+@WebAPI_HostAddress = https://localhost:7222
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlODBlOWI1Ny1kMTNlLTQ0NjgtYjBhNy00NWM4YzRlZTFiZWMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJtYXJAdGVzdC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNzY3MDQ1OTE1LCJpc3MiOiJBYnN0cmFBUEkiLCJhdWQiOiJBYnN0cmFDbGllbnQifQ.NmD-ZSJulPHy2HCOmuXjSo_0rFoc5u6ZI-ZCb-Mt6lk
+
+
+GET {{WebAPI_HostAddress}}/api/Auth/register/
+Accept: application/json
+
+###
+
+POST  {{WebAPI_HostAddress}}/api/Auth/register/
+Content-Type: application/json
+{
+  "Username": "test",
+  "email": "mar@test.com",
+  "password": "password"
+}
+
+
+### Login
+POST {{WebAPI_HostAddress}}/api/auth/login
+Content-Type: application/json
+{
+  "email": "mar@test.com",
+  "password": "password"
+}
+
+
+### Create country (authorized)
+POST {{WebAPI_HostAddress}}/api/Countries
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Bolivia" ,
+  "code": "Bo",
+  "population": 13000000,
+  "area": 2780000
+}
+
+
+### Edit country (authorized)
+PUT {{WebAPI_HostAddress}}/api/Countries/F794222B-E09B-42A4-BB94-E0C4661B9E4F
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Bolivia" ,
+  "code": "Bo",
+  "population": 46000000,
+  "area": 2780000
+}
+
+### delete country (authorized)
+DELETE {{WebAPI_HostAddress}}/api/Countries/F794222B-E09B-42A4-BB94-E0C4661B9E4F
+Authorization: Bearer {{token}}
+
+
+
+### Create City (authorized)
+POST {{WebAPI_HostAddress}}/api/Cities
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "La Pash",
+  "population": 2000000,
+  "area": 150155445,
+  "description": "Tierra Bendita",
+  "isCapital": false,
+  "countryId": "9415A2C7-2271-4BB0-97E3-7DA210679DDE"
+}
+
+
+### Edit City (authorized)
+PUT {{WebAPI_HostAddress}}/api/Cities/
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "id": "18E2288F-228A-4DCB-81D1-4E6B0E022D23",
+  "name": "La Paz",
+  "population": 2000000,
+  "area": 150155445,
+  "description": "Tierra altiplanica",
+  "isCapital": true,
+  "countryId": "9415A2C7-2271-4BB0-97E3-7DA210679DDE"
+}
+
+### delete city (authorized)
+DELETE {{WebAPI_HostAddress}}/api/Cities/18E2288F-228A-4DCB-81D1-4E6B0E022D23
+Authorization: Bearer {{token}}
+
+
+### Get city (authorized)
+Get {{WebAPI_HostAddress}}/api/Cities?CountryId=9415A2C7-2271-4BB0-97E3-7DA210679DDE
+Authorization: Bearer {{token}}

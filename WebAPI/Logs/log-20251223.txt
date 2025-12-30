@@ -1,0 +1,165 @@
+[2025-12-23 16:32:46 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-23 16:32:47 INF] Now listening on: https://localhost:7222
+[2025-12-23 16:32:47 INF] Now listening on: http://localhost:5273
+[2025-12-23 16:32:47 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-23 16:32:47 INF] Hosting environment: Development
+[2025-12-23 16:32:47 INF] Content root path: C:\Practica para entrevista\ServiceOnlyBasic\Abstra\WebAPI
+[2025-12-23 16:40:59 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/v1 - null null
+[2025-12-23 16:41:00 INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+[2025-12-23 16:41:00 INF] Write content with HTTP Response ContentType of text/html
+[2025-12-23 16:41:00 INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+[2025-12-23 16:41:00 INF] HTTP GET /scalar/v1 responded 200 in 195.2797 ms
+[2025-12-23 16:41:00 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/v1 - 200 null text/html 362.6044ms
+[2025-12-23 16:41:00 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/scalar.js - null null
+[2025-12-23 16:41:00 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/scalar.aspnetcore.js - null null
+[2025-12-23 16:41:00 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-23 16:41:00 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-23 16:41:00 INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+[2025-12-23 16:41:00 INF] CORS policy execution successful.
+[2025-12-23 16:41:00 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 16.1685ms
+[2025-12-23 16:41:00 INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+[2025-12-23 16:41:00 INF] Sending file with download name ''.
+[2025-12-23 16:41:00 INF] Sending file with download name ''.
+[2025-12-23 16:41:00 INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+[2025-12-23 16:41:00 INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 28.7268 ms
+[2025-12-23 16:41:00 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/scalar.aspnetcore.js - 200 1046 text/javascript 34.9047ms
+[2025-12-23 16:41:00 INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+[2025-12-23 16:41:00 INF] HTTP GET /scalar/scalar.js responded 200 in 47.2239 ms
+[2025-12-23 16:41:00 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/scalar.js - 200 934118 text/javascript 53.6763ms
+[2025-12-23 16:41:00 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 201.2766ms
+[2025-12-23 16:41:00 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-23 16:41:00 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-23 16:41:00 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-23 16:41:00 INF] HTTP GET /openapi/v1.json responded 200 in 23.3328 ms
+[2025-12-23 16:41:00 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 31.5224ms
+[2025-12-23 16:41:01 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/favicon.svg - null null
+[2025-12-23 16:41:01 INF] Executing endpoint 'HTTP: GET /scalar/favicon.svg'
+[2025-12-23 16:41:01 INF] Sending file with download name ''.
+[2025-12-23 16:41:01 INF] Executed endpoint 'HTTP: GET /scalar/favicon.svg'
+[2025-12-23 16:41:01 INF] HTTP GET /scalar/favicon.svg responded 200 in 5.3239 ms
+[2025-12-23 16:41:01 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/favicon.svg - 200 533 image/svg+xml 10.5989ms
+[2025-12-23 16:41:12 INF] Request starting HTTP/2 GET https://localhost:7222/api/Auth/me - null null
+[2025-12-23 16:41:12 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-23 16:41:12 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-23 16:41:12 INF] HTTP GET /api/Auth/me responded 401 in 13.0202 ms
+[2025-12-23 16:41:12 INF] Request finished HTTP/2 GET https://localhost:7222/api/Auth/me - 401 0 null 20.8136ms
+[2025-12-23 16:42:48 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/register - application/json 85
+[2025-12-23 16:42:48 INF] CORS policy execution successful.
+[2025-12-23 16:42:48 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Register (WebAPI)'
+[2025-12-23 16:42:48 INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Application.DTOs.RegisterDto, System.Threading.CancellationToken) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-23 16:42:50 INF] Executed DbCommand (68ms) [Parameters=[@username='?' (Size = 450), @email='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @username OR [u].[Email] = @email) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-23 16:42:50 ERR] Failed executing DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 450), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [CreatedAt], [Email], [IsDeleted], [PasswordHash], [Role], [UpdatedAt], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[2025-12-23 16:42:50 ERR] An exception occurred in the database while saving changes for context type 'Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IsDeleted'.
+Invalid column name 'UpdatedAt'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0764d496-b024-4abc-b5a0-573785ec815e
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IsDeleted'.
+Invalid column name 'UpdatedAt'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0764d496-b024-4abc-b5a0-573785ec815e
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2025-12-23 16:43:14 INF] Executed action WebAPI.Controllers.AuthController.Register (WebAPI) in 25128.7816ms
+[2025-12-23 16:43:14 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Register (WebAPI)'
+[2025-12-23 16:43:14 ERR] Unhandled exception
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IsDeleted'.
+Invalid column name 'UpdatedAt'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0764d496-b024-4abc-b5a0-573785ec815e
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Infrastructure.Data.AppDbContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\Practica para entrevista\ServiceOnlyBasic\Abstra\Infrastructure\Data\AppDbContext.cs:line 49
+   at Infrastructure.Repositories.UserRepository.AddAsync(User user, CancellationToken cancellationToken) in C:\Practica para entrevista\ServiceOnlyBasic\Abstra\Infrastructure\Repositories\UserRepository.cs:line 16
+   at Application.Services.AuthService.RegisterAsync(RegisterDto dto, CancellationToken cancellationToken) in C:\Practica para entrevista\ServiceOnlyBasic\Abstra\Application\Services\AuthService.cs:line 39
+   at WebAPI.Controllers.AuthController.Register(RegisterDto dto, CancellationToken cancellationToken) in C:\Practica para entrevista\ServiceOnlyBasic\Abstra\WebAPI\Controllers\AuthController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Practica para entrevista\ServiceOnlyBasic\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 22
+[2025-12-23 16:43:14 ERR] HTTP POST /api/Auth/register responded 500 in 25251.5798 ms
+[2025-12-23 16:43:14 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/register - 500 null application/json; charset=utf-8 25270.2017ms

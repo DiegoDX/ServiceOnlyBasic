@@ -1,0 +1,961 @@
+[2025-12-02 15:21:51 INF] Executed DbCommand (137ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [Abstra];
+[2025-12-02 15:21:51 INF] Executed DbCommand (115ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [Abstra] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+[2025-12-02 15:21:52 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[2025-12-02 15:21:52 INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+[2025-12-02 15:21:52 INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+[2025-12-02 15:21:52 INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+[2025-12-02 15:21:52 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[2025-12-02 15:21:52 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[2025-12-02 15:21:52 INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[2025-12-02 15:21:52 INF] Applying migration '20251202192138_InitialCreate'.
+[2025-12-02 15:21:52 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Countries] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Countries] PRIMARY KEY ([Id])
+);
+[2025-12-02 15:21:52 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL IDENTITY,
+    [Username] nvarchar(450) NOT NULL,
+    [Email] nvarchar(450) NOT NULL,
+    [PasswordHash] nvarchar(max) NOT NULL,
+    [Role] nvarchar(max) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+);
+[2025-12-02 15:21:52 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Cities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [CountryId] int NOT NULL,
+    CONSTRAINT [PK_Cities] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Cities_Countries_CountryId] FOREIGN KEY ([CountryId]) REFERENCES [Countries] ([Id]) ON DELETE CASCADE
+);
+[2025-12-02 15:21:52 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Cities_CountryId] ON [Cities] ([CountryId]);
+[2025-12-02 15:21:52 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Users_Email] ON [Users] ([Email]);
+[2025-12-02 15:21:52 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Users_Username] ON [Users] ([Username]);
+[2025-12-02 15:21:52 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20251202192138_InitialCreate', N'10.0.0');
+[2025-12-02 15:21:52 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+[2025-12-02 15:26:25 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-02 15:26:25 INF] Now listening on: https://localhost:7222
+[2025-12-02 15:26:25 INF] Now listening on: http://localhost:5273
+[2025-12-02 15:26:25 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-02 15:26:25 INF] Hosting environment: Development
+[2025-12-02 15:26:25 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-02 15:26:52 INF] Request starting HTTP/2 GET https://localhost:7222/swagger - null null
+[2025-12-02 15:26:53 INF] HTTP GET /swagger responded 301 in 4.1301 ms
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/swagger - 301 null null 126.1802ms
+[2025-12-02 15:26:53 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-02 15:26:53 INF] HTTP GET /swagger/index.html responded 200 in 48.7928 ms
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 56.0878ms
+[2025-12-02 15:26:53 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-02 15:26:53 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-02 15:26:53 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-02 15:26:53 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-02 15:26:53 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-02 15:26:53 INF] HTTP GET /swagger/index.css responded 200 in 1.3362 ms
+[2025-12-02 15:26:53 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 30.2398ms
+[2025-12-02 15:26:53 INF] HTTP GET /swagger/index.js responded 200 in 0.6898 ms
+[2025-12-02 15:26:53 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 39.7768ms
+[2025-12-02 15:26:53 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 30.2721 ms
+[2025-12-02 15:26:53 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 39.3539 ms
+[2025-12-02 15:26:53 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 54.0742 ms
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 46.5839ms
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 59.7257ms
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 61.0038ms
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 77.488ms
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 137.6914ms
+[2025-12-02 15:26:53 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - null null
+[2025-12-02 15:26:53 ERR] Unhandled exception
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Countries" for actions - WebAPI.Controllers.CountriesController.Create (WebAPI), WebAPI.Controllers.CountriesController.Edit (WebAPI), WebAPI.Controllers.CountriesController.Delete (WebAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 18
+[2025-12-02 15:26:53 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - null null
+[2025-12-02 15:26:53 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.9700 ms
+[2025-12-02 15:26:53 ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 84.0052 ms
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - 200 628 image/png 21.4978ms
+[2025-12-02 15:26:53 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - 500 null application/json; charset=utf-8 90.4205ms
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger - null null
+[2025-12-02 15:28:12 INF] HTTP GET /swagger responded 301 in 0.1594 ms
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger - 301 null null 30.831ms
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-02 15:28:12 INF] HTTP GET /swagger/index.html responded 200 in 0.7622 ms
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 6.3349ms
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-02 15:28:12 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 24.3809 ms
+[2025-12-02 15:28:12 INF] HTTP GET /swagger/index.css responded 200 in 0.2558 ms
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-02 15:28:12 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 4.8615 ms
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 44.3933ms
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 44.7392ms
+[2025-12-02 15:28:12 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.6744 ms
+[2025-12-02 15:28:12 INF] HTTP GET /swagger/index.js responded 200 in 1.2947 ms
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 21.5739ms
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 47.0517ms
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 54.5359ms
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 55.4699ms
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.2397ms
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-02 15:28:12 ERR] Unhandled exception
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Countries" for actions - WebAPI.Controllers.CountriesController.Create (WebAPI), WebAPI.Controllers.CountriesController.Edit (WebAPI), WebAPI.Controllers.CountriesController.Delete (WebAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 18
+[2025-12-02 15:28:12 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-02 15:28:12 ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 19.1408 ms
+[2025-12-02 15:28:12 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.4365 ms
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 500 null application/json; charset=utf-8 25.9166ms
+[2025-12-02 15:28:12 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 9.8364ms
+[2025-12-02 15:28:36 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-02 15:28:37 INF] Now listening on: https://localhost:7222
+[2025-12-02 15:28:37 INF] Now listening on: http://localhost:5273
+[2025-12-02 15:28:37 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-02 15:28:37 INF] Hosting environment: Development
+[2025-12-02 15:28:37 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-02 15:29:07 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-02 15:29:07 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-02 15:29:07 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 60.0135ms
+[2025-12-02 15:29:07 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.6359ms
+[2025-12-02 15:29:07 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-02 15:29:07 ERR] Unhandled exception
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Countries" for actions - WebAPI.Controllers.CountriesController.Create (WebAPI), WebAPI.Controllers.CountriesController.Edit (WebAPI), WebAPI.Controllers.CountriesController.Delete (WebAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 18
+[2025-12-02 15:29:07 ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 32.3602 ms
+[2025-12-02 15:29:07 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 500 null application/json; charset=utf-8 67.0402ms
+[2025-12-02 15:32:42 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-02 15:32:42 INF] Now listening on: https://localhost:7222
+[2025-12-02 15:32:42 INF] Now listening on: http://localhost:5273
+[2025-12-02 15:32:42 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-02 15:32:42 INF] Hosting environment: Development
+[2025-12-02 15:32:42 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-02 15:35:26 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-02 15:35:26 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-02 15:35:26 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 26.0151ms
+[2025-12-02 15:35:26 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.7884ms
+[2025-12-02 15:35:26 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-02 15:35:26 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 12.5771 ms
+[2025-12-02 15:35:26 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.5087ms
+[2025-12-02 18:14:39 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-02 18:14:40 INF] Now listening on: https://localhost:7222
+[2025-12-02 18:14:40 INF] Now listening on: http://localhost:5273
+[2025-12-02 18:14:40 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-02 18:14:40 INF] Hosting environment: Development
+[2025-12-02 18:14:40 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-02 18:15:02 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-02 18:15:02 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-02 18:15:02 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 29.8028ms
+[2025-12-02 18:15:02 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.5022ms
+[2025-12-02 18:15:02 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-02 18:15:02 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.7192 ms
+[2025-12-02 18:15:02 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.0145ms
+[2025-12-02 18:15:41 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Countries - application/json 27
+[2025-12-02 18:15:42 INF] HTTP POST /api/Countries responded 307 in 9.6914 ms
+[2025-12-02 18:15:42 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Countries - 307 0 null 19.4351ms
+[2025-12-02 18:15:42 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Countries - null null
+[2025-12-02 18:15:42 INF] Executing endpoint '405 HTTP Method Not Supported'
+[2025-12-02 18:15:42 INF] Executed endpoint '405 HTTP Method Not Supported'
+[2025-12-02 18:15:42 INF] HTTP OPTIONS /api/Countries responded 405 in 96.2585 ms
+[2025-12-02 18:15:42 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Countries - 405 0 null 102.1392ms
+[2025-12-02 18:18:52 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-02 18:18:52 INF] HTTP GET /api/Countries responded 307 in 0.5141 ms
+[2025-12-02 18:18:52 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 null null 63.2065ms
+[2025-12-02 18:18:52 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-02 18:18:52 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 18:18:52 INF] Route matched with {action = "Getall", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 18:18:53 INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+[2025-12-02 18:18:53 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.Country, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CountryDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 18:18:53 INF] Executed action WebAPI.Controllers.CountriesController.Getall (WebAPI) in 1175.8521ms
+[2025-12-02 18:18:53 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 18:18:53 INF] HTTP GET /api/Countries responded 200 in 1207.8795 ms
+[2025-12-02 18:18:53 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 1226.8994ms
+[2025-12-02 18:18:53 INF] Request starting HTTP/2 GET https://localhost:7222/favicon.ico - null null
+[2025-12-02 18:18:53 INF] HTTP GET /favicon.ico responded 404 in 4.5162 ms
+[2025-12-02 18:18:53 INF] Request finished HTTP/2 GET https://localhost:7222/favicon.ico - 404 0 null 11.9553ms
+[2025-12-02 18:18:53 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7222/favicon.ico, Response status code: 404
+[2025-12-02 18:19:57 INF] Request starting HTTP/1.1 GET http://localhost:5273//api/Countries - null null
+[2025-12-02 18:19:57 INF] HTTP GET //api/Countries responded 307 in 0.1018 ms
+[2025-12-02 18:19:57 INF] Request finished HTTP/1.1 GET http://localhost:5273//api/Countries - 307 null null 12.4536ms
+[2025-12-02 18:19:57 INF] Request starting HTTP/2 GET https://localhost:7222//api/Countries - null null
+[2025-12-02 18:19:57 INF] HTTP GET //api/Countries responded 404 in 0.1330 ms
+[2025-12-02 18:19:57 INF] Request finished HTTP/2 GET https://localhost:7222//api/Countries - 404 null null 6.9663ms
+[2025-12-02 18:19:57 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7222//api/Countries, Response status code: 404
+[2025-12-02 18:20:07 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-02 18:20:07 INF] HTTP GET /api/Countries responded 307 in 0.0983 ms
+[2025-12-02 18:20:07 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 null null 11.4985ms
+[2025-12-02 18:20:07 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-02 18:20:07 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 18:20:07 INF] Route matched with {action = "Getall", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 18:20:07 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+[2025-12-02 18:20:07 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.Country, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CountryDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 18:20:07 INF] Executed action WebAPI.Controllers.CountriesController.Getall (WebAPI) in 59.5606ms
+[2025-12-02 18:20:07 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 18:20:07 INF] HTTP GET /api/Countries responded 200 in 68.3905 ms
+[2025-12-02 18:20:07 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 75.2657ms
+[2025-12-02 18:40:05 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-02 18:40:06 INF] Now listening on: https://localhost:7222
+[2025-12-02 18:40:06 INF] Now listening on: http://localhost:5273
+[2025-12-02 18:40:06 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-02 18:40:06 INF] Hosting environment: Development
+[2025-12-02 18:40:06 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-02 18:40:31 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Countries - null null
+[2025-12-02 18:40:31 INF] HTTP POST /api/Countries responded 307 in 14.0669 ms
+[2025-12-02 18:40:31 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Countries - 307 0 null 93.6118ms
+[2025-12-02 18:40:48 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-02 18:40:48 INF] HTTP GET /api/Countries responded 307 in 4.0157 ms
+[2025-12-02 18:40:48 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 null null 147.965ms
+[2025-12-02 18:40:48 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-02 18:40:48 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 18:40:48 INF] Route matched with {action = "Getall", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 18:40:50 INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+[2025-12-02 18:40:50 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.Country, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CountryDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 18:40:50 INF] Executed action WebAPI.Controllers.CountriesController.Getall (WebAPI) in 1604.5692ms
+[2025-12-02 18:40:50 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 18:40:50 INF] HTTP GET /api/Countries responded 200 in 1697.8959 ms
+[2025-12-02 18:40:50 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 1720.4894ms
+[2025-12-02 18:41:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-02 18:41:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-02 18:41:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 9.4271ms
+[2025-12-02 18:41:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.5114ms
+[2025-12-02 18:41:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-02 18:41:04 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.0899 ms
+[2025-12-02 18:41:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.9881ms
+[2025-12-02 18:41:32 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Countries - application/json 27
+[2025-12-02 18:41:32 INF] HTTP POST /api/Countries responded 307 in 0.2329 ms
+[2025-12-02 18:41:32 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Countries - 307 0 null 7.1114ms
+[2025-12-02 18:41:32 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Countries - null null
+[2025-12-02 18:41:32 INF] CORS policy execution successful.
+[2025-12-02 18:41:32 INF] HTTP OPTIONS /api/Countries responded 204 in 11.1460 ms
+[2025-12-02 18:41:32 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Countries - 204 null null 15.5907ms
+[2025-12-02 18:41:32 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 27
+[2025-12-02 18:41:32 INF] CORS policy execution successful.
+[2025-12-02 18:41:32 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-02 18:41:32 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 18:41:32 INF] Executed DbCommand (31ms) [Parameters=[@dto_Name='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[Name] = @dto_Name) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 18:41:32 INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Countries] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+[2025-12-02 18:41:32 INF] Executing OkObjectResult, writing value of type 'Application.Common.Result'.
+[2025-12-02 18:41:32 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 442.1243ms
+[2025-12-02 18:41:32 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-02 18:41:32 INF] HTTP POST /api/Countries responded 200 in 468.1286 ms
+[2025-12-02 18:41:32 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 474.1832ms
+[2025-12-02 18:41:37 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Countries - application/json 27
+[2025-12-02 18:41:37 INF] HTTP POST /api/Countries responded 307 in 0.4210 ms
+[2025-12-02 18:41:37 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Countries - 307 0 null 11.1347ms
+[2025-12-02 18:41:37 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Countries - null null
+[2025-12-02 18:41:37 INF] CORS policy execution successful.
+[2025-12-02 18:41:37 INF] HTTP OPTIONS /api/Countries responded 204 in 1.0013 ms
+[2025-12-02 18:41:37 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Countries - 204 null null 5.5971ms
+[2025-12-02 18:41:37 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 27
+[2025-12-02 18:41:38 INF] CORS policy execution successful.
+[2025-12-02 18:41:38 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-02 18:41:38 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 18:41:38 INF] Executed DbCommand (11ms) [Parameters=[@dto_Name='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[Name] = @dto_Name) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 18:41:38 INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+[2025-12-02 18:41:38 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 44.5121ms
+[2025-12-02 18:41:38 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-02 18:41:38 INF] HTTP POST /api/Countries responded 400 in 54.4401 ms
+[2025-12-02 18:41:38 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 400 null text/plain; charset=utf-8 81.3186ms
+[2025-12-02 18:46:21 INF] Request starting HTTP/1.1 PUT http://localhost:5273/api/Countries - application/json 34
+[2025-12-02 18:46:21 INF] HTTP PUT /api/Countries responded 307 in 0.0957 ms
+[2025-12-02 18:46:21 INF] Request finished HTTP/1.1 PUT http://localhost:5273/api/Countries - 307 0 null 5.2274ms
+[2025-12-02 18:46:21 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Countries - null null
+[2025-12-02 18:46:21 INF] CORS policy execution successful.
+[2025-12-02 18:46:21 INF] HTTP OPTIONS /api/Countries responded 204 in 1.0847 ms
+[2025-12-02 18:46:21 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Countries - 204 null null 5.8711ms
+[2025-12-02 18:46:21 INF] Request starting HTTP/2 PUT https://localhost:7222/api/Countries - application/json 34
+[2025-12-02 18:46:21 INF] CORS policy execution successful.
+[2025-12-02 18:46:21 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Edit (WebAPI)'
+[2025-12-02 18:46:21 INF] Route matched with {action = "Edit", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Application.DTOs.CountryDto) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 18:46:21 INF] Executed DbCommand (3ms) [Parameters=[@countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @countryId
+[2025-12-02 18:46:21 INF] Executed DbCommand (2ms) [Parameters=[@dto_Name='?' (Size = 4000), @dto_id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[Name] = @dto_Name AND [c].[Id] <> @dto_id) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 18:46:21 INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Countries] SET [Name] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+[2025-12-02 18:46:21 INF] Executing OkObjectResult, writing value of type 'Application.Common.Result'.
+[2025-12-02 18:46:21 INF] Executed action WebAPI.Controllers.CountriesController.Edit (WebAPI) in 55.2363ms
+[2025-12-02 18:46:21 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Edit (WebAPI)'
+[2025-12-02 18:46:21 INF] HTTP PUT /api/Countries responded 200 in 67.6605 ms
+[2025-12-02 18:46:21 INF] Request finished HTTP/2 PUT https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 72.2792ms
+[2025-12-02 19:21:18 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-02 19:21:18 INF] Now listening on: https://localhost:7222
+[2025-12-02 19:21:18 INF] Now listening on: http://localhost:5273
+[2025-12-02 19:21:18 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-02 19:21:18 INF] Hosting environment: Development
+[2025-12-02 19:21:18 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-02 19:21:34 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-02 19:21:34 INF] HTTP GET /api/Countries responded 307 in 15.1419 ms
+[2025-12-02 19:21:34 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 103.877ms
+[2025-12-02 19:21:34 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-02 19:21:34 INF] CORS policy execution successful.
+[2025-12-02 19:21:35 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 19:21:35 INF] Route matched with {action = "Getall", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 19:21:36 INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+[2025-12-02 19:21:36 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.Country, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CountryDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 19:21:36 INF] Executed action WebAPI.Controllers.CountriesController.Getall (WebAPI) in 1345.199ms
+[2025-12-02 19:21:36 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 19:21:36 INF] HTTP GET /api/Countries responded 200 in 1428.7844 ms
+[2025-12-02 19:21:36 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 1442.4713ms
+[2025-12-02 19:22:07 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Cities - application/json 44
+[2025-12-02 19:22:07 INF] HTTP POST /api/Cities responded 307 in 0.7035 ms
+[2025-12-02 19:22:07 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Cities - 307 0 null 8.477ms
+[2025-12-02 19:22:07 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Cities - null null
+[2025-12-02 19:22:07 INF] CORS policy execution successful.
+[2025-12-02 19:22:07 INF] HTTP OPTIONS /api/Cities responded 204 in 1.4710 ms
+[2025-12-02 19:22:07 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Cities - 204 null null 5.0256ms
+[2025-12-02 19:22:07 INF] Request starting HTTP/2 POST https://localhost:7222/api/Cities - application/json 44
+[2025-12-02 19:22:07 INF] CORS policy execution successful.
+[2025-12-02 19:22:07 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-02 19:22:07 INF] Route matched with {action = "Create", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCityDto) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 19:22:07 INF] Executed DbCommand (22ms) [Parameters=[@name='?' (Size = 4000), @countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c]
+        WHERE [c].[Name] = @name AND [c].[CountryId] = @countryId) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 19:22:07 INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-12-02 19:22:07 INF] Executed action WebAPI.Controllers.CitiesController.Create (WebAPI) in 206.3784ms
+[2025-12-02 19:22:07 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-02 19:22:07 INF] HTTP POST /api/Cities responded 400 in 240.9896 ms
+[2025-12-02 19:22:07 INF] Request finished HTTP/2 POST https://localhost:7222/api/Cities - 400 null application/json; charset=utf-8 247.026ms
+[2025-12-02 19:24:27 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-02 19:24:27 INF] Now listening on: https://localhost:7222
+[2025-12-02 19:24:27 INF] Now listening on: http://localhost:5273
+[2025-12-02 19:24:28 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-02 19:24:28 INF] Hosting environment: Development
+[2025-12-02 19:24:28 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-02 19:24:40 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Cities - application/json 47
+[2025-12-02 19:24:40 INF] HTTP POST /api/Cities responded 307 in 16.6310 ms
+[2025-12-02 19:24:40 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Cities - 307 0 null 241.8635ms
+[2025-12-02 19:24:40 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Cities - null null
+[2025-12-02 19:24:40 INF] CORS policy execution successful.
+[2025-12-02 19:24:40 INF] HTTP OPTIONS /api/Cities responded 204 in 4.1138 ms
+[2025-12-02 19:24:40 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Cities - 204 null null 13.4413ms
+[2025-12-02 19:24:40 INF] Request starting HTTP/2 POST https://localhost:7222/api/Cities - application/json 47
+[2025-12-02 19:24:40 INF] CORS policy execution successful.
+[2025-12-02 19:24:41 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-02 19:24:41 INF] Route matched with {action = "Create", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCityDto) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 19:24:42 INF] Executed DbCommand (56ms) [Parameters=[@name='?' (Size = 4000), @countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c]
+        WHERE [c].[Name] = @name AND [c].[CountryId] = @countryId) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 19:24:42 INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([CountryId], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+[2025-12-02 19:24:42 INF] Executing OkObjectResult, writing value of type 'Application.Common.Result'.
+[2025-12-02 19:24:42 INF] Executed action WebAPI.Controllers.CitiesController.Create (WebAPI) in 1714.2983ms
+[2025-12-02 19:24:42 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-02 19:24:42 INF] HTTP POST /api/Cities responded 200 in 1795.7417 ms
+[2025-12-02 19:24:42 INF] Request finished HTTP/2 POST https://localhost:7222/api/Cities - 200 null application/json; charset=utf-8 1807.5742ms
+[2025-12-02 19:25:15 INF] Request starting HTTP/1.1 PUT http://localhost:5273/api/Cities - application/json 82
+[2025-12-02 19:25:15 INF] HTTP PUT /api/Cities responded 307 in 0.2075 ms
+[2025-12-02 19:25:15 INF] Request finished HTTP/1.1 PUT http://localhost:5273/api/Cities - 307 0 null 22.2382ms
+[2025-12-02 19:25:15 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Cities - null null
+[2025-12-02 19:25:15 INF] CORS policy execution successful.
+[2025-12-02 19:25:15 INF] HTTP OPTIONS /api/Cities responded 204 in 4.5845 ms
+[2025-12-02 19:25:15 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Cities - 204 null null 100.7035ms
+[2025-12-02 19:25:15 INF] Request starting HTTP/2 PUT https://localhost:7222/api/Cities - application/json 82
+[2025-12-02 19:25:15 INF] CORS policy execution successful.
+[2025-12-02 19:25:15 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-02 19:25:15 INF] Route matched with {action = "Edit", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Application.DTOs.CityDto) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 19:25:15 INF] Executed DbCommand (9ms) [Parameters=[@cityDto_id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CountryId], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @cityDto_id
+[2025-12-02 19:25:15 INF] Executed DbCommand (8ms) [Parameters=[@name='?' (Size = 4000), @countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c]
+        WHERE [c].[Name] = @name AND [c].[CountryId] = @countryId) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 19:25:15 INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-12-02 19:25:15 INF] Executed action WebAPI.Controllers.CitiesController.Edit (WebAPI) in 146.0363ms
+[2025-12-02 19:25:15 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-02 19:25:15 INF] HTTP PUT /api/Cities responded 400 in 166.3878 ms
+[2025-12-02 19:25:15 INF] Request finished HTTP/2 PUT https://localhost:7222/api/Cities - 400 null application/json; charset=utf-8 175.7915ms
+[2025-12-02 19:25:25 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Cities - application/json 47
+[2025-12-02 19:25:25 INF] HTTP POST /api/Cities responded 307 in 0.1728 ms
+[2025-12-02 19:25:25 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Cities - 307 0 null 6.8678ms
+[2025-12-02 19:25:25 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Cities - null null
+[2025-12-02 19:25:25 INF] CORS policy execution successful.
+[2025-12-02 19:25:25 INF] HTTP OPTIONS /api/Cities responded 204 in 0.8976 ms
+[2025-12-02 19:25:25 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Cities - 204 null null 5.656ms
+[2025-12-02 19:25:25 INF] Request starting HTTP/2 POST https://localhost:7222/api/Cities - application/json 47
+[2025-12-02 19:25:25 INF] CORS policy execution successful.
+[2025-12-02 19:25:25 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-02 19:25:25 INF] Route matched with {action = "Create", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCityDto) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 19:25:25 INF] Executed DbCommand (1ms) [Parameters=[@name='?' (Size = 4000), @countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c]
+        WHERE [c].[Name] = @name AND [c].[CountryId] = @countryId) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 19:25:25 INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-12-02 19:25:25 INF] Executed action WebAPI.Controllers.CitiesController.Create (WebAPI) in 19.252ms
+[2025-12-02 19:25:25 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-02 19:25:25 INF] HTTP POST /api/Cities responded 400 in 29.2067 ms
+[2025-12-02 19:25:25 INF] Request finished HTTP/2 POST https://localhost:7222/api/Cities - 400 null application/json; charset=utf-8 34.2688ms
+[2025-12-02 19:25:36 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Cities?countryId=1 - null null
+[2025-12-02 19:25:36 INF] HTTP GET /api/Cities responded 307 in 1.7513 ms
+[2025-12-02 19:25:36 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Cities?countryId=1 - 307 0 null 8.1618ms
+[2025-12-02 19:25:36 INF] Request starting HTTP/2 GET https://localhost:7222/api/Cities?countryId=1 - null null
+[2025-12-02 19:25:36 INF] CORS policy execution successful.
+[2025-12-02 19:25:36 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Getall (WebAPI)'
+[2025-12-02 19:25:36 INF] Route matched with {action = "Getall", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall(Int32) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 19:25:36 INF] Executed DbCommand (3ms) [Parameters=[@countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryId], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[CountryId] = @countryId
+[2025-12-02 19:25:36 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.City, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CityDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 19:27:25 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-02 19:27:26 INF] Now listening on: https://localhost:7222
+[2025-12-02 19:27:26 INF] Now listening on: http://localhost:5273
+[2025-12-02 19:27:26 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-02 19:27:26 INF] Hosting environment: Development
+[2025-12-02 19:27:26 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-02 19:28:04 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Countries - application/json 21
+[2025-12-02 19:28:04 INF] HTTP POST /api/Countries responded 307 in 12.2382 ms
+[2025-12-02 19:28:04 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Countries - 307 0 null 215.1726ms
+[2025-12-02 19:28:04 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Countries - null null
+[2025-12-02 19:28:04 INF] CORS policy execution successful.
+[2025-12-02 19:28:04 INF] HTTP OPTIONS /api/Countries responded 204 in 4.2871 ms
+[2025-12-02 19:28:04 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Countries - 204 null null 11.0686ms
+[2025-12-02 19:28:04 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 21
+[2025-12-02 19:28:04 INF] CORS policy execution successful.
+[2025-12-02 19:28:04 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-02 19:28:04 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 19:28:05 INF] Executed DbCommand (53ms) [Parameters=[@dto_Name='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[Name] = @dto_Name) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 19:28:06 INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Countries] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+[2025-12-02 19:28:06 INF] Executing OkObjectResult, writing value of type 'Application.Common.Result'.
+[2025-12-02 19:28:06 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 1660.4012ms
+[2025-12-02 19:28:06 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-02 19:28:06 INF] HTTP POST /api/Countries responded 200 in 1736.5036 ms
+[2025-12-02 19:28:06 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 1750.7658ms
+[2025-12-02 19:28:12 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Countries - application/json 21
+[2025-12-02 19:28:12 INF] HTTP POST /api/Countries responded 307 in 0.2327 ms
+[2025-12-02 19:28:12 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Countries - 307 0 null 5.4591ms
+[2025-12-02 19:28:12 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Countries - null null
+[2025-12-02 19:28:12 INF] CORS policy execution successful.
+[2025-12-02 19:28:12 INF] HTTP OPTIONS /api/Countries responded 204 in 1.5146 ms
+[2025-12-02 19:28:12 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Countries - 204 null null 6.8004ms
+[2025-12-02 19:28:12 INF] Request starting HTTP/2 POST https://localhost:7222/api/Countries - application/json 21
+[2025-12-02 19:28:12 INF] CORS policy execution successful.
+[2025-12-02 19:28:12 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-02 19:28:12 INF] Route matched with {action = "Create", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCountryDto) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 19:28:12 INF] Executed DbCommand (2ms) [Parameters=[@dto_Name='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c]
+        WHERE [c].[Name] = @dto_Name) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 19:28:12 INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Countries] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+[2025-12-02 19:28:12 INF] Executing OkObjectResult, writing value of type 'Application.Common.Result'.
+[2025-12-02 19:28:12 INF] Executed action WebAPI.Controllers.CountriesController.Create (WebAPI) in 94.3162ms
+[2025-12-02 19:28:12 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Create (WebAPI)'
+[2025-12-02 19:28:12 INF] HTTP POST /api/Countries responded 200 in 101.1012 ms
+[2025-12-02 19:28:12 INF] Request finished HTTP/2 POST https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 106.5016ms
+[2025-12-02 19:28:29 INF] Request starting HTTP/1.1 DELETE http://localhost:5273/api/Countries?countryId=2 - null null
+[2025-12-02 19:28:29 INF] HTTP DELETE /api/Countries responded 307 in 0.2124 ms
+[2025-12-02 19:28:29 INF] Request finished HTTP/1.1 DELETE http://localhost:5273/api/Countries?countryId=2 - 307 0 null 8.8019ms
+[2025-12-02 19:28:29 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Countries?countryId=2 - null null
+[2025-12-02 19:28:29 INF] CORS policy execution successful.
+[2025-12-02 19:28:29 INF] HTTP OPTIONS /api/Countries responded 204 in 1.0235 ms
+[2025-12-02 19:28:29 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Countries?countryId=2 - 204 null null 7.1242ms
+[2025-12-02 19:28:29 INF] Request starting HTTP/2 DELETE https://localhost:7222/api/Countries?countryId=2 - null null
+[2025-12-02 19:28:29 INF] CORS policy execution successful.
+[2025-12-02 19:28:29 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Delete (WebAPI)'
+[2025-12-02 19:28:29 INF] Route matched with {action = "Delete", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 19:28:29 INF] Executed DbCommand (2ms) [Parameters=[@countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @countryId
+[2025-12-02 19:28:29 INF] Executed DbCommand (1ms) [Parameters=[@countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @countryId
+[2025-12-02 19:28:29 INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Countries]
+OUTPUT 1
+WHERE [Id] = @p0;
+[2025-12-02 19:28:29 INF] Executing StatusCodeResult, setting HTTP status code 204
+[2025-12-02 19:28:29 INF] Executed action WebAPI.Controllers.CountriesController.Delete (WebAPI) in 115.3728ms
+[2025-12-02 19:28:29 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Delete (WebAPI)'
+[2025-12-02 19:28:29 INF] HTTP DELETE /api/Countries responded 204 in 135.6181 ms
+[2025-12-02 19:28:29 INF] Request finished HTTP/2 DELETE https://localhost:7222/api/Countries?countryId=2 - 204 null null 142.0178ms
+[2025-12-02 19:28:41 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-02 19:28:41 INF] HTTP GET /api/Countries responded 307 in 4.4135 ms
+[2025-12-02 19:28:41 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 10.3029ms
+[2025-12-02 19:28:41 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-02 19:28:42 INF] CORS policy execution successful.
+[2025-12-02 19:28:42 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 19:28:42 INF] Route matched with {action = "Getall", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 19:28:42 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+[2025-12-02 19:28:42 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.Country, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CountryDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 19:28:42 INF] Executed action WebAPI.Controllers.CountriesController.Getall (WebAPI) in 18.177ms
+[2025-12-02 19:28:42 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 19:28:42 INF] HTTP GET /api/Countries responded 200 in 31.5022 ms
+[2025-12-02 19:28:42 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 36.3472ms
+[2025-12-02 19:28:43 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-02 19:28:43 INF] HTTP GET /api/Countries responded 307 in 0.3844 ms
+[2025-12-02 19:28:43 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 6.5131ms
+[2025-12-02 19:28:43 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-02 19:28:43 INF] CORS policy execution successful.
+[2025-12-02 19:28:43 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 19:28:43 INF] Route matched with {action = "Getall", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 19:28:43 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+[2025-12-02 19:28:43 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.Country, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CountryDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 19:28:43 INF] Executed action WebAPI.Controllers.CountriesController.Getall (WebAPI) in 4.3352ms
+[2025-12-02 19:28:43 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 19:28:43 INF] HTTP GET /api/Countries responded 200 in 12.6558 ms
+[2025-12-02 19:28:43 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 16.9608ms
+[2025-12-02 19:29:31 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Cities - application/json 38
+[2025-12-02 19:29:31 INF] HTTP POST /api/Cities responded 307 in 0.1824 ms
+[2025-12-02 19:29:31 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Cities - 307 0 null 6.4391ms
+[2025-12-02 19:29:31 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Cities - null null
+[2025-12-02 19:29:31 INF] CORS policy execution successful.
+[2025-12-02 19:29:31 INF] HTTP OPTIONS /api/Cities responded 204 in 0.8350 ms
+[2025-12-02 19:29:31 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Cities - 204 null null 5.4166ms
+[2025-12-02 19:29:31 INF] Request starting HTTP/2 POST https://localhost:7222/api/Cities - application/json 38
+[2025-12-02 19:29:31 INF] CORS policy execution successful.
+[2025-12-02 19:29:31 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-02 19:29:31 INF] Route matched with {action = "Create", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCityDto) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 19:29:31 INF] Executed DbCommand (5ms) [Parameters=[@name='?' (Size = 4000), @countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c]
+        WHERE [c].[Name] = @name AND [c].[CountryId] = @countryId) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 19:29:31 INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([CountryId], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+[2025-12-02 19:29:31 INF] Executing OkObjectResult, writing value of type 'Application.Common.Result'.
+[2025-12-02 19:29:31 INF] Executed action WebAPI.Controllers.CitiesController.Create (WebAPI) in 51.8917ms
+[2025-12-02 19:29:31 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-02 19:29:31 INF] HTTP POST /api/Cities responded 200 in 69.4056 ms
+[2025-12-02 19:29:31 INF] Request finished HTTP/2 POST https://localhost:7222/api/Cities - 200 null application/json; charset=utf-8 75.3795ms
+[2025-12-02 19:29:48 INF] Request starting HTTP/1.1 DELETE http://localhost:5273/api/Countries?countryId=3 - null null
+[2025-12-02 19:29:48 INF] HTTP DELETE /api/Countries responded 307 in 0.1012 ms
+[2025-12-02 19:29:48 INF] Request finished HTTP/1.1 DELETE http://localhost:5273/api/Countries?countryId=3 - 307 0 null 6.6178ms
+[2025-12-02 19:29:48 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Countries?countryId=3 - null null
+[2025-12-02 19:29:48 INF] CORS policy execution successful.
+[2025-12-02 19:29:48 INF] HTTP OPTIONS /api/Countries responded 204 in 0.6938 ms
+[2025-12-02 19:29:48 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Countries?countryId=3 - 204 null null 4.8442ms
+[2025-12-02 19:29:48 INF] Request starting HTTP/2 DELETE https://localhost:7222/api/Countries?countryId=3 - null null
+[2025-12-02 19:29:48 INF] CORS policy execution successful.
+[2025-12-02 19:29:48 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Delete (WebAPI)'
+[2025-12-02 19:29:48 INF] Route matched with {action = "Delete", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 19:29:48 INF] Executed DbCommand (1ms) [Parameters=[@countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @countryId
+[2025-12-02 19:29:48 INF] Executed DbCommand (0ms) [Parameters=[@countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @countryId
+[2025-12-02 19:29:48 INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Countries]
+OUTPUT 1
+WHERE [Id] = @p0;
+[2025-12-02 19:29:48 INF] Executing StatusCodeResult, setting HTTP status code 204
+[2025-12-02 19:29:48 INF] Executed action WebAPI.Controllers.CountriesController.Delete (WebAPI) in 20.5378ms
+[2025-12-02 19:29:48 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Delete (WebAPI)'
+[2025-12-02 19:29:48 INF] HTTP DELETE /api/Countries responded 204 in 25.4922 ms
+[2025-12-02 19:29:48 INF] Request finished HTTP/2 DELETE https://localhost:7222/api/Countries?countryId=3 - 204 null null 31.689ms
+[2025-12-02 19:29:54 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Countries - null null
+[2025-12-02 19:29:54 INF] HTTP GET /api/Countries responded 307 in 0.2377 ms
+[2025-12-02 19:29:54 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Countries - 307 0 null 5.5843ms
+[2025-12-02 19:29:54 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-02 19:29:54 INF] CORS policy execution successful.
+[2025-12-02 19:29:54 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 19:29:54 INF] Route matched with {action = "Getall", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-02 19:29:54 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Countries] AS [c]
+[2025-12-02 19:29:54 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.Country, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CountryDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 19:29:54 INF] Executed action WebAPI.Controllers.CountriesController.Getall (WebAPI) in 5.2531ms
+[2025-12-02 19:29:54 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Getall (WebAPI)'
+[2025-12-02 19:29:54 INF] HTTP GET /api/Countries responded 200 in 12.6723 ms
+[2025-12-02 19:29:54 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 21.5315ms
+[2025-12-02 21:43:34 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-02 21:43:34 INF] Now listening on: https://localhost:7222
+[2025-12-02 21:43:34 INF] Now listening on: http://localhost:5273
+[2025-12-02 21:43:34 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-02 21:43:34 INF] Hosting environment: Development
+[2025-12-02 21:43:34 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-02 21:44:24 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-02 21:44:25 INF] HTTP GET /swagger/index.html responded 200 in 88.4132 ms
+[2025-12-02 21:44:25 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-02 21:44:25 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-02 21:44:25 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 277.1395ms
+[2025-12-02 21:44:25 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 18.5367ms
+[2025-12-02 21:44:25 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.3057ms
+[2025-12-02 21:44:25 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-02 21:44:25 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-02 21:44:25 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.0872 ms
+[2025-12-02 21:44:25 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.8315ms
+[2025-12-02 21:44:25 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 14.9842 ms
+[2025-12-02 21:44:25 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 21.6595ms
+[2025-12-02 21:44:44 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Cities?countryId=1 - null null
+[2025-12-02 21:44:44 INF] HTTP GET /api/Cities responded 307 in 1.1842 ms
+[2025-12-02 21:44:44 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Cities?countryId=1 - 307 0 null 7.8981ms
+[2025-12-02 21:44:44 INF] Request starting HTTP/2 GET https://localhost:7222/api/Cities?countryId=1 - null null
+[2025-12-02 21:44:44 INF] CORS policy execution successful.
+[2025-12-02 21:44:44 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Getall (WebAPI)'
+[2025-12-02 21:44:45 INF] Route matched with {action = "Getall", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall(Int32) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 21:44:46 INF] Executed DbCommand (56ms) [Parameters=[@countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryId], [c].[Name], [c0].[Id], [c0].[Name]
+FROM [Cities] AS [c]
+INNER JOIN [Countries] AS [c0] ON [c].[CountryId] = [c0].[Id]
+WHERE [c].[CountryId] = @countryId
+[2025-12-02 21:44:46 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.City, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CityDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 21:44:46 INF] Executed action WebAPI.Controllers.CitiesController.Getall (WebAPI) in 1317.0768ms
+[2025-12-02 21:44:46 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Getall (WebAPI)'
+[2025-12-02 21:44:46 INF] HTTP GET /api/Cities responded 200 in 1400.3860 ms
+[2025-12-02 21:44:46 INF] Request finished HTTP/2 GET https://localhost:7222/api/Cities?countryId=1 - 200 null application/json; charset=utf-8 1416.548ms
+[2025-12-02 21:45:14 INF] Request starting HTTP/1.1 PUT http://localhost:5273/api/Cities - application/json 82
+[2025-12-02 21:45:14 INF] HTTP PUT /api/Cities responded 307 in 0.1409 ms
+[2025-12-02 21:45:14 INF] Request finished HTTP/1.1 PUT http://localhost:5273/api/Cities - 307 0 null 5.593ms
+[2025-12-02 21:45:14 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Cities - null null
+[2025-12-02 21:45:14 INF] CORS policy execution successful.
+[2025-12-02 21:45:14 INF] HTTP OPTIONS /api/Cities responded 204 in 1.6986 ms
+[2025-12-02 21:45:14 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Cities - 204 null null 5.9941ms
+[2025-12-02 21:45:14 INF] Request starting HTTP/2 PUT https://localhost:7222/api/Cities - application/json 82
+[2025-12-02 21:45:14 INF] CORS policy execution successful.
+[2025-12-02 21:45:14 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-02 21:45:14 INF] Route matched with {action = "Edit", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Application.DTOs.CityDto) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 21:45:14 INF] Executed DbCommand (3ms) [Parameters=[@cityDto_id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CountryId], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @cityDto_id
+[2025-12-02 21:45:14 INF] Executed DbCommand (2ms) [Parameters=[@name='?' (Size = 4000), @countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c]
+        WHERE [c].[Name] = @name AND [c].[CountryId] = @countryId) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 21:45:14 INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-12-02 21:45:14 INF] Executed action WebAPI.Controllers.CitiesController.Edit (WebAPI) in 99.2074ms
+[2025-12-02 21:45:14 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-02 21:45:14 INF] HTTP PUT /api/Cities responded 400 in 117.1734 ms
+[2025-12-02 21:45:14 INF] Request finished HTTP/2 PUT https://localhost:7222/api/Cities - 400 null application/json; charset=utf-8 126.8373ms
+[2025-12-02 21:45:25 INF] Request starting HTTP/1.1 PUT http://localhost:5273/api/Cities - application/json 82
+[2025-12-02 21:45:25 INF] HTTP PUT /api/Cities responded 307 in 0.1047 ms
+[2025-12-02 21:45:25 INF] Request finished HTTP/1.1 PUT http://localhost:5273/api/Cities - 307 0 null 5.684ms
+[2025-12-02 21:45:25 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Cities - null null
+[2025-12-02 21:45:25 INF] CORS policy execution successful.
+[2025-12-02 21:45:25 INF] HTTP OPTIONS /api/Cities responded 204 in 0.8362 ms
+[2025-12-02 21:45:25 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Cities - 204 null null 4.9702ms
+[2025-12-02 21:45:25 INF] Request starting HTTP/2 PUT https://localhost:7222/api/Cities - application/json 82
+[2025-12-02 21:45:25 INF] CORS policy execution successful.
+[2025-12-02 21:45:25 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-02 21:45:25 INF] Route matched with {action = "Edit", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Application.DTOs.CityDto) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 21:46:00 INF] Executed DbCommand (18ms) [Parameters=[@cityDto_id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CountryId], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @cityDto_id
+[2025-12-02 21:46:40 INF] Executed DbCommand (2,384ms) [Parameters=[@name='?' (Size = 4000), @countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c]
+        WHERE [c].[Name] = @name AND [c].[CountryId] = @countryId) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 21:47:22 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-02 21:47:22 INF] Now listening on: https://localhost:7222
+[2025-12-02 21:47:22 INF] Now listening on: http://localhost:5273
+[2025-12-02 21:47:22 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-02 21:47:22 INF] Hosting environment: Development
+[2025-12-02 21:47:22 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-02 21:47:38 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-02 21:47:39 INF] HTTP GET /swagger/index.html responded 200 in 53.9783 ms
+[2025-12-02 21:47:39 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-02 21:47:39 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 226.2307ms
+[2025-12-02 21:47:39 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-02 21:47:39 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 12.4625ms
+[2025-12-02 21:47:39 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.8547ms
+[2025-12-02 21:47:39 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - null null
+[2025-12-02 21:47:39 INF] HTTP GET /swagger/v1/swagger.json responded 200 in 13.7644 ms
+[2025-12-02 21:47:39 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.3621ms
+[2025-12-02 21:49:42 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Cities?countryId=1 - null null
+[2025-12-02 21:49:42 INF] HTTP GET /api/Cities responded 307 in 2.1374 ms
+[2025-12-02 21:49:42 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Cities?countryId=1 - 307 0 null 11.9471ms
+[2025-12-02 21:49:42 INF] Request starting HTTP/2 GET https://localhost:7222/api/Cities?countryId=1 - null null
+[2025-12-02 21:49:42 INF] CORS policy execution successful.
+[2025-12-02 21:49:42 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Getall (WebAPI)'
+[2025-12-02 21:49:42 INF] Route matched with {action = "Getall", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall(Int32) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 21:49:43 INF] Executed DbCommand (55ms) [Parameters=[@countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryId], [c].[Name], [c0].[Id], [c0].[Name]
+FROM [Cities] AS [c]
+INNER JOIN [Countries] AS [c0] ON [c].[CountryId] = [c0].[Id]
+WHERE [c].[CountryId] = @countryId
+[2025-12-02 21:49:43 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.City, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CityDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 21:49:43 INF] Executed action WebAPI.Controllers.CitiesController.Getall (WebAPI) in 1136.9651ms
+[2025-12-02 21:49:43 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Getall (WebAPI)'
+[2025-12-02 21:49:43 INF] HTTP GET /api/Cities responded 200 in 1206.4455 ms
+[2025-12-02 21:49:43 INF] Request finished HTTP/2 GET https://localhost:7222/api/Cities?countryId=1 - 200 null application/json; charset=utf-8 1216.3694ms
+[2025-12-02 21:50:02 INF] Request starting HTTP/1.1 PUT http://localhost:5273/api/Cities - application/json 82
+[2025-12-02 21:50:02 INF] HTTP PUT /api/Cities responded 307 in 0.1275 ms
+[2025-12-02 21:50:02 INF] Request finished HTTP/1.1 PUT http://localhost:5273/api/Cities - 307 0 null 4.6654ms
+[2025-12-02 21:50:02 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Cities - null null
+[2025-12-02 21:50:02 INF] CORS policy execution successful.
+[2025-12-02 21:50:02 INF] HTTP OPTIONS /api/Cities responded 204 in 1.2199 ms
+[2025-12-02 21:50:02 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Cities - 204 null null 4.4495ms
+[2025-12-02 21:50:02 INF] Request starting HTTP/2 PUT https://localhost:7222/api/Cities - application/json 82
+[2025-12-02 21:50:02 INF] CORS policy execution successful.
+[2025-12-02 21:50:02 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-02 21:50:02 INF] Route matched with {action = "Edit", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Application.DTOs.CityDto) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 21:50:02 INF] Executed DbCommand (2ms) [Parameters=[@cityDto_id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CountryId], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @cityDto_id
+[2025-12-02 21:50:10 INF] Executed DbCommand (2ms) [Parameters=[@name='?' (Size = 4000), @countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c]
+        WHERE [c].[Name] = @name AND [c].[CountryId] = @countryId) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 21:50:10 INF] Executed DbCommand (4ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Cities] SET [CountryId] = @p0, [Name] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+[2025-12-02 21:50:10 INF] Executing StatusCodeResult, setting HTTP status code 204
+[2025-12-02 21:50:10 INF] Executed action WebAPI.Controllers.CitiesController.Edit (WebAPI) in 7785.4025ms
+[2025-12-02 21:50:10 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Edit (WebAPI)'
+[2025-12-02 21:50:10 INF] HTTP PUT /api/Cities responded 204 in 7796.9600 ms
+[2025-12-02 21:50:10 INF] Request finished HTTP/2 PUT https://localhost:7222/api/Cities - 204 null null 7802.1263ms
+[2025-12-02 21:50:31 INF] Request starting HTTP/1.1 POST http://localhost:5273/api/Cities - application/json 39
+[2025-12-02 21:50:31 INF] HTTP POST /api/Cities responded 307 in 0.0677 ms
+[2025-12-02 21:50:31 INF] Request finished HTTP/1.1 POST http://localhost:5273/api/Cities - 307 0 null 7.0978ms
+[2025-12-02 21:50:31 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Cities - null null
+[2025-12-02 21:50:31 INF] CORS policy execution successful.
+[2025-12-02 21:50:31 INF] HTTP OPTIONS /api/Cities responded 204 in 0.7235 ms
+[2025-12-02 21:50:31 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Cities - 204 null null 5.6665ms
+[2025-12-02 21:50:31 INF] Request starting HTTP/2 POST https://localhost:7222/api/Cities - application/json 39
+[2025-12-02 21:50:31 INF] CORS policy execution successful.
+[2025-12-02 21:50:31 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-02 21:50:31 INF] Route matched with {action = "Create", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.DTOs.CreateCityDto) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 21:50:31 INF] Executed DbCommand (1ms) [Parameters=[@name='?' (Size = 4000), @countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Cities] AS [c]
+        WHERE [c].[Name] = @name AND [c].[CountryId] = @countryId) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2025-12-02 21:50:31 INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([CountryId], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+[2025-12-02 21:50:31 INF] Executing OkObjectResult, writing value of type 'Application.Common.Result'.
+[2025-12-02 21:50:31 INF] Executed action WebAPI.Controllers.CitiesController.Create (WebAPI) in 63.1078ms
+[2025-12-02 21:50:31 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Create (WebAPI)'
+[2025-12-02 21:50:31 INF] HTTP POST /api/Cities responded 200 in 86.3259 ms
+[2025-12-02 21:50:31 INF] Request finished HTTP/2 POST https://localhost:7222/api/Cities - 200 null application/json; charset=utf-8 95.6724ms
+[2025-12-02 21:50:42 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Cities?countryId=1 - null null
+[2025-12-02 21:50:42 INF] HTTP GET /api/Cities responded 307 in 0.2141 ms
+[2025-12-02 21:50:42 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Cities?countryId=1 - 307 0 null 6.3837ms
+[2025-12-02 21:50:42 INF] Request starting HTTP/2 GET https://localhost:7222/api/Cities?countryId=1 - null null
+[2025-12-02 21:50:42 INF] CORS policy execution successful.
+[2025-12-02 21:50:42 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Getall (WebAPI)'
+[2025-12-02 21:50:42 INF] Route matched with {action = "Getall", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall(Int32) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 21:50:42 INF] Executed DbCommand (3ms) [Parameters=[@countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryId], [c].[Name], [c0].[Id], [c0].[Name]
+FROM [Cities] AS [c]
+INNER JOIN [Countries] AS [c0] ON [c].[CountryId] = [c0].[Id]
+WHERE [c].[CountryId] = @countryId
+[2025-12-02 21:50:42 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.City, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CityDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 21:50:42 INF] Executed action WebAPI.Controllers.CitiesController.Getall (WebAPI) in 8.7923ms
+[2025-12-02 21:50:42 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Getall (WebAPI)'
+[2025-12-02 21:50:42 INF] HTTP GET /api/Cities responded 200 in 14.3025 ms
+[2025-12-02 21:50:42 INF] Request finished HTTP/2 GET https://localhost:7222/api/Cities?countryId=1 - 200 null application/json; charset=utf-8 19.7158ms
+[2025-12-02 21:51:20 INF] Request starting HTTP/1.1 DELETE http://localhost:5273/api/Cities?cityId=3 - null null
+[2025-12-02 21:51:20 INF] HTTP DELETE /api/Cities responded 307 in 0.2603 ms
+[2025-12-02 21:51:20 INF] Request finished HTTP/1.1 DELETE http://localhost:5273/api/Cities?cityId=3 - 307 0 null 7.9941ms
+[2025-12-02 21:51:20 INF] Request starting HTTP/2 OPTIONS https://localhost:7222/api/Cities?cityId=3 - null null
+[2025-12-02 21:51:20 INF] CORS policy execution successful.
+[2025-12-02 21:51:20 INF] HTTP OPTIONS /api/Cities responded 204 in 0.7295 ms
+[2025-12-02 21:51:20 INF] Request finished HTTP/2 OPTIONS https://localhost:7222/api/Cities?cityId=3 - 204 null null 4.7074ms
+[2025-12-02 21:51:20 INF] Request starting HTTP/2 DELETE https://localhost:7222/api/Cities?cityId=3 - null null
+[2025-12-02 21:51:20 INF] CORS policy execution successful.
+[2025-12-02 21:51:20 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Delete (WebAPI)'
+[2025-12-02 21:51:20 INF] Route matched with {action = "Delete", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 21:51:20 INF] Executed DbCommand (2ms) [Parameters=[@cityId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CountryId], [c].[Name]
+FROM [Cities] AS [c]
+WHERE [c].[Id] = @cityId
+[2025-12-02 21:51:20 INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Cities]
+OUTPUT 1
+WHERE [Id] = @p0;
+[2025-12-02 21:51:20 INF] Executing OkObjectResult, writing value of type 'Application.Common.Result'.
+[2025-12-02 21:51:20 INF] Executed action WebAPI.Controllers.CitiesController.Delete (WebAPI) in 24.0555ms
+[2025-12-02 21:51:20 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Delete (WebAPI)'
+[2025-12-02 21:51:20 INF] HTTP DELETE /api/Cities responded 200 in 34.8549 ms
+[2025-12-02 21:51:20 INF] Request finished HTTP/2 DELETE https://localhost:7222/api/Cities?cityId=3 - 200 null application/json; charset=utf-8 42.4155ms
+[2025-12-02 21:51:32 INF] Request starting HTTP/1.1 GET http://localhost:5273/api/Cities?countryId=1 - null null
+[2025-12-02 21:51:32 INF] HTTP GET /api/Cities responded 307 in 1.0817 ms
+[2025-12-02 21:51:32 INF] Request finished HTTP/1.1 GET http://localhost:5273/api/Cities?countryId=1 - 307 0 null 6.7333ms
+[2025-12-02 21:51:32 INF] Request starting HTTP/2 GET https://localhost:7222/api/Cities?countryId=1 - null null
+[2025-12-02 21:51:32 INF] CORS policy execution successful.
+[2025-12-02 21:51:32 INF] Executing endpoint 'WebAPI.Controllers.CitiesController.Getall (WebAPI)'
+[2025-12-02 21:51:32 INF] Route matched with {action = "Getall", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getall(Int32) on controller WebAPI.Controllers.CitiesController (WebAPI).
+[2025-12-02 21:51:32 INF] Executed DbCommand (3ms) [Parameters=[@countryId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryId], [c].[Name], [c0].[Id], [c0].[Name]
+FROM [Cities] AS [c]
+INNER JOIN [Countries] AS [c0] ON [c].[CountryId] = [c0].[Id]
+WHERE [c].[CountryId] = @countryId
+[2025-12-02 21:51:32 INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Core.Entities.City, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Application.DTOs.CityDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2025-12-02 21:51:32 INF] Executed action WebAPI.Controllers.CitiesController.Getall (WebAPI) in 8.0594ms
+[2025-12-02 21:51:32 INF] Executed endpoint 'WebAPI.Controllers.CitiesController.Getall (WebAPI)'
+[2025-12-02 21:51:32 INF] HTTP GET /api/Cities responded 200 in 13.0881 ms
+[2025-12-02 21:51:32 INF] Request finished HTTP/2 GET https://localhost:7222/api/Cities?countryId=1 - 200 null application/json; charset=utf-8 17.2683ms

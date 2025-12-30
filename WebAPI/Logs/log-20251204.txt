@@ -1,0 +1,1241 @@
+[2025-12-04 10:14:43 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-04 10:14:43 INF] Now listening on: https://localhost:7222
+[2025-12-04 10:14:43 INF] Now listening on: http://localhost:5273
+[2025-12-04 10:14:43 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-04 10:14:43 INF] Hosting environment: Development
+[2025-12-04 10:14:43 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-04 10:16:56 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 10:16:56 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 10:16:56 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 30.1198ms
+[2025-12-04 10:16:56 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 266.3613ms
+[2025-12-04 10:16:56 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - null null
+[2025-12-04 10:16:56 INF] HTTP GET /swagger/v1/swagger.json responded 404 in 64.3441 ms
+[2025-12-04 10:16:56 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - 404 0 null 89.2475ms
+[2025-12-04 10:16:56 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7222/swagger/v1/swagger.json, Response status code: 404
+[2025-12-04 10:23:02 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 10:23:02 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 10:23:02 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 10:23:02 INF] HTTP GET /openapi/v1.json responded 200 in 36.6399 ms
+[2025-12-04 10:23:02 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 134.0862ms
+[2025-12-04 10:23:02 INF] Request starting HTTP/2 GET https://localhost:7222/favicon.ico - null null
+[2025-12-04 10:23:02 INF] HTTP GET /favicon.ico responded 404 in 4.6564 ms
+[2025-12-04 10:23:02 INF] Request finished HTTP/2 GET https://localhost:7222/favicon.ico - 404 0 null 11.4984ms
+[2025-12-04 10:23:02 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7222/favicon.ico, Response status code: 404
+[2025-12-04 10:23:17 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/index.html - null null
+[2025-12-04 10:23:17 INF] HTTP GET /openapi/index.html responded 404 in 0.1989 ms
+[2025-12-04 10:23:17 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/index.html - 404 null null 9.4975ms
+[2025-12-04 10:23:17 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7222/openapi/index.html, Response status code: 404
+[2025-12-04 10:37:02 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-04 10:37:02 INF] Now listening on: https://localhost:7222
+[2025-12-04 10:37:02 INF] Now listening on: http://localhost:5273
+[2025-12-04 10:37:02 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-04 10:37:02 INF] Hosting environment: Development
+[2025-12-04 10:37:02 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-04 10:38:54 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 10:38:54 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 10:38:54 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 29.1921ms
+[2025-12-04 10:38:54 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.7295ms
+[2025-12-04 10:38:54 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - null null
+[2025-12-04 10:38:54 INF] HTTP GET /swagger/v1/swagger.json responded 404 in 49.2621 ms
+[2025-12-04 10:38:54 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - 404 0 null 78.4326ms
+[2025-12-04 10:38:54 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7222/swagger/v1/swagger.json, Response status code: 404
+[2025-12-04 10:39:02 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 10:39:02 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 10:39:02 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 4.7491ms
+[2025-12-04 10:39:02 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.8003ms
+[2025-12-04 10:39:02 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - null null
+[2025-12-04 10:39:02 INF] HTTP GET /swagger/v1/swagger.json responded 404 in 0.9639 ms
+[2025-12-04 10:39:02 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - 404 0 null 5.9084ms
+[2025-12-04 10:39:02 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7222/swagger/v1/swagger.json, Response status code: 404
+[2025-12-04 10:39:13 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 10:39:13 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 10:39:13 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 10:39:13 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 10:39:13 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 10:39:13 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 12.3901ms
+[2025-12-04 10:39:13 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.394ms
+[2025-12-04 10:39:13 ERR] Unhandled exception
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.IO.Stream.<CopyToAsync>g__Core|30_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 20
+[2025-12-04 10:39:13 ERR] Unhandled exception
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.IO.Stream.<CopyToAsync>g__Core|30_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 20
+[2025-12-04 10:39:13 ERR] HTTP GET /swagger/swagger-ui.css responded 500 in 120.6116 ms
+[2025-12-04 10:39:13 ERR] HTTP GET /swagger/index.css responded 500 in 123.3370 ms
+[2025-12-04 10:39:13 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 499 23649 application/json; charset=utf-8 140.0652ms
+[2025-12-04 10:39:13 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 499 152 application/json; charset=utf-8 141.8936ms
+[2025-12-04 10:39:13 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - null null
+[2025-12-04 10:39:13 INF] HTTP GET /swagger/v1/swagger.json responded 404 in 1.8325 ms
+[2025-12-04 10:39:13 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/v1/swagger.json - 404 0 null 6.3243ms
+[2025-12-04 10:39:13 INF] HTTP GET /swagger/index.html responded 200 in 50.1076 ms
+[2025-12-04 10:39:13 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7222/swagger/v1/swagger.json, Response status code: 404
+[2025-12-04 10:39:13 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 202.8511ms
+[2025-12-04 10:39:15 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 10:39:15 INF] HTTP GET /swagger/index.html responded 200 in 0.3651 ms
+[2025-12-04 10:39:15 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 9.3579ms
+[2025-12-04 10:39:15 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 10:39:15 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 10:39:15 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 10:39:15 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 10:39:15 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 9.6567 ms
+[2025-12-04 10:39:15 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 10:39:15 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 10:39:15 INF] HTTP GET /swagger/index.css responded 200 in 0.1643 ms
+[2025-12-04 10:39:15 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 10:39:15 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.9732ms
+[2025-12-04 10:39:15 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 16.1201ms
+[2025-12-04 10:39:15 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 19.4386ms
+[2025-12-04 10:39:15 INF] HTTP GET /swagger/index.js responded 200 in 0.3445 ms
+[2025-12-04 10:39:15 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 23.2166ms
+[2025-12-04 10:39:15 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 2.0069 ms
+[2025-12-04 10:39:15 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 9.7837 ms
+[2025-12-04 10:39:15 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 34.5387ms
+[2025-12-04 10:39:15 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 38.9876ms
+[2025-12-04 10:39:15 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 40.7747ms
+[2025-12-04 10:39:15 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 10:39:15 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 2.4820 ms
+[2025-12-04 10:39:16 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 10.4315ms
+[2025-12-04 10:39:16 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 10:39:16 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 10:39:16 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 10:39:16 INF] HTTP GET /openapi/v1.json responded 200 in 14.1660 ms
+[2025-12-04 10:39:16 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 20.1074ms
+[2025-12-04 10:39:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 10:39:21 INF] HTTP GET /swagger/index.html responded 200 in 0.3711 ms
+[2025-12-04 10:39:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 7.5294ms
+[2025-12-04 10:39:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 10:39:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 10:39:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 10:39:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 10:39:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 10:39:21 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 10:39:21 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 10:39:21 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 1.1495 ms
+[2025-12-04 10:39:21 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.1753 ms
+[2025-12-04 10:39:21 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.6696ms
+[2025-12-04 10:39:21 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.7885 ms
+[2025-12-04 10:39:21 INF] HTTP GET /swagger/index.css responded 200 in 0.1997 ms
+[2025-12-04 10:39:21 INF] HTTP GET /swagger/index.js responded 200 in 0.3345 ms
+[2025-12-04 10:39:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 23.2276ms
+[2025-12-04 10:39:21 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 16.8087ms
+[2025-12-04 10:39:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 25.0597ms
+[2025-12-04 10:39:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 30.2899ms
+[2025-12-04 10:39:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 31.9746ms
+[2025-12-04 10:39:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 33.5248ms
+[2025-12-04 10:39:21 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 10:39:21 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 10:39:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - null null
+[2025-12-04 10:39:21 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 13.1369 ms
+[2025-12-04 10:39:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - 200 628 image/png 18.8143ms
+[2025-12-04 10:39:21 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 10:39:21 INF] HTTP GET /openapi/v1.json responded 200 in 24.5254 ms
+[2025-12-04 10:39:21 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 29.7454ms
+[2025-12-04 10:39:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 10:39:29 INF] HTTP GET /swagger/index.html responded 200 in 0.3083 ms
+[2025-12-04 10:39:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 13.0872ms
+[2025-12-04 10:39:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 10:39:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 10:39:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 10:39:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 10:39:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 10:39:29 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 10:39:29 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 10:39:29 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.5126 ms
+[2025-12-04 10:39:29 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 24.079ms
+[2025-12-04 10:39:29 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 0.8508 ms
+[2025-12-04 10:39:29 INF] HTTP GET /swagger/index.js responded 200 in 0.2683 ms
+[2025-12-04 10:39:29 INF] HTTP GET /swagger/index.css responded 200 in 0.0891 ms
+[2025-12-04 10:39:29 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.4059 ms
+[2025-12-04 10:39:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 30.5105ms
+[2025-12-04 10:39:29 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.4687ms
+[2025-12-04 10:39:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 35.324ms
+[2025-12-04 10:39:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 36.9946ms
+[2025-12-04 10:39:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 39.3681ms
+[2025-12-04 10:39:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 40.843ms
+[2025-12-04 10:39:29 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 10:39:29 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 10:39:29 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 10:39:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - null null
+[2025-12-04 10:39:29 INF] HTTP GET /openapi/v1.json responded 200 in 5.5733 ms
+[2025-12-04 10:39:29 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.2375 ms
+[2025-12-04 10:39:29 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 11.2944ms
+[2025-12-04 10:39:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - 200 628 image/png 5.7181ms
+[2025-12-04 11:16:46 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-04 11:16:46 INF] Now listening on: https://localhost:7222
+[2025-12-04 11:16:46 INF] Now listening on: http://localhost:5273
+[2025-12-04 11:16:46 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-04 11:16:46 INF] Hosting environment: Development
+[2025-12-04 11:16:46 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-04 11:17:00 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-04 11:17:00 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:17:00 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:17:00 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 29.5311 ms
+[2025-12-04 11:17:00 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 29.5425 ms
+[2025-12-04 11:17:00 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 64.4808ms
+[2025-12-04 11:17:00 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 65.5076ms
+[2025-12-04 11:17:00 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:00 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 5.2048ms
+[2025-12-04 11:17:00 INF] HTTP GET /swagger/index.js responded 200 in 47.7807 ms
+[2025-12-04 11:17:00 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-04 11:17:00 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 78.1831ms
+[2025-12-04 11:17:00 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.1455ms
+[2025-12-04 11:17:01 INF] Request starting HTTP/1.1 GET http://localhost:5273/openapi/v1.json - null null
+[2025-12-04 11:17:01 INF] HTTP GET /openapi/v1.json responded 307 in 1.3490 ms
+[2025-12-04 11:17:01 INF] Request finished HTTP/1.1 GET http://localhost:5273/openapi/v1.json - 307 0 null 8.9281ms
+[2025-12-04 11:17:01 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:01 INF] CORS policy execution successful.
+[2025-12-04 11:17:01 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:01 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:01 INF] HTTP GET /openapi/v1.json responded 200 in 57.5727 ms
+[2025-12-04 11:17:01 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 62.7709ms
+[2025-12-04 11:17:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-04 11:17:03 INF] HTTP GET /swagger/index.html responded 200 in 5.5235 ms
+[2025-12-04 11:17:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 70.6987ms
+[2025-12-04 11:17:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-04 11:17:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-04 11:17:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:17:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:17:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-04 11:17:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:03 INF] HTTP GET /swagger/index.css responded 200 in 0.2243 ms
+[2025-12-04 11:17:03 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 7.7497 ms
+[2025-12-04 11:17:03 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 1.1163 ms
+[2025-12-04 11:17:03 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.3466 ms
+[2025-12-04 11:17:03 INF] HTTP GET /swagger/index.js responded 200 in 0.3856 ms
+[2025-12-04 11:17:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 25.8399ms
+[2025-12-04 11:17:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 30.2069ms
+[2025-12-04 11:17:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 31.8862ms
+[2025-12-04 11:17:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 32.3552ms
+[2025-12-04 11:17:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 33.5604ms
+[2025-12-04 11:17:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 35.2354ms
+[2025-12-04 11:17:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-04 11:17:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.9029ms
+[2025-12-04 11:17:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/openapi/v1.json - null null
+[2025-12-04 11:17:03 INF] HTTP GET /openapi/v1.json responded 307 in 0.1168 ms
+[2025-12-04 11:17:03 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-04 11:17:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/openapi/v1.json - 307 0 null 4.9286ms
+[2025-12-04 11:17:03 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:03 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 1.0136 ms
+[2025-12-04 11:17:03 INF] CORS policy execution successful.
+[2025-12-04 11:17:03 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 7.7442ms
+[2025-12-04 11:17:03 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:03 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:03 INF] HTTP GET /openapi/v1.json responded 200 in 10.9873 ms
+[2025-12-04 11:17:03 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 16.2087ms
+[2025-12-04 11:17:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-04 11:17:04 INF] HTTP GET /swagger/index.html responded 200 in 0.2652 ms
+[2025-12-04 11:17:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 8.3408ms
+[2025-12-04 11:17:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-04 11:17:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-04 11:17:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:17:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-04 11:17:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:17:04 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.1470 ms
+[2025-12-04 11:17:04 INF] HTTP GET /swagger/index.css responded 200 in 0.0935 ms
+[2025-12-04 11:17:04 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 0.6961 ms
+[2025-12-04 11:17:04 INF] HTTP GET /swagger/index.js responded 200 in 0.2009 ms
+[2025-12-04 11:17:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 11.6168ms
+[2025-12-04 11:17:04 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.5180 ms
+[2025-12-04 11:17:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 17.286ms
+[2025-12-04 11:17:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 18.9142ms
+[2025-12-04 11:17:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 19.9141ms
+[2025-12-04 11:17:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 20.8605ms
+[2025-12-04 11:17:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 23.4809ms
+[2025-12-04 11:17:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-04 11:17:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.6126ms
+[2025-12-04 11:17:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/openapi/v1.json - null null
+[2025-12-04 11:17:04 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-04 11:17:04 INF] HTTP GET /openapi/v1.json responded 307 in 0.0700 ms
+[2025-12-04 11:17:04 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.4140 ms
+[2025-12-04 11:17:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/openapi/v1.json - 307 0 null 10.5142ms
+[2025-12-04 11:17:04 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 10.2969ms
+[2025-12-04 11:17:04 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:04 INF] CORS policy execution successful.
+[2025-12-04 11:17:04 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:04 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:04 INF] HTTP GET /openapi/v1.json responded 200 in 7.6396 ms
+[2025-12-04 11:17:04 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 15.4618ms
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-04 11:17:05 INF] HTTP GET /swagger/index.html responded 200 in 0.3103 ms
+[2025-12-04 11:17:05 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 8.2592ms
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:05 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.0913 ms
+[2025-12-04 11:17:05 INF] HTTP GET /swagger/index.css responded 200 in 0.0637 ms
+[2025-12-04 11:17:05 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 0.5438 ms
+[2025-12-04 11:17:05 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.2708 ms
+[2025-12-04 11:17:05 INF] HTTP GET /swagger/index.js responded 200 in 0.3637 ms
+[2025-12-04 11:17:05 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 22.7479ms
+[2025-12-04 11:17:05 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 25.0825ms
+[2025-12-04 11:17:05 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 27.4186ms
+[2025-12-04 11:17:05 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 29.0015ms
+[2025-12-04 11:17:05 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 30.331ms
+[2025-12-04 11:17:05 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 31.6949ms
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-04 11:17:05 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.4043ms
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/openapi/v1.json - null null
+[2025-12-04 11:17:05 INF] HTTP GET /openapi/v1.json responded 307 in 0.0814 ms
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-04 11:17:05 INF] Request finished HTTP/1.1 GET http://localhost:5273/openapi/v1.json - 307 0 null 5.4125ms
+[2025-12-04 11:17:05 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:05 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.1063 ms
+[2025-12-04 11:17:05 INF] CORS policy execution successful.
+[2025-12-04 11:17:05 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 10.034ms
+[2025-12-04 11:17:05 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:05 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:05 INF] HTTP GET /openapi/v1.json responded 200 in 8.0980 ms
+[2025-12-04 11:17:05 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 15.3692ms
+[2025-12-04 11:17:05 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-04 11:17:05 INF] HTTP GET /swagger/index.html responded 200 in 0.2196 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 8.3131ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.css responded 200 in 0.1225 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.1045 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 0.6624 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.2341 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.js responded 200 in 0.4888 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 16.0411ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 18.3979ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 19.9208ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 21.0746ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 22.3189ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 23.6776ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.3779ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/openapi/v1.json - null null
+[2025-12-04 11:17:06 INF] HTTP GET /openapi/v1.json responded 307 in 0.1036 ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/openapi/v1.json - 307 0 null 5.3284ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.1004 ms
+[2025-12-04 11:17:06 INF] CORS policy execution successful.
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 9.3787ms
+[2025-12-04 11:17:06 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:06 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:06 INF] HTTP GET /openapi/v1.json responded 200 in 9.0145 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 15.3823ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.html responded 200 in 0.2449 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 4.9126ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.0917 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.css responded 200 in 0.0734 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 0.5042 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.2358 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.js responded 200 in 0.5291 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 14.672ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 16.6041ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 17.9973ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 19.208ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 20.5309ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 21.8934ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.0547ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/openapi/v1.json - null null
+[2025-12-04 11:17:06 INF] HTTP GET /openapi/v1.json responded 307 in 0.0621 ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/openapi/v1.json - 307 0 null 5.4267ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.1137 ms
+[2025-12-04 11:17:06 INF] CORS policy execution successful.
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 11.4327ms
+[2025-12-04 11:17:06 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:06 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:06 INF] HTTP GET /openapi/v1.json responded 200 in 7.8391 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 15.8567ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.html responded 200 in 0.2732 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 9.2226ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.1255 ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 5.8273ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.css responded 200 in 0.1084 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 0.9862 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.5459 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.js responded 200 in 0.2953 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 18.104ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 23.7728ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 25.116ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 26.4567ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 27.7527ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.9247ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/openapi/v1.json - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-04 11:17:06 INF] HTTP GET /openapi/v1.json responded 307 in 0.0434 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.0975 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/openapi/v1.json - 307 0 null 6.1279ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 5.3706ms
+[2025-12-04 11:17:06 INF] CORS policy execution successful.
+[2025-12-04 11:17:06 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:06 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:06 INF] HTTP GET /openapi/v1.json responded 200 in 5.9789 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 12.3329ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.html - null null
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.html responded 200 in 0.2678 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.html - 200 null text/html;charset=utf-8 8.6565ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.css - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/index.js - null null
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.0867 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.css responded 200 in 0.0521 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 0.5093 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.1612 ms
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/index.js responded 200 in 0.2597 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 14.5327ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui.css - 200 23649 text/css 20.6504ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.css - 200 152 text/css 17.689ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 19.1466ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 21.2062ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/index.js - 200 null application/javascript;charset=utf-8 22.4134ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/_vs/browserLink - null null
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.4263ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/openapi/v1.json - null null
+[2025-12-04 11:17:06 INF] HTTP GET /openapi/v1.json responded 307 in 0.0624 ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - null null
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/openapi/v1.json - 307 0 null 4.2928ms
+[2025-12-04 11:17:06 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:06 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.0907 ms
+[2025-12-04 11:17:06 INF] CORS policy execution successful.
+[2025-12-04 11:17:06 INF] Request finished HTTP/1.1 GET http://localhost:5273/swagger/favicon-32x32.png - 200 628 image/png 7.954ms
+[2025-12-04 11:17:06 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:06 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:06 INF] HTTP GET /openapi/v1.json responded 200 in 8.4783 ms
+[2025-12-04 11:17:06 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 14.3735ms
+[2025-12-04 11:17:26 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:26 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:17:26 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 6.8501ms
+[2025-12-04 11:17:26 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.5173ms
+[2025-12-04 11:17:26 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:26 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:26 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:26 INF] HTTP GET /openapi/v1.json responded 200 in 2.5297 ms
+[2025-12-04 11:17:26 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 4.855ms
+[2025-12-04 11:17:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:17:29 INF] HTTP GET /swagger/index.html responded 200 in 1.0551 ms
+[2025-12-04 11:17:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 45.5269ms
+[2025-12-04 11:17:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:17:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:17:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:17:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:17:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:17:29 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:29 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:17:29 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 2.9799 ms
+[2025-12-04 11:17:29 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 6.1556 ms
+[2025-12-04 11:17:29 INF] HTTP GET /swagger/index.js responded 200 in 0.2455 ms
+[2025-12-04 11:17:29 INF] HTTP GET /swagger/index.css responded 200 in 0.0792 ms
+[2025-12-04 11:17:29 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 23.3525ms
+[2025-12-04 11:17:29 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 1.6431 ms
+[2025-12-04 11:17:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 28.3428ms
+[2025-12-04 11:17:29 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.3341ms
+[2025-12-04 11:17:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 30.3767ms
+[2025-12-04 11:17:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 32.2464ms
+[2025-12-04 11:17:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 33.7891ms
+[2025-12-04 11:17:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 38.1551ms
+[2025-12-04 11:17:29 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - null null
+[2025-12-04 11:17:29 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:29 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.1468 ms
+[2025-12-04 11:17:29 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - 200 628 image/png 13.8919ms
+[2025-12-04 11:17:29 INF] HTTP GET /openapi/v1.json responded 200 in 15.7876 ms
+[2025-12-04 11:17:29 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 29.7721ms
+[2025-12-04 11:17:34 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:17:34 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:34 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 8.0958ms
+[2025-12-04 11:17:34 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.1229ms
+[2025-12-04 11:17:34 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:34 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:34 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:34 INF] HTTP GET /openapi/v1.json responded 200 in 9.7085 ms
+[2025-12-04 11:17:34 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 22.8279ms
+[2025-12-04 11:17:36 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:17:36 INF] HTTP GET /swagger/index.html responded 200 in 0.2774 ms
+[2025-12-04 11:17:36 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 27.6742ms
+[2025-12-04 11:17:36 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:17:36 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:17:36 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:17:36 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:17:36 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:17:36 INF] HTTP GET /swagger/index.css responded 200 in 0.1369 ms
+[2025-12-04 11:17:36 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.3350 ms
+[2025-12-04 11:17:36 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 8.2677 ms
+[2025-12-04 11:17:36 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:17:36 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:17:36 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 1.5345 ms
+[2025-12-04 11:17:36 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 100.3144ms
+[2025-12-04 11:17:36 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 106.0631ms
+[2025-12-04 11:17:36 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 113.0786ms
+[2025-12-04 11:17:36 INF] HTTP GET /swagger/index.js responded 200 in 0.2441 ms
+[2025-12-04 11:17:36 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 121.1624ms
+[2025-12-04 11:17:36 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 128.1052ms
+[2025-12-04 11:17:36 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 128.6571ms
+[2025-12-04 11:17:36 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 138.5036ms
+[2025-12-04 11:17:36 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:17:36 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - null null
+[2025-12-04 11:17:36 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:36 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.1416 ms
+[2025-12-04 11:17:36 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:17:36 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - 200 628 image/png 14.4132ms
+[2025-12-04 11:17:36 INF] HTTP GET /openapi/v1.json responded 200 in 7.1442 ms
+[2025-12-04 11:17:36 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 25.0486ms
+[2025-12-04 11:18:57 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-04 11:18:57 INF] Now listening on: https://localhost:7222
+[2025-12-04 11:18:57 INF] Now listening on: http://localhost:5273
+[2025-12-04 11:18:57 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-04 11:18:57 INF] Hosting environment: Development
+[2025-12-04 11:18:57 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-04 11:19:00 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:19:00 INF] HTTP GET /swagger/index.html responded 200 in 63.9236 ms
+[2025-12-04 11:19:00 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 155.6222ms
+[2025-12-04 11:19:00 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:19:00 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:19:00 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:19:00 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:19:00 INF] HTTP GET /swagger/index.css responded 200 in 21.0469 ms
+[2025-12-04 11:19:00 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:19:00 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 105.2365ms
+[2025-12-04 11:19:00 INF] HTTP GET /swagger/index.js responded 200 in 3.2508 ms
+[2025-12-04 11:19:00 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:19:00 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:19:00 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 38.0254 ms
+[2025-12-04 11:19:00 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 11.2702 ms
+[2025-12-04 11:19:00 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 69.2875 ms
+[2025-12-04 11:19:00 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 128.976ms
+[2025-12-04 11:19:00 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 139.1968ms
+[2025-12-04 11:19:00 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 151.1342ms
+[2025-12-04 11:19:00 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 157.544ms
+[2025-12-04 11:19:00 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 165.0872ms
+[2025-12-04 11:19:00 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 159.2547ms
+[2025-12-04 11:19:00 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:19:00 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - null null
+[2025-12-04 11:19:00 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 1.0326 ms
+[2025-12-04 11:19:00 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - 200 628 image/png 5.1748ms
+[2025-12-04 11:19:00 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:19:00 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:19:00 INF] HTTP GET /openapi/v1.json responded 200 in 71.6210 ms
+[2025-12-04 11:19:00 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 78.6505ms
+[2025-12-04 11:26:01 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-04 11:26:01 INF] Now listening on: https://localhost:7222
+[2025-12-04 11:26:01 INF] Now listening on: http://localhost:5273
+[2025-12-04 11:26:01 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-04 11:26:01 INF] Hosting environment: Development
+[2025-12-04 11:26:01 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-04 11:26:17 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:26:17 INF] HTTP GET /swagger/index.html responded 200 in 62.0800 ms
+[2025-12-04 11:26:17 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 154.2452ms
+[2025-12-04 11:26:17 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:26:17 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:26:17 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:26:17 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:26:17 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:26:17 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:26:17 INF] HTTP GET /swagger/index.js responded 200 in 1.0561 ms
+[2025-12-04 11:26:17 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:26:17 INF] HTTP GET /swagger/index.css responded 200 in 14.4889 ms
+[2025-12-04 11:26:17 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 20.9616ms
+[2025-12-04 11:26:17 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 30.1211ms
+[2025-12-04 11:26:17 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 20.6388 ms
+[2025-12-04 11:26:17 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 17.1531 ms
+[2025-12-04 11:26:17 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 32.9787ms
+[2025-12-04 11:26:17 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 55.0547 ms
+[2025-12-04 11:26:18 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 70.8387ms
+[2025-12-04 11:26:18 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 72.0123ms
+[2025-12-04 11:26:18 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 76.4642ms
+[2025-12-04 11:26:18 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.3678ms
+[2025-12-04 11:26:18 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:26:18 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - null null
+[2025-12-04 11:26:18 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 1.7395 ms
+[2025-12-04 11:26:18 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - 200 628 image/png 7.2958ms
+[2025-12-04 11:26:18 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:18 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:18 INF] HTTP GET /openapi/v1.json responded 200 in 82.0804 ms
+[2025-12-04 11:26:18 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 89.3831ms
+[2025-12-04 11:26:19 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:26:19 INF] HTTP GET /swagger/index.html responded 200 in 0.2413 ms
+[2025-12-04 11:26:19 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 6.3994ms
+[2025-12-04 11:26:19 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:26:19 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:26:19 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:26:19 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:26:19 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:26:19 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:26:19 INF] HTTP GET /swagger/index.css responded 200 in 0.0933 ms
+[2025-12-04 11:26:19 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.5363 ms
+[2025-12-04 11:26:19 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:26:19 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.2722 ms
+[2025-12-04 11:26:19 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 1.4478 ms
+[2025-12-04 11:26:19 INF] HTTP GET /swagger/index.js responded 200 in 0.2830 ms
+[2025-12-04 11:26:19 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 19.1997ms
+[2025-12-04 11:26:19 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 22.0315ms
+[2025-12-04 11:26:19 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.4049ms
+[2025-12-04 11:26:19 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 25.554ms
+[2025-12-04 11:26:19 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 26.7914ms
+[2025-12-04 11:26:19 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 28.2088ms
+[2025-12-04 11:26:19 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 29.6155ms
+[2025-12-04 11:26:19 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:26:19 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - null null
+[2025-12-04 11:26:19 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:19 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.6083 ms
+[2025-12-04 11:26:19 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - 200 628 image/png 15.7206ms
+[2025-12-04 11:26:19 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:19 INF] HTTP GET /openapi/v1.json responded 200 in 34.5662 ms
+[2025-12-04 11:26:19 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 44.1809ms
+[2025-12-04 11:26:38 INF] Request starting HTTP/1.1 GET http://localhost:5273//swagger/index.html - null null
+[2025-12-04 11:26:38 INF] HTTP GET //swagger/index.html responded 307 in 0.5134 ms
+[2025-12-04 11:26:38 INF] Request finished HTTP/1.1 GET http://localhost:5273//swagger/index.html - 307 null null 7.9073ms
+[2025-12-04 11:26:38 INF] Request starting HTTP/2 GET https://localhost:7222//swagger/index.html - null null
+[2025-12-04 11:26:38 INF] HTTP GET //swagger/index.html responded 404 in 3.9698 ms
+[2025-12-04 11:26:38 INF] Request finished HTTP/2 GET https://localhost:7222//swagger/index.html - 404 null null 9.1143ms
+[2025-12-04 11:26:38 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7222//swagger/index.html, Response status code: 404
+[2025-12-04 11:26:42 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:26:42 INF] HTTP GET /swagger/index.html responded 200 in 0.5788 ms
+[2025-12-04 11:26:42 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 9.5084ms
+[2025-12-04 11:26:42 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:26:42 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:26:42 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 2.8636ms
+[2025-12-04 11:26:42 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.6124ms
+[2025-12-04 11:26:42 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:26:42 ERR] Unhandled exception
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 20
+[2025-12-04 11:26:42 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:26:42 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:42 ERR] HTTP GET /swagger/favicon-16x16.png responded 500 in 50.0282 ms
+[2025-12-04 11:26:42 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 499 665 application/json; charset=utf-8 55.0098ms
+[2025-12-04 11:26:42 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:42 INF] HTTP GET /openapi/v1.json responded 200 in 10.0270 ms
+[2025-12-04 11:26:42 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 29.9053ms
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/index.html responded 200 in 0.2546 ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 18.0872ms
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 4.1931 ms
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 5.2595 ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.1183ms
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/index.js responded 200 in 0.3485 ms
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.4008 ms
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/index.css responded 200 in 0.0730 ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 31.4205ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 40.2627ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 41.9736ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 46.9925ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 48.7883ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 50.9637ms
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.1981 ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 6.1797ms
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:26:45 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:45 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:45 INF] HTTP GET /openapi/v1.json responded 200 in 7.4689 ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 12.8036ms
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/index.html responded 200 in 0.2046 ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 8.4933ms
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/index.css responded 200 in 0.1261 ms
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/index.js responded 200 in 0.2004 ms
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 2.0739 ms
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.3016 ms
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.2369 ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 26.3121ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.42ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 31.3793ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 31.0287ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 34.0272ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 35.2246ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 38.1213ms
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:26:45 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.1294 ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 4.9229ms
+[2025-12-04 11:26:45 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:26:45 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:45 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:45 INF] HTTP GET /openapi/v1.json responded 200 in 5.9961 ms
+[2025-12-04 11:26:45 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 13.953ms
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/index.html responded 200 in 0.4750 ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 12.4767ms
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.3676 ms
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/index.js responded 200 in 0.1604 ms
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.2055 ms
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 0.7698 ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 2.3777ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 6.1418ms
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/index.css responded 200 in 0.1656 ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.5341ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 14.7899ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 16.7858ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 18.5771ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 24.6508ms
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.1212 ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 3.8091ms
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:26:46 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:46 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:46 INF] HTTP GET /openapi/v1.json responded 200 in 7.1799 ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 14.2996ms
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/index.html responded 200 in 0.2169 ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 9.227ms
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:26:46 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/index.css responded 200 in 0.3502 ms
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.3440 ms
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/index.js responded 200 in 0.6591 ms
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.7980 ms
+[2025-12-04 11:26:46 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 1.3444 ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 24.7591ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.7852ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 28.3748ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 30.0111ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 31.1181ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 33.4151ms
+[2025-12-04 11:26:46 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 34.499ms
+[2025-12-04 11:26:47 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:26:47 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.1073 ms
+[2025-12-04 11:26:47 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 3.7299ms
+[2025-12-04 11:26:47 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:26:47 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:47 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:26:47 INF] HTTP GET /openapi/v1.json responded 200 in 10.6946 ms
+[2025-12-04 11:26:47 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 17.4531ms
+[2025-12-04 11:27:43 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:27:43 INF] HTTP GET /swagger/index.html responded 200 in 0.2226 ms
+[2025-12-04 11:27:43 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 5.192ms
+[2025-12-04 11:27:43 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:27:43 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:27:43 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:27:43 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:27:43 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:27:43 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:27:43 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.3731 ms
+[2025-12-04 11:27:43 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 5.4129 ms
+[2025-12-04 11:27:43 INF] HTTP GET /swagger/index.css responded 200 in 0.0576 ms
+[2025-12-04 11:27:43 INF] HTTP GET /swagger/index.js responded 200 in 0.4126 ms
+[2025-12-04 11:27:43 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:27:43 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.6736 ms
+[2025-12-04 11:27:43 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 63.1341ms
+[2025-12-04 11:27:43 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.1315ms
+[2025-12-04 11:27:43 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 64.8901ms
+[2025-12-04 11:27:43 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 67.1994ms
+[2025-12-04 11:27:43 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 67.7567ms
+[2025-12-04 11:27:43 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 62.8274ms
+[2025-12-04 11:27:43 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 75.6031ms
+[2025-12-04 11:27:43 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:27:43 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.1639 ms
+[2025-12-04 11:27:43 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 9.5693ms
+[2025-12-04 11:27:43 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:27:43 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:27:43 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:27:43 INF] HTTP GET /openapi/v1.json responded 200 in 4.4281 ms
+[2025-12-04 11:27:43 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 9.5426ms
+[2025-12-04 11:32:14 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-04 11:32:14 INF] Now listening on: https://localhost:7222
+[2025-12-04 11:32:14 INF] Now listening on: http://localhost:5273
+[2025-12-04 11:32:14 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-04 11:32:14 INF] Hosting environment: Development
+[2025-12-04 11:32:14 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-04 11:34:20 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:34:21 INF] HTTP GET /swagger/index.html responded 200 in 69.7851 ms
+[2025-12-04 11:34:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 215.9079ms
+[2025-12-04 11:34:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:34:21 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:34:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:34:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:34:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:34:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:34:21 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:34:21 INF] HTTP GET /swagger/index.js responded 200 in 1.2708 ms
+[2025-12-04 11:34:21 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 23.7184ms
+[2025-12-04 11:34:21 INF] HTTP GET /swagger/index.css responded 200 in 10.8566 ms
+[2025-12-04 11:34:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 61.0455ms
+[2025-12-04 11:34:21 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 33.9029 ms
+[2025-12-04 11:34:21 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 39.3726 ms
+[2025-12-04 11:34:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 85.0206ms
+[2025-12-04 11:34:21 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 43.4543 ms
+[2025-12-04 11:34:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 85.877ms
+[2025-12-04 11:34:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 92.2625ms
+[2025-12-04 11:34:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 94.2811ms
+[2025-12-04 11:34:21 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.216ms
+[2025-12-04 11:34:21 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:34:21 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 2.0440 ms
+[2025-12-04 11:34:21 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 7.3994ms
+[2025-12-04 11:34:21 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:34:21 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:21 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:21 INF] HTTP GET /openapi/v1.json responded 200 in 117.3241 ms
+[2025-12-04 11:34:21 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 129.9784ms
+[2025-12-04 11:34:22 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:34:22 INF] HTTP GET /swagger/index.html responded 200 in 0.3552 ms
+[2025-12-04 11:34:22 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 21.1531ms
+[2025-12-04 11:34:22 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:34:22 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:34:22 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:34:22 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:34:22 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:34:22 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:34:22 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:34:22 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 5.2047 ms
+[2025-12-04 11:34:22 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.5202 ms
+[2025-12-04 11:34:22 INF] HTTP GET /swagger/index.js responded 200 in 0.3437 ms
+[2025-12-04 11:34:22 INF] HTTP GET /swagger/index.css responded 200 in 0.1131 ms
+[2025-12-04 11:34:22 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 1.2396 ms
+[2025-12-04 11:34:22 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 19.6451ms
+[2025-12-04 11:34:22 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 21.7428ms
+[2025-12-04 11:34:22 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 23.5812ms
+[2025-12-04 11:34:22 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 24.7476ms
+[2025-12-04 11:34:22 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 28.8067ms
+[2025-12-04 11:34:22 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 30.7653ms
+[2025-12-04 11:34:22 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.3991ms
+[2025-12-04 11:34:22 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:34:22 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.1740 ms
+[2025-12-04 11:34:22 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 10.8884ms
+[2025-12-04 11:34:22 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:34:22 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:22 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:22 INF] HTTP GET /openapi/v1.json responded 200 in 7.2549 ms
+[2025-12-04 11:34:22 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 13.5705ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/index.html responded 200 in 0.2181 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 8.1108ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 1.0223 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/index.css responded 200 in 0.1822 ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 15.3741ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 14.0168ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 1.7036 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/index.js responded 200 in 0.2612 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.6163 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 16.6939ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.0611ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 29.0546ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 29.6318ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 31.4184ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.5337 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 6.6718ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:34:23 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:23 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:23 INF] HTTP GET /openapi/v1.json responded 200 in 11.4758 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 17.6991ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/index.html responded 200 in 0.4504 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 17.4657ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/index.js responded 200 in 0.2236 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/index.css responded 200 in 0.1114 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.3201 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 1.3670 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.5565 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 14.938ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.2983ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 17.2603ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 20.8705ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 22.3097ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 24.4307ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 26.2511ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.1873 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 5.14ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/index.html responded 200 in 0.2286 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 6.1529ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 1.6889 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.5299 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/index.css responded 200 in 0.1536 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/index.js responded 200 in 0.2234 ms
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.3835 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 22.5195ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 26.1692ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.9061ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 28.004ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 30.4715ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 31.0503ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 34.5157ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:34:23 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.2147 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 6.1664ms
+[2025-12-04 11:34:23 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:34:23 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:23 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:23 INF] HTTP GET /openapi/v1.json responded 200 in 7.0552 ms
+[2025-12-04 11:34:23 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 15.2051ms
+[2025-12-04 11:34:29 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:34:29 INF] HTTP GET /swagger/index.html responded 200 in 0.3778 ms
+[2025-12-04 11:34:29 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 6.9749ms
+[2025-12-04 11:34:29 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:34:29 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:34:29 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 7.9476ms
+[2025-12-04 11:34:29 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.281ms
+[2025-12-04 11:34:30 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:34:30 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:30 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:30 INF] HTTP GET /openapi/v1.json responded 200 in 6.5730 ms
+[2025-12-04 11:34:30 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 15.2637ms
+[2025-12-04 11:34:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:34:31 INF] HTTP GET /swagger/index.html responded 200 in 1.0439 ms
+[2025-12-04 11:34:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 15.6788ms
+[2025-12-04 11:34:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:34:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:34:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:34:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:34:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:34:31 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:34:31 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:34:31 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 1.0034 ms
+[2025-12-04 11:34:31 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.2809 ms
+[2025-12-04 11:34:31 INF] HTTP GET /swagger/index.css responded 200 in 0.1501 ms
+[2025-12-04 11:34:31 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.3093 ms
+[2025-12-04 11:34:31 INF] HTTP GET /swagger/index.js responded 200 in 0.2180 ms
+[2025-12-04 11:34:31 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 29.1999ms
+[2025-12-04 11:34:31 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.6038ms
+[2025-12-04 11:34:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 32.1474ms
+[2025-12-04 11:34:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 35.2243ms
+[2025-12-04 11:34:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 37.1535ms
+[2025-12-04 11:34:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 38.9184ms
+[2025-12-04 11:34:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 40.529ms
+[2025-12-04 11:34:31 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:34:31 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.1178 ms
+[2025-12-04 11:34:31 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 3.8823ms
+[2025-12-04 11:34:31 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:34:31 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:31 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:31 INF] HTTP GET /openapi/v1.json responded 200 in 4.3222 ms
+[2025-12-04 11:34:31 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 8.7376ms
+[2025-12-04 11:34:47 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:34:47 INF] HTTP GET /swagger/index.html responded 200 in 0.2039 ms
+[2025-12-04 11:34:47 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 5.9903ms
+[2025-12-04 11:34:47 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:34:47 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:34:47 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:34:47 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:34:47 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:34:47 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:34:47 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:34:47 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 0.3067 ms
+[2025-12-04 11:34:47 INF] HTTP GET /swagger/index.js responded 200 in 0.4208 ms
+[2025-12-04 11:34:47 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.4004ms
+[2025-12-04 11:34:47 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 12.0762ms
+[2025-12-04 11:34:47 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.1382 ms
+[2025-12-04 11:34:47 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 0.9652 ms
+[2025-12-04 11:34:47 INF] HTTP GET /swagger/index.css responded 200 in 0.0556 ms
+[2025-12-04 11:34:47 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 20.7942ms
+[2025-12-04 11:34:47 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 21.964ms
+[2025-12-04 11:34:47 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 28.8464ms
+[2025-12-04 11:34:47 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 32.4584ms
+[2025-12-04 11:34:47 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 35.3232ms
+[2025-12-04 11:34:47 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:34:47 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:47 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - null null
+[2025-12-04 11:34:47 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:34:47 INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.2686 ms
+[2025-12-04 11:34:47 INF] HTTP GET /openapi/v1.json responded 200 in 7.1986 ms
+[2025-12-04 11:34:47 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-32x32.png - 200 628 image/png 4.7962ms
+[2025-12-04 11:34:47 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 13.3268ms
+[2025-12-04 11:35:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:35:23 INF] HTTP GET /swagger/index.html responded 200 in 0.2391 ms
+[2025-12-04 11:35:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 15.5739ms
+[2025-12-04 11:35:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:35:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:35:23 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 5.0913 ms
+[2025-12-04 11:35:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:35:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:35:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:35:23 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:35:23 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:35:23 INF] HTTP GET /swagger/index.css responded 200 in 0.0685 ms
+[2025-12-04 11:35:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 19.5363ms
+[2025-12-04 11:35:23 INF] HTTP GET /swagger/index.js responded 200 in 0.2058 ms
+[2025-12-04 11:35:23 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 0.3699 ms
+[2025-12-04 11:35:23 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 27.589ms
+[2025-12-04 11:35:23 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 2.4921 ms
+[2025-12-04 11:35:23 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.0625ms
+[2025-12-04 11:35:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 38.8979ms
+[2025-12-04 11:35:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 43.6849ms
+[2025-12-04 11:35:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 47.3342ms
+[2025-12-04 11:35:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 51.5476ms
+[2025-12-04 11:35:23 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:35:23 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.1001 ms
+[2025-12-04 11:35:23 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 5.753ms
+[2025-12-04 11:35:23 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:35:23 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:35:23 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:35:23 INF] HTTP GET /openapi/v1.json responded 200 in 7.5689 ms
+[2025-12-04 11:35:23 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 16.5845ms
+[2025-12-04 11:35:49 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:35:49 INF] HTTP GET /swagger/index.html responded 200 in 0.7495 ms
+[2025-12-04 11:35:49 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 16.523ms
+[2025-12-04 11:35:49 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:35:49 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - null null
+[2025-12-04 11:35:49 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.js - null null
+[2025-12-04 11:35:49 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:35:49 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - null null
+[2025-12-04 11:35:49 INF] HTTP GET /swagger/swagger-ui.css responded 200 in 2.6807 ms
+[2025-12-04 11:35:49 INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 1.1649 ms
+[2025-12-04 11:35:49 INF] HTTP GET /swagger/index.js responded 200 in 0.7170 ms
+[2025-12-04 11:35:49 INF] HTTP GET /swagger/index.css responded 200 in 0.0783 ms
+[2025-12-04 11:35:49 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:35:49 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:35:49 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-standalone-preset.js - 200 77354 text/javascript 26.5418ms
+[2025-12-04 11:35:49 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.js - 200 null application/javascript;charset=utf-8 27.4141ms
+[2025-12-04 11:35:49 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 200 152 text/css 31.0098ms
+[2025-12-04 11:35:49 INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 3.8021 ms
+[2025-12-04 11:35:49 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 200 23649 text/css 26.0642ms
+[2025-12-04 11:35:49 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 28.7607ms
+[2025-12-04 11:35:49 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.3224ms
+[2025-12-04 11:35:49 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui-bundle.js - 200 424834 text/javascript 44.8823ms
+[2025-12-04 11:35:49 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:35:49 INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.4018 ms
+[2025-12-04 11:35:49 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 200 665 image/png 5.0698ms
+[2025-12-04 11:35:49 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:35:49 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:35:49 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:35:49 INF] HTTP GET /openapi/v1.json responded 200 in 9.9584 ms
+[2025-12-04 11:35:49 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 15.0916ms
+[2025-12-04 11:43:03 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-04 11:43:04 INF] Now listening on: https://localhost:7222
+[2025-12-04 11:43:04 INF] Now listening on: http://localhost:5273
+[2025-12-04 11:43:04 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-04 11:43:04 INF] Hosting environment: Development
+[2025-12-04 11:43:04 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-04 11:43:26 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.html - null null
+[2025-12-04 11:43:26 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 11:43:26 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - null null
+[2025-12-04 11:43:26 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/index.css - null null
+[2025-12-04 11:43:26 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 11:43:26 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 31.689ms
+[2025-12-04 11:43:26 ERR] Unhandled exception
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.IO.Stream.<CopyToAsync>g__Core|30_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 20
+[2025-12-04 11:43:26 ERR] Unhandled exception
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.IO.Stream.<CopyToAsync>g__Core|30_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 20
+[2025-12-04 11:43:26 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 123.7897ms
+[2025-12-04 11:43:26 INF] Request starting HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - null null
+[2025-12-04 11:43:26 ERR] HTTP GET /swagger/swagger-ui.css responded 500 in 86.1936 ms
+[2025-12-04 11:43:26 ERR] HTTP GET /swagger/index.css responded 500 in 86.2092 ms
+[2025-12-04 11:43:26 ERR] Unhandled exception
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at WebAPI.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Abstra\Abstra\WebAPI\Middleware\ExceptionMiddleware.cs:line 20
+[2025-12-04 11:43:26 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 11:43:26 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.css - 499 152 application/json; charset=utf-8 185.9489ms
+[2025-12-04 11:43:26 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/swagger-ui.css - 499 23649 application/json; charset=utf-8 184.6825ms
+[2025-12-04 11:43:26 ERR] HTTP GET /swagger/favicon-16x16.png responded 500 in 38.7945 ms
+[2025-12-04 11:43:26 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/favicon-16x16.png - 499 665 application/json; charset=utf-8 66.7701ms
+[2025-12-04 11:43:26 INF] HTTP GET /swagger/index.html responded 200 in 112.8319 ms
+[2025-12-04 11:43:26 INF] Request finished HTTP/2 GET https://localhost:7222/swagger/index.html - 200 null text/html;charset=utf-8 248.2277ms
+[2025-12-04 11:43:26 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:43:26 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 11:43:26 INF] HTTP GET /openapi/v1.json responded 200 in 80.1645 ms
+[2025-12-04 11:43:26 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 89.205ms
+[2025-12-04 11:43:46 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 60
+[2025-12-04 11:43:46 INF] CORS policy execution successful.
+[2025-12-04 11:43:46 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-04 11:43:46 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-04 11:43:47 INF] Executed DbCommand (85ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-04 11:43:47 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResultDto'.
+[2025-12-04 11:43:47 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 1349.5423ms
+[2025-12-04 11:43:47 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-04 11:43:47 INF] HTTP POST /api/Auth/login responded 200 in 1392.4389 ms
+[2025-12-04 11:43:47 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/login - 200 null application/json; charset=utf-8 1401.5189ms
+[2025-12-04 13:05:35 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-04 13:05:35 INF] Now listening on: https://localhost:7222
+[2025-12-04 13:05:35 INF] Now listening on: http://localhost:5273
+[2025-12-04 13:05:35 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-04 13:05:35 INF] Hosting environment: Development
+[2025-12-04 13:05:35 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-04 13:06:27 INF] Request starting HTTP/2 GET https://localhost:7222/ - null null
+[2025-12-04 13:06:27 INF] HTTP GET / responded 404 in 53.1265 ms
+[2025-12-04 13:06:27 INF] Request finished HTTP/2 GET https://localhost:7222/ - 404 null null 155.7236ms
+[2025-12-04 13:06:27 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7222/, Response status code: 404
+[2025-12-04 13:11:20 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/v1 - null null
+[2025-12-04 13:11:20 INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+[2025-12-04 13:11:20 INF] Write content with HTTP Response ContentType of text/html
+[2025-12-04 13:11:20 INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+[2025-12-04 13:11:20 INF] HTTP GET /scalar/v1 responded 200 in 105.4774 ms
+[2025-12-04 13:11:20 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/v1 - 200 null text/html 126.7437ms
+[2025-12-04 13:11:20 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/scalar.js - null null
+[2025-12-04 13:11:20 INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+[2025-12-04 13:11:20 INF] Request starting HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - null null
+[2025-12-04 13:11:20 INF] Request starting HTTP/2 GET https://localhost:7222/_vs/browserLink - null null
+[2025-12-04 13:11:20 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/scalar.aspnetcore.js - null null
+[2025-12-04 13:11:20 INF] Sending file with download name ''.
+[2025-12-04 13:11:20 INF] CORS policy execution successful.
+[2025-12-04 13:11:20 INF] Request finished HTTP/2 GET https://localhost:7222/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 27.1698ms
+[2025-12-04 13:11:20 INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+[2025-12-04 13:11:20 INF] Sending file with download name ''.
+[2025-12-04 13:11:20 INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+[2025-12-04 13:11:20 INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 22.7313 ms
+[2025-12-04 13:11:20 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/scalar.aspnetcore.js - 200 1046 text/javascript 43.5832ms
+[2025-12-04 13:11:20 INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+[2025-12-04 13:11:20 INF] HTTP GET /scalar/scalar.js responded 200 in 54.5957 ms
+[2025-12-04 13:11:20 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/scalar.js - 200 934118 text/javascript 66.963ms
+[2025-12-04 13:11:20 INF] Request finished HTTP/2 GET https://localhost:7222/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.0663ms
+[2025-12-04 13:11:20 INF] Request starting HTTP/2 GET https://localhost:7222/openapi/v1.json - null null
+[2025-12-04 13:11:20 INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 13:11:20 INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+[2025-12-04 13:11:20 INF] HTTP GET /openapi/v1.json responded 200 in 12.5303 ms
+[2025-12-04 13:11:20 INF] Request finished HTTP/2 GET https://localhost:7222/openapi/v1.json - 200 null application/json;charset=utf-8 16.8758ms
+[2025-12-04 13:11:21 INF] Request starting HTTP/2 GET https://localhost:7222/scalar/favicon.svg - null null
+[2025-12-04 13:11:21 INF] Executing endpoint 'HTTP: GET /scalar/favicon.svg'
+[2025-12-04 13:11:21 INF] Sending file with download name ''.
+[2025-12-04 13:11:21 INF] Executed endpoint 'HTTP: GET /scalar/favicon.svg'
+[2025-12-04 13:11:21 INF] HTTP GET /scalar/favicon.svg responded 200 in 4.5651 ms
+[2025-12-04 13:11:21 INF] Request finished HTTP/2 GET https://localhost:7222/scalar/favicon.svg - 200 533 image/svg+xml 10.2507ms
+[2025-12-04 13:12:56 INF] Request starting HTTP/2 POST https://localhost:7222/api/Auth/login - application/json 56
+[2025-12-04 13:12:56 INF] CORS policy execution successful.
+[2025-12-04 13:12:56 INF] Executing endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-04 13:12:56 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto) on controller WebAPI.Controllers.AuthController (WebAPI).
+[2025-12-04 13:12:57 INF] Executed DbCommand (59ms) [Parameters=[@usernameOrEmail='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @usernameOrEmail OR [u].[Email] = @usernameOrEmail
+[2025-12-04 13:12:57 INF] Executing OkObjectResult, writing value of type 'Application.DTOs.AuthResultDto'.
+[2025-12-04 13:12:57 INF] Executed action WebAPI.Controllers.AuthController.Login (WebAPI) in 1433.3569ms
+[2025-12-04 13:12:57 INF] Executed endpoint 'WebAPI.Controllers.AuthController.Login (WebAPI)'
+[2025-12-04 13:12:57 INF] HTTP POST /api/Auth/login responded 200 in 1466.3297 ms
+[2025-12-04 13:12:57 INF] Request finished HTTP/2 POST https://localhost:7222/api/Auth/login - 200 null application/json; charset=utf-8 1481.0759ms
+[2025-12-04 13:14:01 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-04 13:14:01 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-04 13:14:01 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-04 13:14:01 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-04 13:14:01 INF] HTTP GET /api/Countries responded 401 in 17.5315 ms
+[2025-12-04 13:14:01 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 25.2692ms
+[2025-12-04 13:15:17 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Countries - null null
+[2025-12-04 13:15:17 INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '03/12/2025 22:49:44', Current time (UTC): '04/12/2025 17:15:17'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+[2025-12-04 13:15:17 ERR] JWT FAILED: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '03/12/2025 22:49:44', Current time (UTC): '04/12/2025 17:15:17'.
+[2025-12-04 13:15:17 INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '03/12/2025 22:49:44', Current time (UTC): '04/12/2025 17:15:17'.
+[2025-12-04 13:15:17 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-04 13:15:17 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-04 13:15:17 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-04 13:15:17 INF] HTTP GET /api/Countries responded 401 in 34.3067 ms
+[2025-12-04 13:15:17 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Countries - 401 0 null 38.2013ms
+[2025-12-04 13:15:35 INF] Request starting HTTP/1.1 GET https://localhost:7222/api/Countries - null null
+[2025-12-04 13:15:35 INF] JWT TOKEN VALID
+[2025-12-04 13:15:35 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Debug (WebAPI)'
+[2025-12-04 13:15:35 INF] Route matched with {action = "Debug", controller = "Countries"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Debug() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-04 13:15:39 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-12-04 13:15:39 INF] Executed action WebAPI.Controllers.CountriesController.Debug (WebAPI) in 3994.5768ms
+[2025-12-04 13:15:39 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Debug (WebAPI)'
+[2025-12-04 13:15:39 INF] HTTP GET /api/Countries responded 200 in 4010.4131 ms
+[2025-12-04 13:15:39 INF] Request finished HTTP/1.1 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 4014.8895ms
+[2025-12-04 13:20:06 INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-12-04 13:20:06 INF] Now listening on: https://localhost:7222
+[2025-12-04 13:20:06 INF] Now listening on: http://localhost:5273
+[2025-12-04 13:20:07 INF] Application started. Press Ctrl+C to shut down.
+[2025-12-04 13:20:07 INF] Hosting environment: Development
+[2025-12-04 13:20:07 INF] Content root path: C:\Abstra\Abstra\WebAPI
+[2025-12-04 13:20:47 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-04 13:20:47 INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[2025-12-04 13:20:47 WRN] JWT CHALLENGE TRIGGERED
+[2025-12-04 13:20:47 INF] AuthenticationScheme: Bearer was challenged.
+[2025-12-04 13:20:47 INF] HTTP GET /api/Countries responded 401 in 75.0491 ms
+[2025-12-04 13:20:47 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 401 0 null 117.8022ms
+[2025-12-04 13:21:28 INF] Request starting HTTP/2 GET https://localhost:7222/api/Countries - null null
+[2025-12-04 13:21:28 INF] JWT TOKEN VALID
+[2025-12-04 13:21:28 INF] Executing endpoint 'WebAPI.Controllers.CountriesController.Debug (WebAPI)'
+[2025-12-04 13:21:28 INF] Route matched with {action = "Debug", controller = "Countries"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Debug() on controller WebAPI.Controllers.CountriesController (WebAPI).
+[2025-12-04 13:21:31 INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-12-04 13:21:31 INF] Executed action WebAPI.Controllers.CountriesController.Debug (WebAPI) in 2886.466ms
+[2025-12-04 13:21:31 INF] Executed endpoint 'WebAPI.Controllers.CountriesController.Debug (WebAPI)'
+[2025-12-04 13:21:31 INF] HTTP GET /api/Countries responded 200 in 2957.3757 ms
+[2025-12-04 13:21:31 INF] Request finished HTTP/2 GET https://localhost:7222/api/Countries - 200 null application/json; charset=utf-8 2965.7397ms
