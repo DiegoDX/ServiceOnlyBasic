@@ -1,0 +1,28 @@
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: src/WebAPI/Dockerfile
+    container_name: service-api
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: >
+        Server=sqlserver;
+        Database=ProjectForinterview;
+        User=sa;
+        Password=YourStrong!Passw0rd;
+        TrustServerCertificate=true
+    depends_on:
+      - sqlserver
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "YourStrong!Passw0rd"
+      ACCEPT_EULA: "Y"

@@ -1,4 +1,5 @@
 ﻿using Application.DependencyInjection;
+using Infrastructure.Data;
 using Infrastructure.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -62,6 +63,22 @@ namespace WebAPI
             builder.Services.AddRateLimiting();
 
             var app = builder.Build();
+
+            // ---------------------------- Database migration ----------------------------
+            using (var scope = app.Services.CreateScope())
+            {
+                try
+                {
+                    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+                    db.Database.Migrate();
+                }
+                catch (Exception ex)
+                {
+                    Log.Fatal(ex, "An error occurred while migrating or initializing the database");
+                    throw;
+                }
+            }
+
 
             // ---------------------------- Middleware ----------------------------
 

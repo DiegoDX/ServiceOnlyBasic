@@ -1,19 +1,21 @@
 <Solution>
   <Folder Name="/Solution Items/">
+    <File Path=".docker/.dockerignore" />
+    <File Path=".docker/docker-compose.yml" />
     <File Path=".github/workflows/ci.yml" />
     <File Path=".gitignore" />
     <File Path="README.md" />
   </Folder>
   <Folder Name="/SRC/">
-    <Project Path="Application/Application.csproj" Id="c0163e4a-d10a-4466-8699-ab8fd870778c" />
-    <Project Path="Core/Core.csproj" />
-    <Project Path="Infrastructure/Infrastructure.csproj" Id="167f9215-646e-4685-998c-905d6a5e251a" />
-    <Project Path="WebAPI/WebAPI.csproj" Id="d1ad5c9d-86be-4716-870e-fdfc7e3a97af" />
+    <Project Path="src/Application/Application.csproj" />
+    <Project Path="src/Core/Core.csproj" />
+    <Project Path="src/Infrastructure/Infrastructure.csproj" />
+    <Project Path="src/WebAPI/WebAPI.csproj" />
   </Folder>
   <Folder Name="/Tests/">
-    <Project Path="Application.Tests/Application.Tests.csproj" Id="de9a3b51-da7c-41d1-9b91-487c8663f230" />
-    <Project Path="Domain.Tests/Domain.Tests.csproj" Id="a4eccfe7-c617-4557-86d4-741a6d61bd0c" />
-    <Project Path="Infrastructure.Tests/Infrastructure.Tests.csproj" Id="0631821c-c86c-4aaf-8382-aa3a9d587a57" />
-    <Project Path="WebApi.Tests/WebApi.Tests.csproj" Id="e5875d9f-fb04-41b9-a98e-be3f4f4df402" />
+    <Project Path="Test/Application.Tests/Application.Tests.csproj" />
+    <Project Path="Test/Domain.Tests/Domain.Tests.csproj" />
+    <Project Path="Test/Infrastructure.Tests/Infrastructure.Tests.csproj" />
+    <Project Path="Test/WebApi.Tests/WebApi.Tests.csproj" />
   </Folder>
 </Solution>
