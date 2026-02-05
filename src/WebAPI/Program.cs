@@ -62,6 +62,9 @@ namespace WebAPI
             //rate limiting
             builder.Services.AddRateLimiting();
 
+            //memory cache
+            builder.Services.AddMemoryCache();
+
             var app = builder.Build();
 
             // ---------------------------- Database migration ----------------------------

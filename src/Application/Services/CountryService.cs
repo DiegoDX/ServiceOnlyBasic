@@ -8,7 +8,9 @@ using Core.Constants;
 using Core.Entities;
 using Core.Exceptions;
 using Core.ValueObjects;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Application.Services
 {
@@ -16,15 +18,24 @@ namespace Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<CountryService> _logger;
+        private readonly IMemoryCache _cache;
+        private const string AllCountriesCacheKey = "all_countries";
 
-        public CountryService(IUnitOfWork uow, ILogger<CountryService> logger)
+
+        public CountryService(IUnitOfWork uow, ILogger<CountryService> logger, IMemoryCache cache)
         {
             _unitOfWork = uow;
             _logger = logger;
+            _cache = cache; 
         }
 
         public async Task<Result<IEnumerable<CountryListItemDto>>> GetAllAsync(CancellationToken cancellationToken)
         {
+            if(_cache.TryGetValue(AllCountriesCacheKey, out IEnumerable<CountryListItemDto>? cachedCountries))
+            {
+                return Result<IEnumerable<CountryListItemDto>>.Success(cachedCountries);
+            }
+
             var countries = await _unitOfWork.Countries.GetAllAsync(cancellationToken);
             var countryDtos = countries.Select(c =>
                 new CountryListItemDto(
@@ -35,6 +46,15 @@ namespace Application.Services
                     c.AreaInSquareKm
                 )
             );
+
+            var options = new MemoryCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10),
+                SlidingExpiration = TimeSpan.FromMinutes(2)
+            };
+
+            _cache.Set(AllCountriesCacheKey, countryDtos, options);
+
             return Result<IEnumerable<CountryListItemDto>>.Success(countryDtos);
         }
 
@@ -49,6 +69,7 @@ namespace Application.Services
             var country = new Country(dto.Name, new CountryCode(dto.Code), dto.Population, dto.Area);
             await _unitOfWork.Countries.AddAsync(country, cancellationToken);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
+            _cache.Remove(AllCountriesCacheKey);
             return country.Id;
         }
 
@@ -73,6 +94,7 @@ namespace Application.Services
 
             await _unitOfWork.Countries.UpdateAsync(existingCountry, cancellationToken);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
+            _cache.Remove(AllCountriesCacheKey);
         }
 
         public async Task DeleteAsync(Guid id, CancellationToken cancellationToken)
@@ -86,6 +108,7 @@ namespace Application.Services
             
             await _unitOfWork.Countries.DeleteAsync(existingCountry, cancellationToken);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
+            _cache.Remove(AllCountriesCacheKey);
         }
 
         public async Task<PagedResult<CountryListItemDto>> GetPagedAsync(CountryQueryParams query, CancellationToken cancellationToken)
