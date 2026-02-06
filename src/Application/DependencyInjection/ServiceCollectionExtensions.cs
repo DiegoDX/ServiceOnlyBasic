@@ -15,6 +15,7 @@ namespace Application.DependencyInjection
             services.AddScoped<ICityService, CityService>();
             services.AddScoped<IAuthService, AuthService>();
 
+
             //Validators
             services.AddValidatorsFromAssembly(typeof(ServiceCollectionExtensions).Assembly);
             return services;

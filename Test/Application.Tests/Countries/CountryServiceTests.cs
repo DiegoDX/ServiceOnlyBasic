@@ -5,6 +5,7 @@ using Core.Entities;
 using Core.Exceptions;
 using Core.ValueObjects;
 using FluentAssertions;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Moq;
 using System.Linq.Expressions;
@@ -16,6 +17,9 @@ namespace Application.Tests.Countries
         private readonly Mock<ICountryRepository> _countryRepoMock = new();
         private readonly Mock<IUnitOfWork> _unitOfWorkMock = new();
         private readonly Mock<ILogger<CountryService>> _loggerMock = new();
+        private readonly Mock<IMemoryCache> _cacheMock = new();
+
+        
 
         private CountryService CreateService()
         {
@@ -24,7 +28,8 @@ namespace Application.Tests.Countries
 
             return new CountryService(
                 _unitOfWorkMock.Object,
-                _loggerMock.Object);
+                _loggerMock.Object,
+                _cacheMock.Object);
         }
 
 

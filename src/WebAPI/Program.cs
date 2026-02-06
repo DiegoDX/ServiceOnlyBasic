@@ -1,4 +1,6 @@
 ﻿using Application.DependencyInjection;
+using Core.Abstractions;
+using Infrastructure.Caching;
 using Infrastructure.Data;
 using Infrastructure.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
@@ -64,6 +66,14 @@ namespace WebAPI
 
             //memory cache
             builder.Services.AddMemoryCache();
+
+            builder.Services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = builder.Configuration.GetConnectionString("Redis");
+                options.InstanceName = "ServiceOnlyBasic";
+            });
+
+            builder.Services.AddScoped<ICacheService, RedisCacheService>();
 
             var app = builder.Build();
 

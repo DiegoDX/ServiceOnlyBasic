@@ -4,10 +4,13 @@ using Application.Interfaces.Repositories;
 using Application.Interfaces.Services;
 using Application.Pagination;
 using Application.Pagination.Params;
+using Core.Abstractions;
 using Core.Constants;
 using Core.Entities;
 using Core.Exceptions;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
 using System.Linq.Expressions;
 
 namespace Application.Services
@@ -16,15 +19,25 @@ namespace Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<CityService> _logger;
+        private readonly ICacheService _cache;
 
-        public CityService(IUnitOfWork uow, ILogger<CityService> logger)
+        private const string CacheKey = "all_cities";
+
+        public CityService(IUnitOfWork uow, ILogger<CityService> logger, ICacheService cache)
         {
             _unitOfWork = uow;
             _logger = logger;
+            _cache = cache;
         }
 
         public async Task<Result<IEnumerable<CityListItemDto>>> GetAllAsync(Guid countryId, CancellationToken cancellationToken)
         {
+            var cached = await _cache.GetAsync<Result<IEnumerable<CityListItemDto>>>(CacheKey);
+            if (cached != null)
+            {
+                return cached;
+            }
+
             var cities = await _unitOfWork.Cities.GetAllAsync(countryId, cancellationToken);
             var cityDtos = cities.Select(c => new CityListItemDto(
                 c.Id,
@@ -35,7 +48,9 @@ namespace Application.Services
                 c.IsCapital,
                 c.CountryId
             ));
-            return Result<IEnumerable<CityListItemDto>>.Success(cityDtos);
+            var data = Result<IEnumerable<CityListItemDto>>.Success(cityDtos);
+            await _cache.SetAsync(CacheKey, data, TimeSpan.FromHours(1));
+            return data;
         }
 
         public async Task<Guid> CreateAsync(CreateCityDto dto, CancellationToken cancellationToken)
@@ -51,6 +66,7 @@ namespace Application.Services
             );
             await _unitOfWork.Cities.AddAsync(city, cancellationToken);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
+            await _cache.RemoveAsync(CacheKey);
             return city.Id;
         }
 
@@ -73,6 +89,7 @@ namespace Application.Services
             city.AreaInSquareKm = cityDto.Area;
             await _unitOfWork.Cities.UpdateAsync(city, cancellationToken);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
+            await _cache.RemoveAsync(CacheKey);
         }
 
         public async Task DeleteAsync(Guid id, CancellationToken cancellationToken)
@@ -87,6 +104,7 @@ namespace Application.Services
 
             await _unitOfWork.Cities.DeleteAsync(city, cancellationToken);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
+            await _cache.RemoveAsync(CacheKey);
         }
 
         public async Task<PagedResult<CityListItemDto>> GetPagedAsync(Guid countryId, CityQueryParams query, CancellationToken cancellationToken)
