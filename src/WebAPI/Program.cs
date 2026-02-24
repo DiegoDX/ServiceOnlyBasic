@@ -75,6 +75,9 @@ namespace WebAPI
 
             builder.Services.AddScoped<ICacheService, RedisCacheService>();
 
+            builder.Services.AddGraphQLConfiguration();
+            
+
             var app = builder.Build();
 
             // ---------------------------- Database migration ----------------------------
@@ -122,6 +125,8 @@ namespace WebAPI
 
                 app.MapControllers()
                     .RequireRateLimiting("IpPolicy"); 
+
+                app.MapGraphQL();
 
                 app.Run();
             }
